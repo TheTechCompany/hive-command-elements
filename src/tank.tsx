@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Button } from '@mui/material';
+
 import Sump from './sump';
 
 // export default () => {
@@ -17,6 +19,7 @@ export const Tank = () => {
     return (
         <div>
             <Sump />
+            <Button />
             Tanks
         </div>
     )
