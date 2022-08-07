@@ -19,7 +19,7 @@ export const Tank = () => {
     return (
         <div>
             <Sump />
-            <Button />
+            <Button>Tank</Button>
             Tanks
         </div>
     )

@@ -20,7 +20,7 @@ const sump_1 = __importDefault(require("./sump"));
 const Tank = () => {
     return (react_1.default.createElement("div", null,
         react_1.default.createElement(sump_1.default, null),
-        react_1.default.createElement(material_1.Button, null),
+        react_1.default.createElement(material_1.Button, null, "Tank"),
         "Tanks"));
 };
 exports.Tank = Tank;
