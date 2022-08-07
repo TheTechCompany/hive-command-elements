@@ -7,3 +7,7 @@ export default () => {
         </div>
     )
 }
+
+export const Sump = () => {
+    return <div />
+}
