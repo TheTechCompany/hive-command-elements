@@ -37,7 +37,7 @@ export const Button : React.FC<ButtonProps> = (props) => {
                 style={{
                     display: 'block'
                 }}
-                tabIndex={-1}>{props.children}</span>
+                tabIndex={-1}>{props.children || "Button"}</span>
         </ButtonUnstyled>
     )
 }

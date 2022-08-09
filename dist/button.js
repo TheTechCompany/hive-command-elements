@@ -29,6 +29,6 @@ const Button = (props) => {
         } },
         react_1.default.createElement("span", { style: {
                 display: 'block'
-            }, tabIndex: -1 }, props.children)));
+            }, tabIndex: -1 }, props.children || "Button")));
 };
 exports.Button = Button;
