@@ -17,7 +17,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Tank = exports.Sump = exports.Sparge = exports.Pump = exports.Blower = exports.Agitator = exports.TJoin = exports.StraightPipe = exports.FilterMembrane = exports.ElbowPipe = exports.DosingPump = void 0;
+exports.Sparge = exports.Pump = exports.Blower = exports.Agitator = exports.TJoin = exports.StraightPipe = exports.FilterMembrane = exports.ElbowPipe = exports.DosingPump = void 0;
 // export * from './tank'
 // export * from './sump'
 __exportStar(require("./button"), exports);
@@ -39,7 +39,5 @@ var Pump_1 = require("./Pump");
 Object.defineProperty(exports, "Pump", { enumerable: true, get: function () { return __importDefault(Pump_1).default; } });
 var Sparge_1 = require("./Sparge");
 Object.defineProperty(exports, "Sparge", { enumerable: true, get: function () { return __importDefault(Sparge_1).default; } });
-var Sump_1 = require("./Sump");
-Object.defineProperty(exports, "Sump", { enumerable: true, get: function () { return __importDefault(Sump_1).default; } });
-var Tank_1 = require("./Tank");
-Object.defineProperty(exports, "Tank", { enumerable: true, get: function () { return __importDefault(Tank_1).default; } });
+// export { default as Sump } from "./Sump";
+// export { default as Tank } from "./Tank";
