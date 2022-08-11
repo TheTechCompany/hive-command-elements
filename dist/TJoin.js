@@ -23,8 +23,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.TJoin = void 0;
 const React = __importStar(require("react"));
-const SvgTJoin = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 160.8 100", xmlSpace: "preserve" }, props),
+const TJoin = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 160.8 100", xmlSpace: "preserve" }, props),
     React.createElement("linearGradient", { id: "TJoin_svg__a", gradientUnits: "userSpaceOnUse", x1: 70.24, y1: 54.78, x2: 90.236, y2: 54.78 },
         React.createElement("stop", { offset: 0, style: {
                 stopColor: "#6f7173",
@@ -80,4 +81,4 @@ const SvgTJoin = (props) => (React.createElement("svg", Object.assign({ xmlns: "
                 stopColor: "#333334",
             } })),
     React.createElement("path", { fill: "url(#TJoin_svg__e)", d: "M91.9 82.6v7.2H68.6v-7.2z" })));
-exports.default = SvgTJoin;
+exports.TJoin = TJoin;

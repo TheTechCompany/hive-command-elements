@@ -23,8 +23,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Sparge = void 0;
 const React = __importStar(require("react"));
-const SvgSparge = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 109.5 29.6", xmlSpace: "preserve" }, props),
+const Sparge = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 109.5 29.6", xmlSpace: "preserve" }, props),
     React.createElement("g", { fill: "none", stroke: "#282828", strokeWidth: 2, strokeLinecap: "round", strokeLinejoin: "round", strokeMiterlimit: 10 },
         React.createElement("path", { d: "M9.6 19.8H100M94.1 8.8l-5.4 11-5.5-11M77.3 8.8l-5.3 11-5.5-11M60.5 8.8l-5.3 11-5.5-11M43.7 8.8l-5.3 11-5.5-11M26.4 8.8l-5.3 11-5.6-11" }))));
-exports.default = SvgSparge;
+exports.Sparge = Sparge;

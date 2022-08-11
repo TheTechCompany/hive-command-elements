@@ -23,8 +23,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Pump = void 0;
 const React = __importStar(require("react"));
-const SvgPump = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 90.2 79.7", xmlSpace: "preserve" }, props),
+const Pump = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 90.2 79.7", xmlSpace: "preserve" }, props),
     React.createElement("linearGradient", { id: "pump_svg__a", gradientUnits: "userSpaceOnUse", x1: 2494.177, y1: 69.965, x2: 2494.177, y2: 41.041, gradientTransform: "matrix(-1 0 0 1 2527.218 0)" },
         React.createElement("stop", { offset: 0, style: {
                 stopColor: "#616264",
@@ -228,4 +229,4 @@ const SvgPump = (props) => (React.createElement("svg", Object.assign({ xmlns: "h
             } })),
     React.createElement("ellipse", { fill: "url(#pump_svg__u)", cx: 72.2, cy: 26.2, rx: 6.6, ry: 13.1 }),
     React.createElement("ellipse", { fill: "none", stroke: "#2D2D2D", strokeWidth: 1.313, strokeMiterlimit: 10, cx: 72.6, cy: 26.2, rx: 6.6, ry: 13.1 })));
-exports.default = SvgPump;
+exports.Pump = Pump;

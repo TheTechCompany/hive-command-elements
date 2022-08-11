@@ -1,7 +1,7 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-const SvgStraightPipe = (props: SVGProps<SVGSVGElement>) => (
+export const StraightPipe = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 39.8 139.5"
@@ -97,4 +97,3 @@ const SvgStraightPipe = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export default SvgStraightPipe;

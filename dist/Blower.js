@@ -23,8 +23,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Blower = void 0;
 const React = __importStar(require("react"));
-const SvgBlower = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 90.2 79.7", xmlSpace: "preserve" }, props),
+const Blower = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 90.2 79.7", xmlSpace: "preserve" }, props),
     React.createElement("linearGradient", { id: "blower_svg__a", gradientUnits: "userSpaceOnUse", x1: 2490.137, y1: 69.11, x2: 2490.137, y2: 40.186, gradientTransform: "matrix(-1 0 0 1 2527.218 0)" },
         React.createElement("stop", { offset: 0, style: {
                 stopColor: "#616264",
@@ -214,4 +215,4 @@ const SvgBlower = (props) => (React.createElement("svg", Object.assign({ xmlns: 
             } })),
     React.createElement("ellipse", { fill: "url(#blower_svg__k)", cx: 76.2, cy: 25.3, rx: 6.6, ry: 13.1 }),
     React.createElement("ellipse", { fill: "none", stroke: "#2D2D2D", strokeWidth: 1.313, strokeMiterlimit: 10, cx: 76.7, cy: 25.3, rx: 6.6, ry: 13.1 })));
-exports.default = SvgBlower;
+exports.Blower = Blower;

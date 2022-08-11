@@ -1,7 +1,7 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-const SvgFilterMembrane = (props: SVGProps<SVGSVGElement>) => (
+export const FilterMembrane = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 109.5 79.7"
@@ -25,4 +25,3 @@ const SvgFilterMembrane = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export default SvgFilterMembrane;

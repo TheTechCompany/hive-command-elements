@@ -1,7 +1,7 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-const SvgElbowPipe = (props: SVGProps<SVGSVGElement>) => (
+export const ElbowPipe = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 90.2 90.2"
@@ -133,4 +133,3 @@ const SvgElbowPipe = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export default SvgElbowPipe;

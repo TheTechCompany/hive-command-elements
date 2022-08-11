@@ -1,7 +1,7 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-const SvgPump = (props: SVGProps<SVGSVGElement>) => (
+export const Pump = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 90.2 79.7"
@@ -569,4 +569,3 @@ const SvgPump = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export default SvgPump;

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-const SvgDosingPump = (props: SVGProps<SVGSVGElement>) => (
+export const DosingPump = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 69.9 69.9"
@@ -167,4 +167,4 @@ const SvgDosingPump = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export default SvgDosingPump;
+// export default SvgDosingPump;

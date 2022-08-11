@@ -1,7 +1,7 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-const SvgTJoin = (props: SVGProps<SVGSVGElement>) => (
+export const TJoin = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 160.8 100"
@@ -156,5 +156,3 @@ const SvgTJoin = (props: SVGProps<SVGSVGElement>) => (
     <path fill="url(#TJoin_svg__e)" d="M91.9 82.6v7.2H68.6v-7.2z" />
   </svg>
 );
-
-export default SvgTJoin;

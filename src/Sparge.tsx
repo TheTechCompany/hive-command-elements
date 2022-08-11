@@ -1,7 +1,7 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-const SvgSparge = (props: SVGProps<SVGSVGElement>) => (
+export const Sparge = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 109.5 29.6"
@@ -21,4 +21,3 @@ const SvgSparge = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export default SvgSparge;

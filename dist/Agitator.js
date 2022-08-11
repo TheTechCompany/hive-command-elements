@@ -23,8 +23,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Agitator = void 0;
 const React = __importStar(require("react"));
-const SvgAgitator = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 89.9 90.1", xmlSpace: "preserve" }, props),
+const Agitator = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 89.9 90.1", xmlSpace: "preserve" }, props),
     React.createElement("linearGradient", { id: "agitator_svg__a", gradientUnits: "userSpaceOnUse", x1: 44.44, y1: 23.806, x2: 44.44, y2: 10.236 },
         React.createElement("stop", { offset: 0, style: {
                 stopColor: "#616264",
@@ -110,4 +111,4 @@ const SvgAgitator = (props) => (React.createElement("svg", Object.assign({ xmlns
                 stopColor: "#616264",
             } })),
     React.createElement("path", { fill: "url(#agitator_svg__e)", stroke: "#4C4C4D", strokeLinejoin: "round", strokeMiterlimit: 10, d: "M36.8 64.3h15.4v13.6H36.8z" })));
-exports.default = SvgAgitator;
+exports.Agitator = Agitator;

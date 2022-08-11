@@ -23,8 +23,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.DosingPump = void 0;
 const React = __importStar(require("react"));
-const SvgDosingPump = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 69.9 69.9", xmlSpace: "preserve" }, props),
+const DosingPump = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 69.9 69.9", xmlSpace: "preserve" }, props),
     React.createElement("linearGradient", { id: "DosingPump_svg__a", gradientUnits: "userSpaceOnUse", x1: 9.843, y1: 14.668, x2: 49.952, y2: 54.778 },
         React.createElement("stop", { offset: 0, style: {
                 stopColor: "#616365",
@@ -75,4 +76,5 @@ const SvgDosingPump = (props) => (React.createElement("svg", Object.assign({ xml
             } })),
     React.createElement("ellipse", { fill: "url(#DosingPump_svg__d)", cx: 58.3, cy: 51, rx: 4.5, ry: 8.9 }),
     React.createElement("ellipse", { fill: "none", stroke: "#2D2D2D", strokeWidth: 0.889, strokeMiterlimit: 10, cx: 58.6, cy: 51, rx: 4.5, ry: 8.9 })));
-exports.default = SvgDosingPump;
+exports.DosingPump = DosingPump;
+// export default SvgDosingPump;
