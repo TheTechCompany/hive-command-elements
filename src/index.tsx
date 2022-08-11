@@ -11,5 +11,5 @@ export * from "./Agitator";
 export * from "./Blower";
 export * from "./Pump";
 export * from "./Sparge";
-// export { default as Sump } from "./Sump";
-// export { default as Tank } from "./Tank";
+export * from "./Sump";
+export * from "./Tank";
