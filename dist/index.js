@@ -26,5 +26,5 @@ __exportStar(require("./Agitator"), exports);
 __exportStar(require("./Blower"), exports);
 __exportStar(require("./Pump"), exports);
 __exportStar(require("./Sparge"), exports);
-// export { default as Sump } from "./Sump";
-// export { default as Tank } from "./Tank";
+__exportStar(require("./Sump"), exports);
+__exportStar(require("./Tank"), exports);
