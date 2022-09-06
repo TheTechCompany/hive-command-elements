@@ -230,3 +230,7 @@ const Pump = (props) => (React.createElement("svg", Object.assign({ xmlns: "http
     React.createElement("ellipse", { fill: "url(#pump_svg__u)", cx: 72.2, cy: 26.2, rx: 6.6, ry: 13.1 }),
     React.createElement("ellipse", { fill: "none", stroke: "#2D2D2D", strokeWidth: 1.313, strokeMiterlimit: 10, cx: 72.6, cy: 26.2, rx: 6.6, ry: 13.1 })));
 exports.Pump = Pump;
+exports.Pump.metadata = {
+    width: 66,
+    height: 66
+};

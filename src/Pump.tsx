@@ -569,3 +569,7 @@ export const Pump = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
+Pump.metadata = {
+  width: 66,
+  height: 66
+}
