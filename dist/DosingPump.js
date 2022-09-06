@@ -77,4 +77,8 @@ const DosingPump = (props) => (React.createElement("svg", Object.assign({ xmlns:
     React.createElement("ellipse", { fill: "url(#DosingPump_svg__d)", cx: 58.3, cy: 51, rx: 4.5, ry: 8.9 }),
     React.createElement("ellipse", { fill: "none", stroke: "#2D2D2D", strokeWidth: 0.889, strokeMiterlimit: 10, cx: 58.6, cy: 51, rx: 4.5, ry: 8.9 })));
 exports.DosingPump = DosingPump;
+exports.DosingPump.metadata = {
+    width: 66,
+    height: 66
+};
 // export default SvgDosingPump;

@@ -167,4 +167,8 @@ export const DosingPump = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
+DosingPump.metadata = {
+  width: 66,
+  height: 66
+}
 // export default SvgDosingPump;

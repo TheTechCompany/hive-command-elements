@@ -140,3 +140,7 @@ export const Sump = (props: SVGProps<SVGSVGElement>) => (
 );
 
 
+Sump.metadata = {
+  width: 66,
+  height: 66
+}

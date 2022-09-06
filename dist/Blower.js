@@ -216,3 +216,7 @@ const Blower = (props) => (React.createElement("svg", Object.assign({ xmlns: "ht
     React.createElement("ellipse", { fill: "url(#blower_svg__k)", cx: 76.2, cy: 25.3, rx: 6.6, ry: 13.1 }),
     React.createElement("ellipse", { fill: "none", stroke: "#2D2D2D", strokeWidth: 1.313, strokeMiterlimit: 10, cx: 76.7, cy: 25.3, rx: 6.6, ry: 13.1 })));
 exports.Blower = Blower;
+exports.Blower.metadata = {
+    width: 66,
+    height: 66
+};

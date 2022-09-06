@@ -505,4 +505,7 @@ export const Blower = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
+Blower.metadata = {
+  width: 66,
+  height: 66
+}

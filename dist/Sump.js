@@ -70,3 +70,7 @@ const Sump = (props) => (React.createElement("svg", Object.assign({ xmlns: "http
             } })),
     React.createElement("path", { fill: "url(#sump_svg__d)", stroke: "#57C9E8", strokeWidth: 1.313, strokeMiterlimit: 10, d: "M48.5 31.2c-13.6-3.8-25.8 8.3-22 22 1.6 5.7 6.1 10.2 11.8 11.8 13.6 3.8 25.8-8.3 22-22-1.6-5.7-6.1-10.2-11.8-11.8zm-4.6 29h-.8c-4.4-.3-7.3-4.9-5.8-9l.8-2.3 4.8-13.3c.2-.5.8-.5 1 0l4.8 13.3.8 2.3c1.6 4.1-1.2 8.7-5.6 9z" })));
 exports.Sump = Sump;
+exports.Sump.metadata = {
+    width: 66,
+    height: 66
+};
