@@ -156,3 +156,8 @@ export const TJoin = (props: SVGProps<SVGSVGElement>) => (
     <path fill="url(#TJoin_svg__e)" d="M91.9 82.6v7.2H68.6v-7.2z" />
   </svg>
 );
+
+TJoin.metadata = {
+  width: 66,
+  height: 66
+}
