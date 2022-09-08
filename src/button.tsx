@@ -2,7 +2,7 @@ import React from 'react';
 import { Button as ButtonUnstyled } from '@mui/material'
 
 export interface ButtonProps {
-    children?: any;
+    text?: any;
     color?: any;
     textColor?: any;
 }
@@ -39,7 +39,7 @@ export const Button : React.FC<ButtonProps> = (props) => {
                 style={{
                     display: 'block'
                 }}
-                tabIndex={-1}>{props.children || "Button"}</span>
+                tabIndex={-1}>{props.text || "Button"}</span>
         </ButtonUnstyled>
     )
 }
@@ -48,7 +48,7 @@ export const Button : React.FC<ButtonProps> = (props) => {
     width: 125,
     height: 50,
     options: {
-        children: 'String',
+        text: 'String',
         textColor: 'String',
         onClick: 'Function'
     }

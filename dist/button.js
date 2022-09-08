@@ -30,14 +30,14 @@ const Button = (props) => {
         } },
         react_1.default.createElement("span", { style: {
                 display: 'block'
-            }, tabIndex: -1 }, props.children || "Button")));
+            }, tabIndex: -1 }, props.text || "Button")));
 };
 exports.Button = Button;
 exports.Button.metadata = {
     width: 125,
     height: 50,
     options: {
-        children: 'String',
+        text: 'String',
         textColor: 'String',
         onClick: 'Function'
     }
