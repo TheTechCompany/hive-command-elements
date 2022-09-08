@@ -11,8 +11,10 @@ export const Button : React.FC<ButtonProps> = (props) => {
     return (
         <ButtonUnstyled
             variant="contained"
+            fullWidth
             color="primary"
             sx={{
+                height: '100%',
                 // background: props.color,
                 border: 0,
                 borderRadius: '0.375em',

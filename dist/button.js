@@ -7,7 +7,8 @@ exports.Button = void 0;
 const react_1 = __importDefault(require("react"));
 const material_1 = require("@mui/material");
 const Button = (props) => {
-    return (react_1.default.createElement(material_1.Button, { variant: "contained", color: "primary", sx: {
+    return (react_1.default.createElement(material_1.Button, { variant: "contained", fullWidth: true, color: "primary", sx: {
+            height: '100%',
             // background: props.color,
             border: 0,
             borderRadius: '0.375em',
