@@ -33,6 +33,8 @@ const Button = (props) => {
 };
 exports.Button = Button;
 exports.Button.metadata = {
+    width: 125,
+    height: 50,
     options: {
         children: 'String',
         textColor: 'String',

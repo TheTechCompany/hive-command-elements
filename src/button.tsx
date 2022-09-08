@@ -43,6 +43,8 @@ export const Button : React.FC<ButtonProps> = (props) => {
 }
 
 (Button as any).metadata = {
+    width: 125,
+    height: 50,
     options: {
         children: 'String',
         textColor: 'String',
