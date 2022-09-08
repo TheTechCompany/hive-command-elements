@@ -13,3 +13,6 @@ export * from "./Pump";
 export * from "./Sparge";
 export * from "./Sump";
 export * from "./Tank";
+export * from './Text'
+export * from './Image'
+export * from './Grid'

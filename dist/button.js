@@ -32,3 +32,10 @@ const Button = (props) => {
             }, tabIndex: -1 }, props.children || "Button")));
 };
 exports.Button = Button;
+exports.Button.metadata = {
+    options: {
+        children: 'String',
+        textColor: 'String',
+        onClick: 'Function'
+    }
+};

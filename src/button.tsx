@@ -41,3 +41,11 @@ export const Button : React.FC<ButtonProps> = (props) => {
         </ButtonUnstyled>
     )
 }
+
+(Button as any).metadata = {
+    options: {
+        children: 'String',
+        textColor: 'String',
+        onClick: 'Function'
+    }
+}

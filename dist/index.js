@@ -28,3 +28,6 @@ __exportStar(require("./Pump"), exports);
 __exportStar(require("./Sparge"), exports);
 __exportStar(require("./Sump"), exports);
 __exportStar(require("./Tank"), exports);
+__exportStar(require("./Text"), exports);
+__exportStar(require("./Image"), exports);
+__exportStar(require("./Grid"), exports);
