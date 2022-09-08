@@ -14,7 +14,7 @@ const Button = (props) => {
             borderRadius: '0.375em',
             color: props.textColor,
             cursor: 'pointer',
-            margin: '1.5em auto',
+            // margin: '1.5em auto',
             padding: '0.5em 1em',
             textShadow: `0 0 0.1em white`,
             transition: `box-shadow 0.2s linear`,
