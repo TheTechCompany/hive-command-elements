@@ -34,7 +34,8 @@ const Grid = (props) => {
         let col = ix % props.cols;
         return (react_1.default.createElement(material_1.Grid, { sx: {
                 display: 'flex',
-                flex: 1
+                flex: 1,
+                padding: 0
             }, item: true, xs: props.cellSize }, renderItem(row, col)));
     })));
 };

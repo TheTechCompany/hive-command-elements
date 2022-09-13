@@ -45,7 +45,8 @@ export const Grid = (props: any) => {
                     <MuiGrid
                         sx={{
                             display: 'flex',
-                            flex: 1
+                            flex: 1,
+                            padding: 0
                         }}
                         item 
                         xs={props.cellSize}>
