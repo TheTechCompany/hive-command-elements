@@ -10,7 +10,7 @@ export const Grid = (props: any) => {
     const renderItem = (row: number, col: number) => {
         if(props.editing){
             return (
-                <div 
+                <div
                     onDrop={(evt) => {
                         let data = JSON.parse(evt.dataTransfer.getData('infinite-canvas'))
                        
@@ -19,7 +19,7 @@ export const Grid = (props: any) => {
                         // onNodeCreate(pos, data)
                         // isDragging.current.dragging = false
                     }}
-                    style={{border: '1px solid black'}}>
+                    style={{border: '1px solid black', flex: 1}}>
                     {props.items?.find((a: any) => a.row == row && a.col == col)}
                 </div>
             )
@@ -36,7 +36,13 @@ export const Grid = (props: any) => {
                 let col = ix % props.cols;
 
                 return (
-                    <MuiGrid item xs={props.cellSize}>
+                    <MuiGrid
+                        sx={{
+                            display: 'flex',
+                            flex: 1
+                        }}
+                        item 
+                        xs={props.cellSize}>
                         {renderItem(row, col)}
                     </MuiGrid>
                 )
