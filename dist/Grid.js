@@ -20,7 +20,7 @@ const Grid = (props) => {
                     // let pos = getRelativeCanvasPos(canvasRef, {offset: _offset, zoom: _zoom}, {x: e.clientX, y: e.clientY})
                     // onNodeCreate(pos, data)
                     // isDragging.current.dragging = false
-                }, style: { border: '1px solid black' } }, (_a = props.items) === null || _a === void 0 ? void 0 : _a.find((a) => a.row == row && a.col == col)));
+                }, style: { border: '1px solid black', flex: 1 } }, (_a = props.items) === null || _a === void 0 ? void 0 : _a.find((a) => a.row == row && a.col == col)));
         }
         else {
             return (_b = props.items) === null || _b === void 0 ? void 0 : _b.find((a) => a.row == row && a.col == col);
@@ -29,7 +29,10 @@ const Grid = (props) => {
     return (react_1.default.createElement(material_1.Grid, { container: true, spacing: 2 }, Array.from(new Array((props.rows || 1) * (props.cols || 1))).map((x, ix) => {
         let row = Math.floor(ix / props.cols);
         let col = ix % props.cols;
-        return (react_1.default.createElement(material_1.Grid, { item: true, xs: props.cellSize }, renderItem(row, col)));
+        return (react_1.default.createElement(material_1.Grid, { sx: {
+                display: 'flex',
+                flex: 1
+            }, item: true, xs: props.cellSize }, renderItem(row, col)));
     })));
 };
 exports.Grid = Grid;
