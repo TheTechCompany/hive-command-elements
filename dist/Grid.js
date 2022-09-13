@@ -26,7 +26,7 @@ const Grid = (props) => {
             return (_b = props.items) === null || _b === void 0 ? void 0 : _b.find((a) => a.row == row && a.col == col);
         }
     };
-    return (react_1.default.createElement(material_1.Grid, { container: true, spacing: 2 }, Array.from(new Array(props.rows * props.cols)).map((x, ix) => {
+    return (react_1.default.createElement(material_1.Grid, { container: true, spacing: 2 }, Array.from(new Array((props.rows || 1) * (props.cols || 1))).map((x, ix) => {
         let row = Math.floor(ix / props.cols);
         let col = ix % props.cols;
         return (react_1.default.createElement(material_1.Grid, { item: true, xs: props.cellSize }, renderItem(row, col)));

@@ -31,7 +31,7 @@ export const Grid = (props: any) => {
     
     return (
         <MuiGrid container spacing={2}>
-            {Array.from(new Array(props.rows * props.cols)).map((x, ix) => {
+            {Array.from(new Array((props.rows || 1) * (props.cols || 1))).map((x, ix) => {
                 let row = Math.floor(ix / props.cols);
                 let col = ix % props.cols;
 
