@@ -46,7 +46,7 @@ export const Grid = (props: any) => {
                         sx={{
                             display: 'flex',
                             flex: 1,
-                            padding: 0
+                            padding: '0 !important'
                         }}
                         item 
                         xs={props.cellSize}>
