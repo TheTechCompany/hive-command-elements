@@ -5,6 +5,7 @@ export interface ButtonProps {
     text?: any;
     color?: any;
     textColor?: any;
+    onClick?: () => void;
 }
 
 export const Button : React.FC<ButtonProps> = (props) => {
@@ -13,6 +14,7 @@ export const Button : React.FC<ButtonProps> = (props) => {
             variant="contained"
             fullWidth
             color="primary"
+            onClick={props.onClick}
             sx={{
                 height: '100%',
                 // background: props.color,
