@@ -210,18 +210,19 @@ exports.Blower = Blower;
 exports.Blower.metadata = {
     width: 66,
     height: 66,
+    maintainAspect: true,
     ports: [
         {
             key: 'outlet',
             momentum: 1,
-            x: '87%',
+            x: '95%',
             y: '34%',
             rotation: 180
         },
         {
             key: 'inlet',
             momentum: -1,
-            x: '0%',
+            x: '-14%',
             y: '55%'
         }
     ]
