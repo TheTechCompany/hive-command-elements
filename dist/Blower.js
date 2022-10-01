@@ -209,5 +209,19 @@ const Blower = (props) => (React.createElement("svg", Object.assign({ xmlns: "ht
 exports.Blower = Blower;
 exports.Blower.metadata = {
     width: 66,
-    height: 66
+    height: 66,
+    ports: [
+        {
+            key: 'outlet',
+            momentum: 1,
+            x: 30,
+            y: 30
+        },
+        {
+            key: 'inlet',
+            momentum: -1,
+            x: 0,
+            y: 30
+        }
+    ]
 };
