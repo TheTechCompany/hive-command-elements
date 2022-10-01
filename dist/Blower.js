@@ -214,15 +214,15 @@ exports.Blower.metadata = {
         {
             key: 'outlet',
             momentum: 1,
-            x: 30,
-            y: 30,
+            x: '87%',
+            y: '34%',
             rotation: 180
         },
         {
             key: 'inlet',
             momentum: -1,
-            x: 0,
-            y: 30
+            x: '0%',
+            y: '55%'
         }
     ]
 };
