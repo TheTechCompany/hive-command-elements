@@ -25,50 +25,42 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Sump = void 0;
 const React = __importStar(require("react"));
-const Sump = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 90.2 89", xmlSpace: "preserve" }, props),
-    React.createElement("linearGradient", { id: "sump_svg__a", gradientUnits: "userSpaceOnUse", x1: 687.398, y1: -1162.866, x2: 687.398, y2: -1189.141, gradientTransform: "matrix(0 1 1 0 1206.31 -659.043)" },
+const Sump = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100", xmlSpace: "preserve" }, props),
+    React.createElement("linearGradient", { id: "sump_svg__a", gradientUnits: "userSpaceOnUse", x1: 905.587, y1: 835.76, x2: 905.587, y2: 871.419, gradientTransform: "rotate(90 880.029 3.633)" },
         React.createElement("stop", { offset: 0, style: {
                 stopColor: "#616264",
             } }),
         React.createElement("stop", { offset: 0.532, style: {
-                stopColor: "#8d8c8e",
+                stopColor: "#a0a0a0",
             } }),
         React.createElement("stop", { offset: 1, style: {
                 stopColor: "#616264",
             } })),
-    React.createElement("path", { fill: "url(#sump_svg__a)", d: "M17.2 48s26.3-.5 26.3-26.3V8.6H17.2V48z" }),
-    React.createElement("linearGradient", { id: "sump_svg__b", gradientUnits: "userSpaceOnUse", x1: 2483.772, y1: 78.754, x2: 2483.772, y2: 49.83, gradientTransform: "matrix(-1 0 0 1 2527.218 0)" },
+    React.createElement("path", { fill: "url(#sump_svg__a)", d: "M12.25 55.9s35.66-.68 35.66-35.66V2.48H12.25V55.9z" }),
+    React.createElement("linearGradient", { id: "sump_svg__b", gradientUnits: "userSpaceOnUse", x1: 1673.3, y1: -637.615, x2: 1673.3, y2: -598.397, gradientTransform: "rotate(180 860.603 -270)" },
         React.createElement("stop", { offset: 0, style: {
                 stopColor: "#616264",
             } }),
         React.createElement("stop", { offset: 0.532, style: {
-                stopColor: "#8d8c8e",
+                stopColor: "#a0a0a0",
             } }),
         React.createElement("stop", { offset: 1, style: {
                 stopColor: "#616264",
             } })),
-    React.createElement("path", { fill: "url(#sump_svg__b)", d: "M65.1 73.4 45.9 51c-1.3-1.5-3.7-1.5-5 0L21.8 73.4c-1.8 2.1-.3 5.4 2.5 5.4h38.4c2.7 0 4.2-3.3 2.4-5.4z" }),
-    React.createElement("radialGradient", { id: "sump_svg__c", cx: 707.079, cy: -1162.863, r: 26.275, gradientTransform: "matrix(0 1 1 0 1206.31 -659.043)", gradientUnits: "userSpaceOnUse" },
+    React.createElement("path", { fill: "url(#sump_svg__b)", d: "M77.33 90.34 51.29 59.97c-1.76-2.03-5.02-2.03-6.78 0L18.48 90.34c-2.44 2.85-.41 7.32 3.39 7.32h52.06c3.8 0 5.84-4.47 3.4-7.32z" }),
+    React.createElement("radialGradient", { id: "sump_svg__c", cx: 932.3, cy: 835.757, r: 35.659, gradientTransform: "rotate(90 880.029 3.633)", gradientUnits: "userSpaceOnUse" },
         React.createElement("stop", { offset: 0, style: {
                 stopColor: "#616264",
             } }),
         React.createElement("stop", { offset: 0.541, style: {
-                stopColor: "#8d8c8e",
+                stopColor: "#a0a0a0",
             } }),
         React.createElement("stop", { offset: 1, style: {
                 stopColor: "#616264",
             } })),
-    React.createElement("circle", { fill: "url(#sump_svg__c)", cx: 43.4, cy: 48, r: 26.3 }),
-    React.createElement("path", { fill: "none", stroke: "#4C4C4D", strokeLinecap: "round", strokeLinejoin: "round", strokeMiterlimit: 10, d: "M60.5 68.3c5.6-4.8 9.2-12 9.2-20C69.7 33.8 58 22 43.4 22V8.9H17.2v39.4c0 8 3.6 15.1 9.2 20l-4.6 5.4c-1.8 2-.3 5.3 2.5 5.3h38.4c2.8 0 4.3-3.3 2.5-5.4l-4.7-5.3z" }),
-    React.createElement("circle", { opacity: 0.33, fill: "#44B2E5", cx: 43.4, cy: 48, r: 15.5 }),
-    React.createElement("radialGradient", { id: "sump_svg__d", cx: 43.446, cy: 48.036, r: 17.59, gradientUnits: "userSpaceOnUse" },
-        React.createElement("stop", { offset: 0, style: {
-                stopColor: "#616264",
-            } }),
-        React.createElement("stop", { offset: 1, style: {
-                stopColor: "#3d3d3d",
-            } })),
-    React.createElement("path", { fill: "url(#sump_svg__d)", stroke: "#57C9E8", strokeWidth: 1.313, strokeMiterlimit: 10, d: "M48.5 31.2c-13.6-3.8-25.8 8.3-22 22 1.6 5.7 6.1 10.2 11.8 11.8 13.6 3.8 25.8-8.3 22-22-1.6-5.7-6.1-10.2-11.8-11.8zm-4.6 29h-.8c-4.4-.3-7.3-4.9-5.8-9l.8-2.3 4.8-13.3c.2-.5.8-.5 1 0l4.8 13.3.8 2.3c1.6 4.1-1.2 8.7-5.6 9z" })));
+    React.createElement("circle", { fill: "url(#sump_svg__c)", cx: 47.9, cy: 55.9, r: 35.66 }),
+    React.createElement("path", { fill: "none", stroke: "#4C4C4D", strokeLinecap: "round", strokeLinejoin: "round", strokeMiterlimit: 10, d: "M71.09 83.43c7.59-6.51 12.47-16.27 12.47-27.12 0-19.66-16-35.66-35.66-35.66V2.89H12.25v53.42c0 10.85 4.88 20.47 12.47 27.12l-6.24 7.32c-2.44 2.85-.41 7.32 3.39 7.32h52.06c3.8 0 5.83-4.47 3.39-7.32l-6.23-7.32z" }),
+    React.createElement("path", { fill: "#333", d: "M54.82 33.13c-18.44-5.15-34.98 11.25-29.83 29.83 2.17 7.73 8.27 13.83 16 16 18.44 5.15 34.98-11.25 29.83-29.83-2.17-7.73-8.27-13.83-16-16zm-6.37 39.32h-1.08c-5.97-.41-9.9-6.64-7.86-12.2l1.08-3.12L47.1 39.1c.27-.68 1.08-.68 1.36 0l6.51 18.03 1.08 3.12c2.29 5.55-1.5 11.79-7.6 12.2z" })));
 exports.Sump = Sump;
 exports.Sump.metadata = {
     width: 66,
