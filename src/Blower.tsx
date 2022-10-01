@@ -477,7 +477,8 @@ Blower.metadata = {
       key: 'outlet',
       momentum: 1,
       x: 30,
-      y: 30
+      y: 30,
+      rotation: 180
     },
     {
       key: 'inlet',
