@@ -481,12 +481,12 @@ Blower.metadata = {
       y: '34%',
       rotation: 180
     },
-    {
-      key: 'inlet',
-      momentum: -1,
-      x: '-14%',
-      y: '55%'
-    }
+    // {
+    //   key: 'inlet',
+    //   momentum: -1,
+    //   x: '-14%',
+    //   y: '55%'
+    // }
   ]
 }
 

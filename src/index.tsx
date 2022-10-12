@@ -16,3 +16,6 @@ export * from "./Tank";
 export * from './Text'
 export * from './Image'
 export * from './Grid'
+
+export * from './Water'
+export * from './Tank'
