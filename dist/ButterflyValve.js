@@ -23,8 +23,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ButterflyValve = void 0;
 const React = __importStar(require("react"));
-const SvgButterflyValve = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100", xmlSpace: "preserve" }, props),
+const ButterflyValve = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100", xmlSpace: "preserve" }, props),
     React.createElement("linearGradient", { id: "butterfly_valve_svg__a", gradientUnits: "userSpaceOnUse", x1: -895.648, y1: 124.468, x2: -895.648, y2: 173.161, gradientTransform: "matrix(-1 0 0 1 -814.198 -82.706)" },
         React.createElement("stop", { offset: 0, style: {
                 stopColor: "#333334",
@@ -56,4 +57,7 @@ const SvgButterflyValve = (props) => (React.createElement("svg", Object.assign({
                 stopColor: "#616264",
             } })),
     React.createElement("circle", { fill: "url(#butterfly_valve_svg__c)", cx: 48.6, cy: 66.3, r: 5.55 })));
-exports.default = SvgButterflyValve;
+exports.ButterflyValve = ButterflyValve;
+exports.ButterflyValve.metadata = {
+    type: 'valve'
+};

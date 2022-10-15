@@ -1,7 +1,7 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-const SvgButterflyValve = (props: SVGProps<SVGSVGElement>) => (
+export const ButterflyValve = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 100 100"
@@ -105,4 +105,6 @@ const SvgButterflyValve = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export default SvgButterflyValve;
+ButterflyValve.metadata = {
+  type: 'valve'
+}
