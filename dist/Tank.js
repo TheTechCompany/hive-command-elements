@@ -200,4 +200,5 @@ exports.Tank = Tank;
 exports.Tank.metadata = {
     width: 200,
     height: 50,
+    type: 'tank'
 };

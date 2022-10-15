@@ -127,6 +127,7 @@ export const DosingPump = (props: SVGProps<SVGSVGElement>) => (
 
 DosingPump.metadata = {
   width: 66,
-  height: 66
+  height: 66,
+  type: 'dosing-pump'
 }
 

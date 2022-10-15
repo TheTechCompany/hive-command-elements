@@ -430,4 +430,5 @@ export const Tank = (props: SVGProps<SVGSVGElement>) => (
 Tank.metadata = {
     width: 200,
     height: 50,
+    type: 'tank'
 }

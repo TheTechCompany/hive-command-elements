@@ -2,6 +2,9 @@
 // export * from './sump'
 export * from './button'
 
+export * from './ButterflyValve'
+export * from './BallValve'
+
 export * from "./DosingPump";
 export * from "./ElbowPipe";
 export * from "./FilterMembrane";

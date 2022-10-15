@@ -118,6 +118,7 @@ export const Pump = (props: SVGProps<SVGSVGElement>) => (
 Pump.metadata = {
   width: 66,
   height: 66,
+  type: 'pump',
   ports: [
     {
       key: 'outlet',

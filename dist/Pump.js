@@ -65,6 +65,7 @@ exports.Pump = Pump;
 exports.Pump.metadata = {
     width: 66,
     height: 66,
+    type: 'pump',
     ports: [
         {
             key: 'outlet',

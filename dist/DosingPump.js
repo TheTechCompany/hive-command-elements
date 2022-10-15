@@ -69,5 +69,6 @@ const DosingPump = (props) => (React.createElement("svg", Object.assign({ xmlns:
 exports.DosingPump = DosingPump;
 exports.DosingPump.metadata = {
     width: 66,
-    height: 66
+    height: 66,
+    type: 'dosing-pump'
 };

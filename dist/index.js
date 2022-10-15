@@ -17,6 +17,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // export * from './tank'
 // export * from './sump'
 __exportStar(require("./button"), exports);
+__exportStar(require("./ButterflyValve"), exports);
+__exportStar(require("./BallValve"), exports);
 __exportStar(require("./DosingPump"), exports);
 __exportStar(require("./ElbowPipe"), exports);
 __exportStar(require("./FilterMembrane"), exports);
