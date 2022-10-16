@@ -33,5 +33,7 @@ __exportStar(require("./Tank"), exports);
 __exportStar(require("./Text"), exports);
 __exportStar(require("./Image"), exports);
 __exportStar(require("./Grid"), exports);
+__exportStar(require("./NFMembrane"), exports);
+__exportStar(require("./SquareTank"), exports);
 __exportStar(require("./Water"), exports);
 __exportStar(require("./Tank"), exports);
