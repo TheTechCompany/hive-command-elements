@@ -1,8 +1,10 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-export const Water = (props: SVGProps<SVGSVGElement>) => (
-  <svg
+export const Water = (props: SVGProps<SVGSVGElement>) => {
+  console.log({props});
+  
+  return (<svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 100 100"
     xmlSpace="preserve"
@@ -16,10 +18,14 @@ export const Water = (props: SVGProps<SVGSVGElement>) => (
       strokeMiterlimit={10}
       d="M28.81 23.22h37.33v37.33H28.81z"
     />
-  </svg>
-);
+  </svg>)
+};
 
 Water.metadata = {
   width: 50,
   height: 50,
+  options: {
+    color: 'String',
+    level: 'Number'
+  }
 }
