@@ -76,14 +76,14 @@ exports.DosingPump.metadata = {
             key: 'outlet',
             momentum: 1,
             x: '95%',
-            y: '34%',
+            y: '90%',
             rotation: 180
         },
         {
             key: 'inlet',
             momentum: -1,
-            x: '-14%',
-            y: '55%'
+            x: '-35%',
+            y: '70%'
         }
     ]
 };

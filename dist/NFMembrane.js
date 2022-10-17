@@ -844,15 +844,15 @@ exports.NFMembrane.metadata = {
         {
             key: 'outlet',
             momentum: 1,
-            x: '95%',
-            y: '34%',
+            x: '90%',
+            y: '57%',
             rotation: 180
         },
         {
             key: 'inlet',
             momentum: -1,
-            x: '-14%',
-            y: '55%'
+            x: '-21%',
+            y: '44%'
         }
     ]
 };
