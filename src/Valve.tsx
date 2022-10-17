@@ -114,15 +114,15 @@ Valve.metadata = {
     {
       key: 'outlet',
       momentum: 1,
-      x: '95%',
-      y: '34%',
+      x: '75%',
+      y: '60%',
       rotation: 180
     },
     {
       key: 'inlet',
       momentum: -1,
       x: '-14%',
-      y: '55%'
+      y: '40%'
     }
   ] 
 }
