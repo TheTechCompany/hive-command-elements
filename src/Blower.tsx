@@ -1,7 +1,12 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-export const Blower = (props: SVGProps<SVGSVGElement>) => (
+export const Blower = (props: SVGProps<SVGSVGElement>) => {
+  console.log("Blower Props", {props})
+
+  return (
+
+
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 100 100"
@@ -468,6 +473,8 @@ export const Blower = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
+
+}
 
 Blower.metadata = {
   width: 50,
