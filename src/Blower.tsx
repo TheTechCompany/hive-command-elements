@@ -10,7 +10,7 @@ export const Blower = (props: any) => {
 
     if(props.options?.on == 'true'){
       timer = setInterval(() => {
-        setRotation(rotation + 5);
+        setRotation((rotation) => rotation + 5);
       }, 300)  
     }else{
       setRotation(0);
@@ -22,6 +22,8 @@ export const Blower = (props: any) => {
     }
   }, [props.options?.on])
 
+  console.log({options: props.options, rotation});
+  
   return (
 
 

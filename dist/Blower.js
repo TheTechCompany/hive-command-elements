@@ -33,7 +33,7 @@ const Blower = (props) => {
         let timer;
         if (((_a = props.options) === null || _a === void 0 ? void 0 : _a.on) == 'true') {
             timer = setInterval(() => {
-                setRotation(rotation + 5);
+                setRotation((rotation) => rotation + 5);
             }, 300);
         }
         else {
@@ -45,6 +45,7 @@ const Blower = (props) => {
                 clearInterval(timer);
         };
     }, [(_a = props.options) === null || _a === void 0 ? void 0 : _a.on]);
+    console.log({ options: props.options, rotation });
     return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100", xmlSpace: "preserve" }, props),
         React.createElement("linearGradient", { id: "blower_svg__a", gradientUnits: "userSpaceOnUse", x1: 1679.894, y1: -630.862, x2: 1679.894, y2: -590.504, gradientTransform: "rotate(180 860.603 -270)" },
             React.createElement("stop", { offset: 0, style: {
