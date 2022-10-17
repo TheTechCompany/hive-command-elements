@@ -1,8 +1,7 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-export const Blower = (props: SVGProps<SVGSVGElement>) => {
-  console.log("Blower Props", {props})
+export const Blower = (props: any) => {
 
   return (
 
@@ -179,6 +178,7 @@ export const Blower = (props: SVGProps<SVGSVGElement>) => {
         }}
       />
     </linearGradient>
+    <g style={{transform: props.options?.on == 'true' ? 'rotate(30deg)' : undefined}}>
     <path
       fill="url(#blower_svg__e)"
       d="M41.24 22.96c-9.35 9.35 0 17.3 0 17.3s-3.21-.14-5.72 2.37C21.29 33.14 27.15 27 27.15 27s3.91-4.04 14.09-4.04z"
@@ -463,6 +463,7 @@ export const Blower = (props: SVGProps<SVGSVGElement>) => {
       fill="url(#blower_svg__j)"
       d="M19.2 35.66c3.35 12.84 14.93 8.65 14.93 8.65s-1.67 2.65-.84 6.14c-15.35 7.53-17.72-.56-17.72-.56s-1.4-5.3 3.63-14.23z"
     />
+    </g>
     <path
       fill="none"
       stroke="#4C4C4D"
