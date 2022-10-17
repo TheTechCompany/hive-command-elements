@@ -895,5 +895,20 @@ export const NFMembrane = (props: SVGProps<SVGSVGElement>) => (
 );
 
 NFMembrane.metadata = {
-  type: 'membrane'
+  type: 'membrane',
+  ports: [
+    {
+      key: 'outlet',
+      momentum: 1,
+      x: '95%',
+      y: '34%',
+      rotation: 180
+    },
+    {
+      key: 'inlet',
+      momentum: -1,
+      x: '-14%',
+      y: '55%'
+    }
+  ]
 }

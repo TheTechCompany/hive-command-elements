@@ -70,5 +70,20 @@ exports.DosingPump = DosingPump;
 exports.DosingPump.metadata = {
     width: 66,
     height: 66,
-    type: 'dosing-pump'
+    type: 'dosing-pump',
+    ports: [
+        {
+            key: 'outlet',
+            momentum: 1,
+            x: '95%',
+            y: '34%',
+            rotation: 180
+        },
+        {
+            key: 'inlet',
+            momentum: -1,
+            x: '-14%',
+            y: '55%'
+        }
+    ]
 };

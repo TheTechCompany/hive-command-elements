@@ -839,5 +839,20 @@ const NFMembrane = (props) => (React.createElement("svg", Object.assign({ id: "N
         React.createElement("path", { className: "NF_MEMBRANE_svg__st320", d: "M73.9 13.8h10.7v.2H73.9z" }))));
 exports.NFMembrane = NFMembrane;
 exports.NFMembrane.metadata = {
-    type: 'membrane'
+    type: 'membrane',
+    ports: [
+        {
+            key: 'outlet',
+            momentum: 1,
+            x: '95%',
+            y: '34%',
+            rotation: 180
+        },
+        {
+            key: 'inlet',
+            momentum: -1,
+            x: '-14%',
+            y: '55%'
+        }
+    ]
 };
