@@ -29,7 +29,7 @@ const Water = (props) => {
     var _a;
     return (React.createElement("svg", Object.assign({ style: {
             transformOrigin: '0 bottom',
-            transform: `scaleY(${(100 / parseFloat(((_a = props.options) === null || _a === void 0 ? void 0 : _a.level) || 100)) || 1})`
+            transform: `scaleY(${(parseFloat(((_a = props.options) === null || _a === void 0 ? void 0 : _a.level) || 100) / 100) || 1})`
         }, xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 40.1 40.1", xmlSpace: "preserve", role: "img" }, props),
         React.createElement("path", { opacity: 0.5, fill: "#4AE5FF", d: "M1.4 1.4h37.3v37.3H1.4z" }),
         React.createElement("path", { fill: "none", stroke: "#4AE5FF", strokeMiterlimit: 10, d: "M1.4 1.4h37.3v37.3H1.4z" })));
