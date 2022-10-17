@@ -208,8 +208,8 @@ const Blower = (props) => (React.createElement("svg", Object.assign({ xmlns: "ht
     React.createElement("path", { fill: "none", stroke: "#4C4C4D", strokeLinecap: "round", strokeLinejoin: "round", strokeMiterlimit: 10, d: "M41.24 11.38c-20.23 0-36.7 16.46-36.7 36.7 0 11.16 5.02 21.07 12.84 27.91l-6.42 7.39c-2.51 2.93-.42 7.53 3.49 7.53h53.58c3.91 0 6-4.6 3.49-7.53l-6.42-7.39c7.81-6.7 12.84-16.74 12.84-27.91h18.28v-36.7H41.24z" })));
 exports.Blower = Blower;
 exports.Blower.metadata = {
-    width: 66,
-    height: 66,
+    width: 50,
+    height: 50,
     type: 'blower',
     maintainAspect: true,
     ports: [

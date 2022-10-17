@@ -470,8 +470,8 @@ export const Blower = (props: SVGProps<SVGSVGElement>) => (
 );
 
 Blower.metadata = {
-  width: 66,
-  height: 66,
+  width: 50,
+  height: 50,
   type: 'blower',
   maintainAspect: true,
   ports: [

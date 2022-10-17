@@ -126,8 +126,8 @@ export const DosingPump = (props: SVGProps<SVGSVGElement>) => (
 );
 
 DosingPump.metadata = {
-  width: 66,
-  height: 66,
+  width: 50,
+  height: 50,
   type: 'dosing-pump',
   ports: [
     {

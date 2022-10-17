@@ -63,8 +63,8 @@ const Pump = (props) => (React.createElement("svg", Object.assign({ xmlns: "http
     React.createElement("path", { fill: "#333", d: "M48.18 24.81c-19.55-5.46-37.09 11.93-31.62 31.62 2.3 8.19 8.77 14.66 16.96 16.96 19.55 5.46 37.09-11.93 31.62-31.62-2.3-8.19-8.77-14.66-16.96-16.96zM41.42 66.5h-1.14c-6.32-.43-10.49-7.04-8.34-12.94l1.15-3.31 6.9-19.12c.29-.72 1.15-.72 1.44 0l6.9 19.12 1.15 3.31c2.44 5.89-1.59 12.5-8.06 12.94z" })));
 exports.Pump = Pump;
 exports.Pump.metadata = {
-    width: 66,
-    height: 66,
+    width: 50,
+    height: 50,
     type: 'pump',
     ports: [
         {
