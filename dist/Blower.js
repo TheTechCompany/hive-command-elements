@@ -26,7 +26,25 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Blower = void 0;
 const React = __importStar(require("react"));
 const Blower = (props) => {
-    var _a;
+    var _a, _b;
+    const [rotation, setRotation] = React.useState(0);
+    React.useEffect(() => {
+        var _a;
+        let timer;
+        if (((_a = props.options) === null || _a === void 0 ? void 0 : _a.on) == 'true') {
+            timer = setInterval(() => {
+                setRotation(rotation + 5);
+            }, 300);
+        }
+        else {
+            setRotation(0);
+            clearInterval(timer);
+        }
+        return () => {
+            if (timer)
+                clearInterval(timer);
+        };
+    }, [(_a = props.options) === null || _a === void 0 ? void 0 : _a.on]);
     return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100", xmlSpace: "preserve" }, props),
         React.createElement("linearGradient", { id: "blower_svg__a", gradientUnits: "userSpaceOnUse", x1: 1679.894, y1: -630.862, x2: 1679.894, y2: -590.504, gradientTransform: "rotate(180 860.603 -270)" },
             React.createElement("stop", { offset: 0, style: {
@@ -91,7 +109,10 @@ const Blower = (props) => {
             React.createElement("stop", { offset: 1, style: {
                     stopColor: "#616264",
                 } })),
-        React.createElement("g", { style: { transform: ((_a = props.options) === null || _a === void 0 ? void 0 : _a.on) == 'true' ? 'rotate(30deg)' : undefined } },
+        React.createElement("g", { style: {
+                transform: ((_b = props.options) === null || _b === void 0 ? void 0 : _b.on) == 'true' ? `rotate(${rotation}deg)` : undefined,
+                transformOrigin: '41% 48%'
+            } },
             React.createElement("path", { fill: "url(#blower_svg__e)", d: "M41.24 22.96c-9.35 9.35 0 17.3 0 17.3s-3.21-.14-5.72 2.37C21.29 33.14 27.15 27 27.15 27s3.91-4.04 14.09-4.04z" }),
             React.createElement("linearGradient", { id: "blower_svg__f", gradientUnits: "userSpaceOnUse", x1: 1102.993, y1: -1654.695, x2: 1118.28, y2: -1654.695, gradientTransform: "rotate(-120 1068.364 -504.451)" },
                 React.createElement("stop", { offset: 0, style: {

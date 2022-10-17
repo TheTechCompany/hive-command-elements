@@ -3,6 +3,25 @@ import { SVGProps } from "react";
 
 export const Blower = (props: any) => {
 
+  const [ rotation, setRotation ] = React.useState(0);
+
+  React.useEffect(() => {
+    let timer: any;
+
+    if(props.options?.on == 'true'){
+      timer = setInterval(() => {
+        setRotation(rotation + 5);
+      }, 300)  
+    }else{
+      setRotation(0);
+      clearInterval(timer)
+    }
+
+    return () => {
+      if(timer) clearInterval(timer);
+    }
+  }, [props.options?.on])
+
   return (
 
 
@@ -178,7 +197,10 @@ export const Blower = (props: any) => {
         }}
       />
     </linearGradient>
-    <g style={{transform: props.options?.on == 'true' ? 'rotate(30deg)' : undefined}}>
+    <g style={{
+      transform: props.options?.on == 'true' ? `rotate(${rotation}deg)` : undefined,
+      transformOrigin: '41% 48%'
+    }}>
     <path
       fill="url(#blower_svg__e)"
       d="M41.24 22.96c-9.35 9.35 0 17.3 0 17.3s-3.21-.14-5.72 2.37C21.29 33.14 27.15 27 27.15 27s3.91-4.04 14.09-4.04z"
