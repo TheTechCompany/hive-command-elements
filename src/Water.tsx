@@ -1,7 +1,11 @@
 import * as React from "react";
 import { SVGProps } from "react";
-export const Water = (props: SVGProps<SVGSVGElement>) => (
+export const Water = (props: any) => (
   <svg
+    style={{
+      transformOrigin: '0 bottom',
+      transform: `scaleY(${(100 / parseFloat(props.options?.level || 100)) || 1})`
+    }}
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 40.1 40.1"
     xmlSpace="preserve"

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-export const DosingPump = (props: SVGProps<SVGSVGElement>) => (
+export const DosingPump = (props: any) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 100 100"
@@ -119,7 +119,7 @@ export const DosingPump = (props: SVGProps<SVGSVGElement>) => (
       />
     </linearGradient>
     <path
-      fill="url(#dosing_pump_svg__c)"
+      fill={props.options?.on == 'true' ? 'cyan': "url(#dosing_pump_svg__c)"}
       d="m59.9 58.58-1.69-6.59-14.13-37.85c-.56-1.69-2.64-1.69-3.01 0L26.94 51.99l-2.64 6.59C19.78 70.63 28.25 84 40.68 84.38h1.88c13-.94 20.91-14.12 17.34-25.8zM39.37 37.11c0-1.51 1.32-2.82 2.82-2.82s2.82 1.32 2.82 2.82V58.2c0 1.51-1.32 2.82-2.82 2.82s-2.82-1.32-2.82-2.82V37.11zm2.82 38.8c-2.64 0-4.71-2.07-4.71-4.71s2.07-4.71 4.71-4.71 4.71 2.07 4.71 4.71-2.07 4.71-4.71 4.71z"
     />
   </svg>
