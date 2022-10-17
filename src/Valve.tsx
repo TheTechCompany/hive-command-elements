@@ -1,12 +1,15 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-export const Valve = (props: SVGProps<SVGSVGElement>) => (
+export const Valve = (props: any) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 80 59.4"
     xmlSpace="preserve"
     role="img"
+    style={{
+      transform: props.options?.open == 'true' ? 'rotate(90deg)' : undefined
+    }}
     {...props}
   >
     <linearGradient
