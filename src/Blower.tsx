@@ -510,8 +510,8 @@ Blower.metadata = {
     {
       key: 'outlet',
       momentum: 1,
-      x: '95%',
-      y: '34%',
+      x: '80%',
+      y: '18%',
       rotation: 180
     },
     // {

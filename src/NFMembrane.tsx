@@ -900,15 +900,15 @@ NFMembrane.metadata = {
     {
       key: 'outlet',
       momentum: 1,
-      x: '90%',
-      y: '57%',
+      x: '80%',
+      y: '42%',
       rotation: 180
     },
     {
       key: 'inlet',
       momentum: -1,
-      x: '-21%',
-      y: '44%'
+      x: '-5%',
+      y: '42%'
     }
   ]
 }
