@@ -61,5 +61,20 @@ exports.ButterflyValve = ButterflyValve;
 exports.ButterflyValve.metadata = {
     type: 'valve',
     width: '50px',
-    height: '30px'
+    height: '30px',
+    ports: [
+        {
+            key: 'outlet',
+            momentum: 1,
+            x: '90%',
+            y: '50%',
+            rotation: 180
+        },
+        {
+            key: 'inlet',
+            momentum: -1,
+            x: '0%',
+            y: '50%'
+        }
+    ]
 };
