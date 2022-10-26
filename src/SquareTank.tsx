@@ -3,20 +3,18 @@ import { SVGProps } from "react";
 
 export const SquareTank = (props: SVGProps<SVGSVGElement>) => (
   <svg
-    id="tank_sq_sm_svg__Layer_1"
+    viewBox="54.726 24.16 150.619 150.684"
     xmlns="http://www.w3.org/2000/svg"
-    x={0}
-    y={0}
-    viewBox="0 0 260 199"
-    xmlSpace="preserve"
     role="img"
     {...props}
   >
-    <style>
-      {
-        ".tank_sq_sm_svg__st2{fill:none;stroke:#383739;stroke-width:1.8221;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}"
-      }
-    </style>
+    <defs>
+      <style>
+        {
+          ".tank_sq_sm_svg__st2{fill:none;stroke:#383739;stroke-width:1.8221;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}"
+        }
+      </style>
+    </defs>
     <linearGradient
       id="tank_sq_sm_svg__SVGID_1_"
       gradientUnits="userSpaceOnUse"
@@ -56,12 +54,6 @@ export const SquareTank = (props: SVGProps<SVGSVGElement>) => (
         }}
       />
     </linearGradient>
-    <path
-      d="M182.7 173.1H77.3c-11.6 0-20.9-9.4-20.9-20.9V46.8c0-11.6 9.4-20.9 20.9-20.9h105.5c11.6 0 20.9 9.4 20.9 20.9v105.5c-.1 11.5-9.4 20.8-21 20.8z"
-      style={{
-        fill: "url(#tank_sq_sm_svg__SVGID_1_)",
-      }}
-    />
     <linearGradient
       id="tank_sq_sm_svg__SVGID_2_"
       gradientUnits="userSpaceOnUse"
@@ -132,6 +124,12 @@ export const SquareTank = (props: SVGProps<SVGSVGElement>) => (
       />
     </linearGradient>
     <path
+      d="M182.7 173.1H77.3c-11.6 0-20.9-9.4-20.9-20.9V46.8c0-11.6 9.4-20.9 20.9-20.9h105.5c11.6 0 20.9 9.4 20.9 20.9v105.5c-.1 11.5-9.4 20.8-21 20.8z"
+      style={{
+        fill: "url(#tank_sq_sm_svg__SVGID_1_)",
+      }}
+    />
+    <path
       d="M183.2 161.4H76.8c-4.8 0-8.7-3.9-8.7-8.7V46.3c0-4.8 3.9-8.7 8.7-8.7h106.3c4.8 0 8.7 3.9 8.7 8.7v106.3c.1 4.9-3.8 8.8-8.6 8.8z"
       style={{
         fill: "url(#tank_sq_sm_svg__SVGID_2_)",
@@ -149,5 +147,7 @@ export const SquareTank = (props: SVGProps<SVGSVGElement>) => (
 );
 
 SquareTank.metadata = {
-  type: 'tank'
+  type: 'tank',
+  width: 100,
+  height: 100
 }
