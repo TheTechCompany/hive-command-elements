@@ -120,14 +120,14 @@ ButterflyValve.metadata = {
       key: 'outlet',
       momentum: 1,
       x: '90%',
-      y: '50%',
+      y: '40%',
       rotation: 180
     },
     {
       key: 'inlet',
       momentum: -1,
-      x: '0%',
-      y: '50%'
+      x: '-10%',
+      y: '40%'
     }
   ]
 }
