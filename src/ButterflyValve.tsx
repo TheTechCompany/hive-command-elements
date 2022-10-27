@@ -113,8 +113,8 @@ export const ButterflyValve = (props: SVGProps<SVGSVGElement>) => (
 
 ButterflyValve.metadata = {
   type: 'valve',
-  width: '50px',
-  height: '30px',
+  width: 50,
+  height: 30,
   ports: [
     {
       key: 'outlet',
