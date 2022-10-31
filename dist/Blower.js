@@ -26,7 +26,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Blower = void 0;
 const React = __importStar(require("react"));
 const Blower = (props) => {
-    var _a, _b;
+    var _a, _b, _c;
     const [rotation, setRotation] = React.useState(0);
     React.useEffect(() => {
         var _a;
@@ -46,7 +46,9 @@ const Blower = (props) => {
         };
     }, [(_a = props.options) === null || _a === void 0 ? void 0 : _a.on]);
     console.log({ options: props.options, rotation });
-    return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100", xmlSpace: "preserve" }, props),
+    return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100", xmlSpace: "preserve", style: {
+            filter: ((_b = props.options) === null || _b === void 0 ? void 0 : _b.on) == 'true' ? 'drop-shadow(0px 0px 5px green)' : undefined
+        } }, props),
         React.createElement("linearGradient", { id: "blower_svg__a", gradientUnits: "userSpaceOnUse", x1: 1679.894, y1: -630.862, x2: 1679.894, y2: -590.504, gradientTransform: "rotate(180 860.603 -270)" },
             React.createElement("stop", { offset: 0, style: {
                     stopColor: "#616264",
@@ -111,7 +113,7 @@ const Blower = (props) => {
                     stopColor: "#616264",
                 } })),
         React.createElement("g", { style: {
-                transform: ((_b = props.options) === null || _b === void 0 ? void 0 : _b.on) == 'true' ? `rotate(${rotation}deg)` : undefined,
+                transform: ((_c = props.options) === null || _c === void 0 ? void 0 : _c.on) == 'true' ? `rotate(${rotation}deg)` : undefined,
                 transformOrigin: '41% 48%'
             } },
             React.createElement("path", { fill: "url(#blower_svg__e)", d: "M41.24 22.96c-9.35 9.35 0 17.3 0 17.3s-3.21-.14-5.72 2.37C21.29 33.14 27.15 27 27.15 27s3.91-4.04 14.09-4.04z" }),

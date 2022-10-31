@@ -26,9 +26,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Valve = void 0;
 const React = __importStar(require("react"));
 const Valve = (props) => {
-    var _a;
+    var _a, _b;
     return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 80 59.4", xmlSpace: "preserve", role: "img", style: {
-            transform: ((_a = props.options) === null || _a === void 0 ? void 0 : _a.open) == 'true' ? 'rotate(90deg)' : undefined
+            filter: ((_a = props.options) === null || _a === void 0 ? void 0 : _a.open) == 'true' ? 'drop-shadow(0px 0px 5px green)' : undefined,
+            transform: ((_b = props.options) === null || _b === void 0 ? void 0 : _b.open) == 'true' ? 'rotate(90deg)' : undefined
         } }, props),
         React.createElement("linearGradient", { id: "Valve_svg__a", gradientUnits: "userSpaceOnUse", x1: 23.143, y1: 46.326, x2: 57.775, y2: 11.694 },
             React.createElement("stop", { offset: 0, style: {

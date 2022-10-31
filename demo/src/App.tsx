@@ -1,6 +1,6 @@
 import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
-import { Button } from '../../src/button'
+import { Button, Blower, DosingPump, Valve, Pump } from '../../src'
 import './App.css'
 
 function App() {
@@ -8,14 +8,28 @@ function App() {
 
   return (
     <div className="App" style={{height: "100vh", width: '100vw', background: '#fff'}}>
-   
-          <Button 
-            color={'blue'}
-            textColor={'white'}
-            >
-            Title
-          </Button>
-         
+        <div style={{width: 50, height: 50, display: 'flex'}}>
+
+          <Valve options={{open:'true'}} />
+        </div>
+
+        <div style={{width: 50, height: 50}}>
+          <Button />
+        </div>
+        <div style={{width: 50, height: 50}}>
+
+          <Blower options={{on: 'true'}} />
+        </div>
+
+        <div style={{width: 50, height: 50}}>
+
+          <Pump options={{on: 'true'}} />
+        </div>
+        <div style={{width: 50, height: 50}}>
+
+          <DosingPump options={{on: 'true'}} />
+        </div>
+
     </div>
   )
 }
