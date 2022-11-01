@@ -9,7 +9,7 @@ export const Valve = (props: any) => (
     role="img"
     style={{
       filter: props.options?.open == 'true' ? 'drop-shadow(0px 0px 5px green)' : undefined,
-      transform: props.options?.open == 'true' ? 'rotate(90deg)' : undefined
+      transform: props.options?.open != 'true' ? 'rotate(90deg)' : undefined
     }}
     {...props}
   >
