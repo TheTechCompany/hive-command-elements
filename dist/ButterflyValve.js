@@ -60,8 +60,8 @@ const ButterflyValve = (props) => (React.createElement("svg", Object.assign({ vi
 exports.ButterflyValve = ButterflyValve;
 exports.ButterflyValve.metadata = {
     type: 'valve',
-    width: 50,
-    height: 30,
+    width: 40,
+    height: 25,
     ports: [
         {
             key: 'outlet',
