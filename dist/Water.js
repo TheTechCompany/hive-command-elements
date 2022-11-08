@@ -27,7 +27,7 @@ exports.Water = void 0;
 const React = __importStar(require("react"));
 const Water = (props) => {
     var _a;
-    return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 45.2 45.2", xmlSpace: "preserve", style: {
+    return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "2.5 2 40 40", xmlSpace: "preserve", style: {
             transformOrigin: '0 bottom',
             transform: `scaleY(${(parseFloat(((_a = props.options) === null || _a === void 0 ? void 0 : _a.level) || 100) / 100) || 1})`
         } }, props),

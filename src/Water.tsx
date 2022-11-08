@@ -4,7 +4,7 @@ import { SVGProps } from "react";
 export const Water = (props: any) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 45.2 45.2"
+    viewBox="2.5 2 40 40"
     xmlSpace="preserve"
     style={{
         transformOrigin: '0 bottom',
