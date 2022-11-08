@@ -9,8 +9,8 @@ export const Tank = (props: SVGProps<SVGSVGElement>) => (
     preserveAspectRatio="none"
     {...props}
   >
-    <defs><radialGradient
-      id="tank_sq_md(1)_svg__a"
+    <radialGradient
+      id="tank_svg__a"
       cx={-1208.551}
       cy={14.219}
       r={230.927}
@@ -61,14 +61,13 @@ export const Tank = (props: SVGProps<SVGSVGElement>) => (
           stopColor: "#616365",
         }}
       />
-    </radialGradient></defs>
-    
+    </radialGradient>
     <path
-      fill="url(#tank_sq_md(1)_svg__a)"
+      fill="url(#tank_svg__a)"
       d="M278 156.7H40.7c-16.3 0-29.4-13.2-29.4-29.4V38.8c0-16.3 13.2-29.4 29.4-29.4H278c16.3 0 29.4 13.2 29.4 29.4v88.5c.1 16.3-13.1 29.4-29.4 29.4z"
     />
     <linearGradient
-      id="tank_sq_md(1)_svg__b"
+      id="tank_svg__b"
       gradientUnits="userSpaceOnUse"
       x1={159.35}
       y1={889.4}
@@ -138,11 +137,11 @@ export const Tank = (props: SVGProps<SVGSVGElement>) => (
       />
     </linearGradient>
     <path
-      fill="url(#tank_sq_md(1)_svg__b)"
+      fill="url(#tank_svg__b)"
       d="M278 156.7H40.7c-16.3 0-29.4-13.2-29.4-29.4V38.8c0-16.3 13.2-29.4 29.4-29.4H278c16.3 0 29.4 13.2 29.4 29.4v88.5c.1 16.3-13.1 29.4-29.4 29.4z"
     />
     <linearGradient
-      id="tank_sq_md(1)_svg__c"
+      id="tank_svg__c"
       gradientUnits="userSpaceOnUse"
       x1={159.35}
       y1={43.3}
@@ -182,7 +181,7 @@ export const Tank = (props: SVGProps<SVGSVGElement>) => (
       />
     </linearGradient>
     <path
-      fill="url(#tank_sq_md(1)_svg__c)"
+      fill="url(#tank_svg__c)"
       d="M278 21.4c9.6 0 17.4 7.8 17.4 17.4v88.5c0 4.6-1.7 8.9-5 12.2s-7.7 5.1-12.4 5.1H40.7c-9.6 0-17.4-7.8-17.4-17.4V38.8c0-9.6 7.8-17.4 17.4-17.4H278m0-12H40.7c-16.2 0-29.4 13.1-29.4 29.4v88.5c0 16.2 13.1 29.4 29.4 29.4H278c16.3 0 29.5-13.1 29.4-29.4V38.8c0-16.2-13.1-29.4-29.4-29.4z"
     />
     <path
@@ -204,7 +203,7 @@ export const Tank = (props: SVGProps<SVGSVGElement>) => (
       d="M277 143.7H42c-10.5 0-19-8.5-19-19V40.5c0-10.5 8.5-19 19-19h235c10.5 0 19 8.5 19 19v84.3c0 10.4-8.5 18.9-19 18.9z"
     />
     <linearGradient
-      id="tank_sq_md(1)_svg__d"
+      id="tank_svg__d"
       gradientUnits="userSpaceOnUse"
       x1={157.6}
       y1={56.8}
@@ -243,7 +242,7 @@ export const Tank = (props: SVGProps<SVGSVGElement>) => (
         }}
       />
     </linearGradient>
-    <path fill="url(#tank_sq_md(1)_svg__d)" d="M153.2 53.1h8.8v90.1h-8.8z" />
+    <path fill="url(#tank_svg__d)" d="M153.2 53.1h8.8v90.1h-8.8z" />
     <path
       fill="#383739"
       d="M161.5 53.6v89.1h-7.7V53.6h7.7m1-1h-9.7v91.1h9.7V52.6z"
