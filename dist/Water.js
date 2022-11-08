@@ -27,12 +27,12 @@ exports.Water = void 0;
 const React = __importStar(require("react"));
 const Water = (props) => {
     var _a;
-    return (React.createElement("svg", Object.assign({ style: {
+    return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 45.2 45.2", xmlSpace: "preserve", style: {
             transformOrigin: '0 bottom',
             transform: `scaleY(${(parseFloat(((_a = props.options) === null || _a === void 0 ? void 0 : _a.level) || 100) / 100) || 1})`
-        }, xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 40.1 40.1", xmlSpace: "preserve", role: "img" }, props),
-        React.createElement("path", { opacity: 0.5, fill: "#4AE5FF", d: "M1.4 1.4h37.3v37.3H1.4z" }),
-        React.createElement("path", { fill: "none", stroke: "#4AE5FF", strokeMiterlimit: 10, d: "M1.4 1.4h37.3v37.3H1.4z" })));
+        } }, props),
+        React.createElement("path", { fill: "#4AE5FF", d: "M41.4 35.5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5V8.1c0-2.8 2.2-5 5-5h27.3c2.8 0 5 2.3 5 5v27.4z", opacity: 0.5 }),
+        React.createElement("path", { fill: "none", stroke: "#4AE5FF", strokeMiterlimit: 10, d: "M41.4 35.5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5V8.1c0-2.8 2.2-5 5-5h27.3c2.8 0 5 2.3 5 5v27.4z" })));
 };
 exports.Water = Water;
 exports.Water.metadata = {
