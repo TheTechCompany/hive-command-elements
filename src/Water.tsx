@@ -6,6 +6,7 @@ export const Water = (props: any) => (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="2.5 2 40 40"
     xmlSpace="preserve"
+    preserveAspectRatio="none"
     style={{
         transformOrigin: '0 bottom',
         transform: `scaleY(${(parseFloat(props.options?.level || 100) / 100) || 1})`
