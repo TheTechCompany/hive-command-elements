@@ -6,6 +6,11 @@ export const SquareTank = (props: SVGProps<SVGSVGElement>) => (
     viewBox="54.726 24.16 150.619 150.684"
     xmlns="http://www.w3.org/2000/svg"
     role="img"
+    preserveAspectRatio="none"
+    style={{
+      width: '100%',
+      height: '100%'
+    }}
     {...props}
   >
     <defs>
