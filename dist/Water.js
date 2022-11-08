@@ -28,6 +28,8 @@ const React = __importStar(require("react"));
 const Water = (props) => {
     var _a;
     return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "2.5 2 40 40", xmlSpace: "preserve", preserveAspectRatio: "none", style: {
+            width: '100%',
+            height: '100%',
             transformOrigin: '0 bottom',
             transform: `scaleY(${(parseFloat(((_a = props.options) === null || _a === void 0 ? void 0 : _a.level) || 100) / 100) || 1})`
         } }, props),

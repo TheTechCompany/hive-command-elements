@@ -8,6 +8,8 @@ export const Water = (props: any) => (
     xmlSpace="preserve"
     preserveAspectRatio="none"
     style={{
+      width: '100%',
+      height: '100%',
         transformOrigin: '0 bottom',
         transform: `scaleY(${(parseFloat(props.options?.level || 100) / 100) || 1})`
     }}
