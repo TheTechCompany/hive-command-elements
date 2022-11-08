@@ -26,28 +26,29 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Tank = void 0;
 const React = __importStar(require("react"));
 const Tank = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 320.2 172", xmlSpace: "preserve", preserveAspectRatio: "none" }, props),
-    React.createElement("radialGradient", { id: "tank_sq_md(1)_svg__a", cx: -1208.551, cy: 14.219, r: 230.927, fx: -1375.519, fy: -27.903, gradientTransform: "matrix(-.9929 .01912 -.01477 -.7181 -1040.41 116.368)", gradientUnits: "userSpaceOnUse" },
-        React.createElement("stop", { offset: 0.043, style: {
-                stopColor: "#787a7c",
-            } }),
-        React.createElement("stop", { offset: 0.315, style: {
-                stopColor: "#8e9192",
-            } }),
-        React.createElement("stop", { offset: 0.475, style: {
-                stopColor: "#999c9e",
-            } }),
-        React.createElement("stop", { offset: 0.537, style: {
-                stopColor: "#989a9c",
-            } }),
-        React.createElement("stop", { offset: 0.662, style: {
-                stopColor: "#88888b",
-            } }),
-        React.createElement("stop", { offset: 0.861, style: {
-                stopColor: "#383838",
-            } }),
-        React.createElement("stop", { offset: 1, style: {
-                stopColor: "#616365",
-            } })),
+    React.createElement("defs", null,
+        React.createElement("radialGradient", { id: "tank_sq_md(1)_svg__a", cx: -1208.551, cy: 14.219, r: 230.927, fx: -1375.519, fy: -27.903, gradientTransform: "matrix(-.9929 .01912 -.01477 -.7181 -1040.41 116.368)", gradientUnits: "userSpaceOnUse" },
+            React.createElement("stop", { offset: 0.043, style: {
+                    stopColor: "#787a7c",
+                } }),
+            React.createElement("stop", { offset: 0.315, style: {
+                    stopColor: "#8e9192",
+                } }),
+            React.createElement("stop", { offset: 0.475, style: {
+                    stopColor: "#999c9e",
+                } }),
+            React.createElement("stop", { offset: 0.537, style: {
+                    stopColor: "#989a9c",
+                } }),
+            React.createElement("stop", { offset: 0.662, style: {
+                    stopColor: "#88888b",
+                } }),
+            React.createElement("stop", { offset: 0.861, style: {
+                    stopColor: "#383838",
+                } }),
+            React.createElement("stop", { offset: 1, style: {
+                    stopColor: "#616365",
+                } }))),
     React.createElement("path", { fill: "url(#tank_sq_md(1)_svg__a)", d: "M278 156.7H40.7c-16.3 0-29.4-13.2-29.4-29.4V38.8c0-16.3 13.2-29.4 29.4-29.4H278c16.3 0 29.4 13.2 29.4 29.4v88.5c.1 16.3-13.1 29.4-29.4 29.4z" }),
     React.createElement("linearGradient", { id: "tank_sq_md(1)_svg__b", gradientUnits: "userSpaceOnUse", x1: 159.35, y1: 889.4, x2: 159.35, y2: 1036.7, gradientTransform: "translate(0 -880)" },
         React.createElement("stop", { offset: 0, style: {

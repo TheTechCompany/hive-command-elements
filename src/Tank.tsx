@@ -9,7 +9,7 @@ export const Tank = (props: SVGProps<SVGSVGElement>) => (
     preserveAspectRatio="none"
     {...props}
   >
-    <radialGradient
+    <defs><radialGradient
       id="tank_sq_md(1)_svg__a"
       cx={-1208.551}
       cy={14.219}
@@ -61,7 +61,8 @@ export const Tank = (props: SVGProps<SVGSVGElement>) => (
           stopColor: "#616365",
         }}
       />
-    </radialGradient>
+    </radialGradient></defs>
+    
     <path
       fill="url(#tank_sq_md(1)_svg__a)"
       d="M278 156.7H40.7c-16.3 0-29.4-13.2-29.4-29.4V38.8c0-16.3 13.2-29.4 29.4-29.4H278c16.3 0 29.4 13.2 29.4 29.4v88.5c.1 16.3-13.1 29.4-29.4 29.4z"
