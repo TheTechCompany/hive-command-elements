@@ -25,31 +25,26 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SquareTank = void 0;
 const React = __importStar(require("react"));
-const SquareTank = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 320.2 172", xmlSpace: "preserve", preserveAspectRatio: "none" }, props),
-    React.createElement("radialGradient", { id: "tank_sq_md(1)_svg__a", cx: -1208.551, cy: 14.219, r: 230.927, fx: -1375.519, fy: -27.903, gradientTransform: "matrix(-.9929 .01912 -.01477 -.7181 -1040.41 116.368)", gradientUnits: "userSpaceOnUse" },
-        React.createElement("stop", { offset: 0.043, style: {
-                stopColor: "#787a7c",
+const SquareTank = (props) => (React.createElement("svg", Object.assign({ viewBox: "54.726 24.16 150.619 150.684", xmlns: "http://www.w3.org/2000/svg", role: "img" }, props),
+    React.createElement("defs", null,
+        React.createElement("style", null, ".tank_sq_sm_svg__st2{fill:none;stroke:#383739;stroke-width:1.8221;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}")),
+    React.createElement("linearGradient", { id: "tank_sq_sm_svg__SVGID_1_", gradientUnits: "userSpaceOnUse", x1: 176.478, y1: 180.002, x2: 83.522, y2: 18.998 },
+        React.createElement("stop", { offset: 0, style: {
+                stopColor: "#7d7f80",
             } }),
         React.createElement("stop", { offset: 0.315, style: {
-                stopColor: "#8e9192",
+                stopColor: "#a8abac",
             } }),
-        React.createElement("stop", { offset: 0.475, style: {
-                stopColor: "#999c9e",
+        React.createElement("stop", { offset: 0.495, style: {
+                stopColor: "#a8abac",
             } }),
-        React.createElement("stop", { offset: 0.537, style: {
-                stopColor: "#989a9c",
-            } }),
-        React.createElement("stop", { offset: 0.662, style: {
-                stopColor: "#88888b",
-            } }),
-        React.createElement("stop", { offset: 0.861, style: {
-                stopColor: "#383838",
+        React.createElement("stop", { offset: 0.825, style: {
+                stopColor: "#7d7f80",
             } }),
         React.createElement("stop", { offset: 1, style: {
                 stopColor: "#616365",
             } })),
-    React.createElement("path", { fill: "url(#tank_sq_md(1)_svg__a)", d: "M278 156.7H40.7c-16.3 0-29.4-13.2-29.4-29.4V38.8c0-16.3 13.2-29.4 29.4-29.4H278c16.3 0 29.4 13.2 29.4 29.4v88.5c.1 16.3-13.1 29.4-29.4 29.4z" }),
-    React.createElement("linearGradient", { id: "tank_sq_md(1)_svg__b", gradientUnits: "userSpaceOnUse", x1: 159.35, y1: 889.4, x2: 159.35, y2: 1036.7, gradientTransform: "translate(0 -880)" },
+    React.createElement("linearGradient", { id: "tank_sq_sm_svg__SVGID_2_", gradientUnits: "userSpaceOnUse", x1: 130, y1: 37.61, x2: 130, y2: 161.39 },
         React.createElement("stop", { offset: 0, style: {
                 stopColor: "#a8abac",
             } }),
@@ -80,44 +75,14 @@ const SquareTank = (props) => (React.createElement("svg", Object.assign({ xmlns:
         React.createElement("stop", { offset: 1, style: {
                 stopColor: "#a8abac",
             } })),
-    React.createElement("path", { fill: "url(#tank_sq_md(1)_svg__b)", d: "M278 156.7H40.7c-16.3 0-29.4-13.2-29.4-29.4V38.8c0-16.3 13.2-29.4 29.4-29.4H278c16.3 0 29.4 13.2 29.4 29.4v88.5c.1 16.3-13.1 29.4-29.4 29.4z" }),
-    React.createElement("linearGradient", { id: "tank_sq_md(1)_svg__c", gradientUnits: "userSpaceOnUse", x1: 159.35, y1: 43.3, x2: 159.35, y2: 190.6, gradientTransform: "matrix(1 0 0 -1 0 200)" },
-        React.createElement("stop", { offset: 0, style: {
-                stopColor: "#7d7f80",
-            } }),
-        React.createElement("stop", { offset: 0.315, style: {
-                stopColor: "#a8abac",
-            } }),
-        React.createElement("stop", { offset: 0.495, style: {
-                stopColor: "#a8abac",
-            } }),
-        React.createElement("stop", { offset: 0.825, style: {
-                stopColor: "#7d7f80",
-            } }),
-        React.createElement("stop", { offset: 1, style: {
-                stopColor: "#616365",
-            } })),
-    React.createElement("path", { fill: "url(#tank_sq_md(1)_svg__c)", d: "M278 21.4c9.6 0 17.4 7.8 17.4 17.4v88.5c0 4.6-1.7 8.9-5 12.2s-7.7 5.1-12.4 5.1H40.7c-9.6 0-17.4-7.8-17.4-17.4V38.8c0-9.6 7.8-17.4 17.4-17.4H278m0-12H40.7c-16.2 0-29.4 13.1-29.4 29.4v88.5c0 16.2 13.1 29.4 29.4 29.4H278c16.3 0 29.5-13.1 29.4-29.4V38.8c0-16.2-13.1-29.4-29.4-29.4z" }),
-    React.createElement("path", { fill: "none", stroke: "#383739", strokeWidth: 1.822, strokeLinecap: "round", strokeLinejoin: "round", strokeMiterlimit: 10, d: "M278 156.7H40.7c-16.3 0-29.4-13.2-29.4-29.4V38.8c0-16.3 13.2-29.4 29.4-29.4H278c16.3 0 29.4 13.2 29.4 29.4v88.5c.1 16.3-13.1 29.4-29.4 29.4z" }),
-    React.createElement("path", { fill: "none", stroke: "#383739", strokeWidth: 1.822, strokeLinecap: "round", strokeLinejoin: "round", strokeMiterlimit: 10, d: "M277 143.7H42c-10.5 0-19-8.5-19-19V40.5c0-10.5 8.5-19 19-19h235c10.5 0 19 8.5 19 19v84.3c0 10.4-8.5 18.9-19 18.9z" }),
-    React.createElement("linearGradient", { id: "tank_sq_md(1)_svg__d", gradientUnits: "userSpaceOnUse", x1: 157.6, y1: 56.8, x2: 157.6, y2: 146.9, gradientTransform: "matrix(1 0 0 -1 0 200)" },
-        React.createElement("stop", { offset: 0, style: {
-                stopColor: "#7d7f80",
-            } }),
-        React.createElement("stop", { offset: 0.315, style: {
-                stopColor: "#a8abac",
-            } }),
-        React.createElement("stop", { offset: 0.495, style: {
-                stopColor: "#a8abac",
-            } }),
-        React.createElement("stop", { offset: 0.825, style: {
-                stopColor: "#7d7f80",
-            } }),
-        React.createElement("stop", { offset: 1, style: {
-                stopColor: "#616365",
-            } })),
-    React.createElement("path", { fill: "url(#tank_sq_md(1)_svg__d)", d: "M153.2 53.1h8.8v90.1h-8.8z" }),
-    React.createElement("path", { fill: "#383739", d: "M161.5 53.6v89.1h-7.7V53.6h7.7m1-1h-9.7v91.1h9.7V52.6z" })));
+    React.createElement("path", { d: "M182.7 173.1H77.3c-11.6 0-20.9-9.4-20.9-20.9V46.8c0-11.6 9.4-20.9 20.9-20.9h105.5c11.6 0 20.9 9.4 20.9 20.9v105.5c-.1 11.5-9.4 20.8-21 20.8z", style: {
+            fill: "url(#tank_sq_sm_svg__SVGID_1_)",
+        } }),
+    React.createElement("path", { d: "M183.2 161.4H76.8c-4.8 0-8.7-3.9-8.7-8.7V46.3c0-4.8 3.9-8.7 8.7-8.7h106.3c4.8 0 8.7 3.9 8.7 8.7v106.3c.1 4.9-3.8 8.8-8.6 8.8z", style: {
+            fill: "url(#tank_sq_sm_svg__SVGID_2_)",
+        } }),
+    React.createElement("path", { className: "tank_sq_sm_svg__st2", d: "M182.7 173.1H77.3c-11.6 0-20.9-9.4-20.9-20.9V46.8c0-11.6 9.4-20.9 20.9-20.9h105.5c11.6 0 20.9 9.4 20.9 20.9v105.5c-.1 11.5-9.4 20.8-21 20.8z" }),
+    React.createElement("path", { className: "tank_sq_sm_svg__st2", d: "M183.2 161.4H76.8c-4.8 0-8.7-3.9-8.7-8.7V46.3c0-4.8 3.9-8.7 8.7-8.7h106.3c4.8 0 8.7 3.9 8.7 8.7v106.3c.1 4.9-3.8 8.8-8.6 8.8z" })));
 exports.SquareTank = SquareTank;
 exports.SquareTank.metadata = {
     type: 'tank',
