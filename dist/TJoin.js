@@ -83,8 +83,8 @@ const TJoin = (props) => (React.createElement("svg", Object.assign({ xmlns: "htt
     React.createElement("path", { fill: "url(#TJoin_svg__e)", d: "M91.9 82.6v7.2H68.6v-7.2z" })));
 exports.TJoin = TJoin;
 exports.TJoin.metadata = {
-    width: 66,
-    height: 66,
+    width: 50,
+    height: 50,
     ports: [
         {
             key: 'left-hand',

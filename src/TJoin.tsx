@@ -158,8 +158,8 @@ export const TJoin = (props: SVGProps<SVGSVGElement>) => (
 );
 
 TJoin.metadata = {
-  width: 66,
-  height: 66,
+  width: 50,
+  height: 50,
   ports: [
     {
       key: 'left-hand',
