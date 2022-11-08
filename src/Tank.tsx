@@ -7,6 +7,10 @@ export const Tank = (props: SVGProps<SVGSVGElement>) => (
     viewBox="0 0 320.2 172"
     xmlSpace="preserve"
     preserveAspectRatio="none"
+    style={{
+      width: '100%',
+      height: '100%'
+    }}
     {...props}
   >
     <radialGradient

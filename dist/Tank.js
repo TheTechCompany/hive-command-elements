@@ -25,7 +25,10 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Tank = void 0;
 const React = __importStar(require("react"));
-const Tank = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 320.2 172", xmlSpace: "preserve", preserveAspectRatio: "none" }, props),
+const Tank = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 320.2 172", xmlSpace: "preserve", preserveAspectRatio: "none", style: {
+        width: '100%',
+        height: '100%'
+    } }, props),
     React.createElement("radialGradient", { id: "tank_svg__a", cx: -1208.551, cy: 14.219, r: 230.927, fx: -1375.519, fy: -27.903, gradientTransform: "matrix(-.9929 .01912 -.01477 -.7181 -1040.41 116.368)", gradientUnits: "userSpaceOnUse" },
         React.createElement("stop", { offset: 0.043, style: {
                 stopColor: "#787a7c",
