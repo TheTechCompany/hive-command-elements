@@ -3,48 +3,56 @@ import { SVGProps } from "react";
 
 export const SquareTank = (props: SVGProps<SVGSVGElement>) => (
   <svg
-    viewBox="54.726 24.16 150.619 150.684"
     xmlns="http://www.w3.org/2000/svg"
-    role="img"
+    viewBox="0 0 320.2 172"
+    xmlSpace="preserve"
+    preserveAspectRatio="none"
     {...props}
   >
-    <defs>
-      <style>
-        {
-          ".tank_sq_sm_svg__st2{fill:none;stroke:#383739;stroke-width:1.8221;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}"
-        }
-      </style>
-    </defs>
-    <linearGradient
-      id="tank_sq_sm_svg__SVGID_1_"
+    <radialGradient
+      id="tank_sq_md(1)_svg__a"
+      cx={-1208.551}
+      cy={14.219}
+      r={230.927}
+      fx={-1375.519}
+      fy={-27.903}
+      gradientTransform="matrix(-.9929 .01912 -.01477 -.7181 -1040.41 116.368)"
       gradientUnits="userSpaceOnUse"
-      x1={176.478}
-      y1={180.002}
-      x2={83.522}
-      y2={18.998}
     >
       <stop
-        offset={0}
+        offset={0.043}
         style={{
-          stopColor: "#7d7f80",
+          stopColor: "#787a7c",
         }}
       />
       <stop
         offset={0.315}
         style={{
-          stopColor: "#a8abac",
+          stopColor: "#8e9192",
         }}
       />
       <stop
-        offset={0.495}
+        offset={0.475}
         style={{
-          stopColor: "#a8abac",
+          stopColor: "#999c9e",
         }}
       />
       <stop
-        offset={0.825}
+        offset={0.537}
         style={{
-          stopColor: "#7d7f80",
+          stopColor: "#989a9c",
+        }}
+      />
+      <stop
+        offset={0.662}
+        style={{
+          stopColor: "#88888b",
+        }}
+      />
+      <stop
+        offset={0.861}
+        style={{
+          stopColor: "#383838",
         }}
       />
       <stop
@@ -53,14 +61,19 @@ export const SquareTank = (props: SVGProps<SVGSVGElement>) => (
           stopColor: "#616365",
         }}
       />
-    </linearGradient>
+    </radialGradient>
+    <path
+      fill="url(#tank_sq_md(1)_svg__a)"
+      d="M278 156.7H40.7c-16.3 0-29.4-13.2-29.4-29.4V38.8c0-16.3 13.2-29.4 29.4-29.4H278c16.3 0 29.4 13.2 29.4 29.4v88.5c.1 16.3-13.1 29.4-29.4 29.4z"
+    />
     <linearGradient
-      id="tank_sq_sm_svg__SVGID_2_"
+      id="tank_sq_md(1)_svg__b"
       gradientUnits="userSpaceOnUse"
-      x1={130}
-      y1={37.61}
-      x2={130}
-      y2={161.39}
+      x1={159.35}
+      y1={889.4}
+      x2={159.35}
+      y2={1036.7}
+      gradientTransform="translate(0 -880)"
     >
       <stop
         offset={0}
@@ -124,24 +137,115 @@ export const SquareTank = (props: SVGProps<SVGSVGElement>) => (
       />
     </linearGradient>
     <path
-      d="M182.7 173.1H77.3c-11.6 0-20.9-9.4-20.9-20.9V46.8c0-11.6 9.4-20.9 20.9-20.9h105.5c11.6 0 20.9 9.4 20.9 20.9v105.5c-.1 11.5-9.4 20.8-21 20.8z"
-      style={{
-        fill: "url(#tank_sq_sm_svg__SVGID_1_)",
-      }}
+      fill="url(#tank_sq_md(1)_svg__b)"
+      d="M278 156.7H40.7c-16.3 0-29.4-13.2-29.4-29.4V38.8c0-16.3 13.2-29.4 29.4-29.4H278c16.3 0 29.4 13.2 29.4 29.4v88.5c.1 16.3-13.1 29.4-29.4 29.4z"
+    />
+    <linearGradient
+      id="tank_sq_md(1)_svg__c"
+      gradientUnits="userSpaceOnUse"
+      x1={159.35}
+      y1={43.3}
+      x2={159.35}
+      y2={190.6}
+      gradientTransform="matrix(1 0 0 -1 0 200)"
+    >
+      <stop
+        offset={0}
+        style={{
+          stopColor: "#7d7f80",
+        }}
+      />
+      <stop
+        offset={0.315}
+        style={{
+          stopColor: "#a8abac",
+        }}
+      />
+      <stop
+        offset={0.495}
+        style={{
+          stopColor: "#a8abac",
+        }}
+      />
+      <stop
+        offset={0.825}
+        style={{
+          stopColor: "#7d7f80",
+        }}
+      />
+      <stop
+        offset={1}
+        style={{
+          stopColor: "#616365",
+        }}
+      />
+    </linearGradient>
+    <path
+      fill="url(#tank_sq_md(1)_svg__c)"
+      d="M278 21.4c9.6 0 17.4 7.8 17.4 17.4v88.5c0 4.6-1.7 8.9-5 12.2s-7.7 5.1-12.4 5.1H40.7c-9.6 0-17.4-7.8-17.4-17.4V38.8c0-9.6 7.8-17.4 17.4-17.4H278m0-12H40.7c-16.2 0-29.4 13.1-29.4 29.4v88.5c0 16.2 13.1 29.4 29.4 29.4H278c16.3 0 29.5-13.1 29.4-29.4V38.8c0-16.2-13.1-29.4-29.4-29.4z"
     />
     <path
-      d="M183.2 161.4H76.8c-4.8 0-8.7-3.9-8.7-8.7V46.3c0-4.8 3.9-8.7 8.7-8.7h106.3c4.8 0 8.7 3.9 8.7 8.7v106.3c.1 4.9-3.8 8.8-8.6 8.8z"
-      style={{
-        fill: "url(#tank_sq_sm_svg__SVGID_2_)",
-      }}
+      fill="none"
+      stroke="#383739"
+      strokeWidth={1.822}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeMiterlimit={10}
+      d="M278 156.7H40.7c-16.3 0-29.4-13.2-29.4-29.4V38.8c0-16.3 13.2-29.4 29.4-29.4H278c16.3 0 29.4 13.2 29.4 29.4v88.5c.1 16.3-13.1 29.4-29.4 29.4z"
     />
     <path
-      className="tank_sq_sm_svg__st2"
-      d="M182.7 173.1H77.3c-11.6 0-20.9-9.4-20.9-20.9V46.8c0-11.6 9.4-20.9 20.9-20.9h105.5c11.6 0 20.9 9.4 20.9 20.9v105.5c-.1 11.5-9.4 20.8-21 20.8z"
+      fill="none"
+      stroke="#383739"
+      strokeWidth={1.822}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeMiterlimit={10}
+      d="M277 143.7H42c-10.5 0-19-8.5-19-19V40.5c0-10.5 8.5-19 19-19h235c10.5 0 19 8.5 19 19v84.3c0 10.4-8.5 18.9-19 18.9z"
     />
+    <linearGradient
+      id="tank_sq_md(1)_svg__d"
+      gradientUnits="userSpaceOnUse"
+      x1={157.6}
+      y1={56.8}
+      x2={157.6}
+      y2={146.9}
+      gradientTransform="matrix(1 0 0 -1 0 200)"
+    >
+      <stop
+        offset={0}
+        style={{
+          stopColor: "#7d7f80",
+        }}
+      />
+      <stop
+        offset={0.315}
+        style={{
+          stopColor: "#a8abac",
+        }}
+      />
+      <stop
+        offset={0.495}
+        style={{
+          stopColor: "#a8abac",
+        }}
+      />
+      <stop
+        offset={0.825}
+        style={{
+          stopColor: "#7d7f80",
+        }}
+      />
+      <stop
+        offset={1}
+        style={{
+          stopColor: "#616365",
+        }}
+      />
+    </linearGradient>
+    <path fill="url(#tank_sq_md(1)_svg__d)" d="M153.2 53.1h8.8v90.1h-8.8z" />
     <path
-      className="tank_sq_sm_svg__st2"
-      d="M183.2 161.4H76.8c-4.8 0-8.7-3.9-8.7-8.7V46.3c0-4.8 3.9-8.7 8.7-8.7h106.3c4.8 0 8.7 3.9 8.7 8.7v106.3c.1 4.9-3.8 8.8-8.6 8.8z"
+      fill="#383739"
+      d="M161.5 53.6v89.1h-7.7V53.6h7.7m1-1h-9.7v91.1h9.7V52.6z"
     />
   </svg>
 );
@@ -151,3 +255,4 @@ SquareTank.metadata = {
   width: 100,
   height: 100
 }
+
