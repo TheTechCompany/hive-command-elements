@@ -95,7 +95,7 @@ TJoin.metadata = {
       key: 'right-hand',
       momentum: 0,
       x: '70%',
-      y: '14%'
+      y: '15%'
     },
     {
       key: 'bottom',
