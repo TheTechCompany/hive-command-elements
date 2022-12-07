@@ -98,7 +98,7 @@ export const ButterflyValve = (props: any) => (
     />
     <path 
       style={{
-        transform: `translateY(${props.options.open == 'true' ? -1 : 0}px) rotate(${props.options.open == 'true' ? '-44' : '45'}deg)`,
+        transform: `translateY(${props.options?.open == 'true' ? -1 : 0}px) rotate(${props.options?.open == 'true' ? '-44' : '45'}deg)`,
       }}
       fill="none"
       stroke="#4C4C4D"

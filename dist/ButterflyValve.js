@@ -26,7 +26,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ButterflyValve = void 0;
 const React = __importStar(require("react"));
 const ButterflyValve = (props) => {
-    var _a;
+    var _a, _b, _c;
     return (React.createElement("svg", Object.assign({ viewBox: "0 -0.092 80.245 51.312", xmlns: "http://www.w3.org/2000/svg", role: "img", style: {
             filter: ((_a = props.options) === null || _a === void 0 ? void 0 : _a.open) == 'true' ? 'drop-shadow(0px 0px 5px green)' : undefined,
         } }, props),
@@ -60,7 +60,7 @@ const ButterflyValve = (props) => {
         React.createElement("path", { fill: "url(#butterfly_valve_svg__a)", d: "M64.325 1.209h15.72v48.87h-15.72z" }),
         React.createElement("path", { fill: "url(#butterfly_valve_svg__b)", d: "M.245 1.209h15.71v48.87H.245z" }),
         React.createElement("path", { style: {
-                transform: `translateY(${props.options.open == 'true' ? -1 : 0}px) rotate(${props.options.open == 'true' ? '-44' : '45'}deg)`,
+                transform: `translateY(${((_b = props.options) === null || _b === void 0 ? void 0 : _b.open) == 'true' ? -1 : 0}px) rotate(${((_c = props.options) === null || _c === void 0 ? void 0 : _c.open) == 'true' ? '-44' : '45'}deg)`,
             }, fill: "none", stroke: "#4C4C4D", strokeWidth: 4, strokeLinecap: "round", strokeLinejoin: "round", strokeMiterlimit: 10, d: "m25.455 12.419 27.75 27.75" }),
         React.createElement("path", { fill: "none", stroke: "#4C4C4D", strokeWidth: 3, strokeLinecap: "round", strokeLinejoin: "round", strokeMiterlimit: 10, d: "M15.375 1.689h47.91v47.91h-47.91z" }),
         React.createElement("circle", { fill: "url(#butterfly_valve_svg__c)", cx: 39.335, cy: 25.849, r: 5.55 })));
