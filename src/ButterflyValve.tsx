@@ -1,11 +1,14 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-export const ButterflyValve = (props: SVGProps<SVGSVGElement>) => (
+export const ButterflyValve = (props: any) => (
   <svg
     viewBox="0 -0.092 80.245 51.312"
     xmlns="http://www.w3.org/2000/svg"
     role="img"
+    style={{
+      filter: props.options?.open == 'true' ? 'drop-shadow(0px 0px 5px green)' : undefined,
+    }}
     {...props}
   >
     <linearGradient
@@ -93,6 +96,18 @@ export const ButterflyValve = (props: SVGProps<SVGSVGElement>) => (
       fill="url(#butterfly_valve_svg__b)"
       d="M.245 1.209h15.71v48.87H.245z"
     />
+    <path 
+      style={{
+        transform: `translateY(${props.options.open == 'true' ? -1 : 0}px) rotate(${props.options.open == 'true' ? '-44' : '45'}deg)`,
+      }}
+      fill="none"
+      stroke="#4C4C4D"
+      strokeWidth={4}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeMiterlimit={10}
+      d="m25.455 12.419 27.75 27.75"
+      />
     <path
       fill="none"
       stroke="#4C4C4D"
@@ -100,7 +115,7 @@ export const ButterflyValve = (props: SVGProps<SVGSVGElement>) => (
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeMiterlimit={10}
-      d="m25.455 12.419 27.75 27.75M15.375 1.689h47.91v47.91h-47.91z"
+      d="M15.375 1.689h47.91v47.91h-47.91z"
     />
     <circle
       fill="url(#butterfly_valve_svg__c)"

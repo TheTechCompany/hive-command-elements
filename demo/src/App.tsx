@@ -1,6 +1,6 @@
 import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
-import { Button, Blower, DosingPump, Valve, Pump } from '../../src'
+import { Button, Blower, DosingPump, Valve, Pump, ButterflyValve } from '../../src'
 import './App.css'
 
 function App() {
@@ -13,6 +13,10 @@ function App() {
           <Valve options={{open:'true'}} />
         </div>
 
+        <div style={{width: 50, height: 50, display: 'flex'}}>
+
+          <ButterflyValve options={{open:'true'}} />
+        </div>
         <div style={{width: 50, height: 50}}>
           <Button />
         </div>
