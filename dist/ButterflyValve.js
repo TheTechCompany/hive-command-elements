@@ -26,7 +26,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ButterflyValve = void 0;
 const React = __importStar(require("react"));
 const ButterflyValve = (props) => {
-    const open = `${props.options.open || false}`;
+    var _a;
+    const open = `${((_a = props.options) === null || _a === void 0 ? void 0 : _a.open) || false}`;
     return (React.createElement("svg", Object.assign({ viewBox: "0 -0.092 80.245 51.312", xmlns: "http://www.w3.org/2000/svg", role: "img", style: {
             filter: open == 'true' ? 'drop-shadow(0px 0px 5px green)' : undefined,
         } }, props),

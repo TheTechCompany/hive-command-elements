@@ -2,7 +2,7 @@ import * as React from "react";
 import { SVGProps } from "react";
 
 export const ButterflyValve = (props: any) => {
-  const open = `${props.options.open || false}`;
+  const open = `${props.options?.open || false}`;
 
   return (<svg
       viewBox="0 -0.092 80.245 51.312"
