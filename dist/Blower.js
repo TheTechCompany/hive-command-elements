@@ -45,7 +45,6 @@ const Blower = (props) => {
                 clearInterval(timer);
         };
     }, [(_a = props.options) === null || _a === void 0 ? void 0 : _a.on]);
-    console.log({ options: props.options, rotation });
     return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100", xmlSpace: "preserve", style: {
             filter: ((_b = props.options) === null || _b === void 0 ? void 0 : _b.on) == 'true' ? 'drop-shadow(0px 0px 5px green)' : undefined
         } }, props),

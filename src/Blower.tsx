@@ -21,8 +21,6 @@ export const Blower = (props: any) => {
       if(timer) clearInterval(timer);
     }
   }, [props.options?.on])
-
-  console.log({options: props.options, rotation});
   
   return (
 
