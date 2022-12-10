@@ -2,14 +2,14 @@ import * as React from "react";
 import { SVGProps } from "react";
 
 export const ButterflyValve = (props: any) => {
-  const open = `${props.options?.open || false}`;
+  const open = props.options?.open || false;
 
   return (<svg
       viewBox="0 -0.092 80.245 51.312"
       xmlns="http://www.w3.org/2000/svg"
       role="img"
       style={{
-        filter: open == 'true' ? 'drop-shadow(0px 0px 5px green)' : undefined,
+        filter: open == true ? 'drop-shadow(0px 0px 5px green)' : undefined,
       }}
       {...props}
     >
@@ -100,7 +100,7 @@ export const ButterflyValve = (props: any) => {
       />
       <path 
         style={{
-          transform: `translateY(${open == 'true' ? -1 : 0}px) rotate(${open == 'true' ? '-44' : '45'}deg)`,
+          transform: `translateY(${open == true ? -1 : 0}px) rotate(${open == true ? '-44' : '45'}deg)`,
         }}
         fill="none"
         stroke="#4C4C4D"
