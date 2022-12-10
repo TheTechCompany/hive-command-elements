@@ -8,7 +8,7 @@ export const Blower = (props: any) => {
   React.useEffect(() => {
     let timer: any;
 
-    if(props.options?.on == 'true'){
+    if(props.options?.on == true){
       timer = setInterval(() => {
         setRotation((rotation) => rotation + 5);
       }, 300)  
@@ -30,7 +30,7 @@ export const Blower = (props: any) => {
     viewBox="0 0 100 100"
     xmlSpace="preserve"
     style={{
-      filter: props.options?.on == 'true' ? 'drop-shadow(0px 0px 5px green)' : undefined
+      filter: props.options?.on == true ? 'drop-shadow(0px 0px 5px green)' : undefined
     }}
     {...props}
   >
@@ -201,7 +201,7 @@ export const Blower = (props: any) => {
       />
     </linearGradient>
     <g style={{
-      transform: props.options?.on == 'true' ? `rotate(${rotation}deg)` : undefined,
+      transform: props.options?.on == true ? `rotate(${rotation}deg)` : undefined,
       transformOrigin: '41% 48%'
     }}>
     <path
