@@ -46,7 +46,7 @@ const Blower = (props) => {
         };
     }, [(_a = props.options) === null || _a === void 0 ? void 0 : _a.on]);
     return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100", xmlSpace: "preserve", style: {
-            filter: ((_b = props.options) === null || _b === void 0 ? void 0 : _b.on) == true ? 'drop-shadow(0px 0px 5px green)' : ((_c = props.options) === null || _c === void 0 ? void 0 : _c.fault) == true ? 'drop-shadow(0px 0px 5px red)' : undefined
+            filter: ((_b = props.options) === null || _b === void 0 ? void 0 : _b.fault) == true ? 'drop-shadow(0px 0px 5px red)' : ((_c = props.options) === null || _c === void 0 ? void 0 : _c.on) == true ? 'drop-shadow(0px 0px 5px green)' : undefined
         } }, props),
         React.createElement("linearGradient", { id: "blower_svg__a", gradientUnits: "userSpaceOnUse", x1: 1679.894, y1: -630.862, x2: 1679.894, y2: -590.504, gradientTransform: "rotate(180 860.603 -270)" },
             React.createElement("stop", { offset: 0, style: {
