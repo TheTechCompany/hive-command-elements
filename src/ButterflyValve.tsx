@@ -9,7 +9,7 @@ export const ButterflyValve = (props: any) => {
       xmlns="http://www.w3.org/2000/svg"
       role="img"
       style={{
-        filter: open == true ? 'drop-shadow(0px 0px 5px green)' : undefined,
+        filter: open == true ? 'drop-shadow(0px 0px 5px green)' : props.options?.fault == true ? 'drop-shadow(0px 0px 5px red)' : undefined,
       }}
       {...props}
     >

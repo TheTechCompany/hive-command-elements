@@ -28,7 +28,7 @@ const React = __importStar(require("react"));
 const Pump = (props) => {
     var _a, _b, _c, _d;
     return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100", xmlSpace: "preserve", style: {
-            filter: ((_a = props.options) === null || _a === void 0 ? void 0 : _a.on) == true || ((_b = props.options) === null || _b === void 0 ? void 0 : _b.speed) > 0 ? 'drop-shadow(0px 0px 5px green)' : undefined
+            filter: ((_a = props.options) === null || _a === void 0 ? void 0 : _a.on) == true || ((_b = props.options) === null || _b === void 0 ? void 0 : _b.speed) > 0 ? 'drop-shadow(0px 0px 5px green)' : props.options.fault == true ? 'drop-shadow(0px 0px 5px red)' : undefined
         } }, props),
         React.createElement("linearGradient", { id: "pump_svg__a", gradientUnits: "userSpaceOnUse", x1: 1680.754, y1: -633.181, x2: 1680.754, y2: -591.601, gradientTransform: "rotate(180 860.603 -270)" },
             React.createElement("stop", { offset: 0, style: {

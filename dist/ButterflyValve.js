@@ -26,10 +26,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ButterflyValve = void 0;
 const React = __importStar(require("react"));
 const ButterflyValve = (props) => {
-    var _a;
+    var _a, _b;
     const open = ((_a = props.options) === null || _a === void 0 ? void 0 : _a.open) || false;
     return (React.createElement("svg", Object.assign({ viewBox: "0 -0.092 80.245 51.312", xmlns: "http://www.w3.org/2000/svg", role: "img", style: {
-            filter: open == true ? 'drop-shadow(0px 0px 5px green)' : undefined,
+            filter: open == true ? 'drop-shadow(0px 0px 5px green)' : ((_b = props.options) === null || _b === void 0 ? void 0 : _b.fault) == true ? 'drop-shadow(0px 0px 5px red)' : undefined,
         } }, props),
         React.createElement("linearGradient", { id: "butterfly_valve_svg__a", gradientUnits: "userSpaceOnUse", x1: -895.648, y1: 124.468, x2: -895.648, y2: 173.161, gradientTransform: "matrix(-1 0 0 1 -823.464 -123.158)" },
             React.createElement("stop", { offset: 0, style: {
