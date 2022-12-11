@@ -28,15 +28,17 @@ const React = __importStar(require("react"));
 const ButterflyValve = (props) => {
     var _a;
     const open = ((_a = props.options) === null || _a === void 0 ? void 0 : _a.open) || false;
+    // 'drop-shadow(0px 0px 5px red)' : 
+    //'drop-shadow(0px 0px 5px green)'
     const shadowStyle = React.useMemo(() => {
         var _a;
         return ((_a = props.options) === null || _a === void 0 ? void 0 : _a.fault) == true ?
-            'drop-shadow(0px 0px 5px red)' :
-            open == true ? 'drop-shadow(0px 0px 5px green)' :
+            'rgba(255, 0, 0, 0.1)' :
+            open == true ? 'rgba(0, 255, 0, 0.1)' :
                 undefined;
     }, [props.options, open]);
     return (React.createElement("svg", Object.assign({ viewBox: "0 -0.092 80.245 51.312", xmlns: "http://www.w3.org/2000/svg", role: "img" }, props, { style: {
-            filter: shadowStyle // props.options?.fault == true ? 'drop-shadow(0px 0px 5px red)' : open == true ? 'drop-shadow(0px 0px 5px green)' : undefined,
+            background: shadowStyle // props.options?.fault == true ? 'drop-shadow(0px 0px 5px red)' : open == true ? 'drop-shadow(0px 0px 5px green)' : undefined,
         } }),
         React.createElement("linearGradient", { id: "butterfly_valve_svg__a", gradientUnits: "userSpaceOnUse", x1: -895.648, y1: 124.468, x2: -895.648, y2: 173.161, gradientTransform: "matrix(-1 0 0 1 -823.464 -123.158)" },
             React.createElement("stop", { offset: 0, style: {

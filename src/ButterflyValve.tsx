@@ -4,10 +4,12 @@ import { SVGProps } from "react";
 export const ButterflyValve = (props: any) => {
   const open = props.options?.open || false;
 
+    // 'drop-shadow(0px 0px 5px red)' : 
+//'drop-shadow(0px 0px 5px green)'
   const shadowStyle = React.useMemo(() => {
     return props.options?.fault == true ? 
-            'drop-shadow(0px 0px 5px red)' : 
-            open == true ? 'drop-shadow(0px 0px 5px green)' : 
+            'rgba(255, 0, 0, 0.1)' :        
+            open == true ?  'rgba(0, 255, 0, 0.1)': 
             undefined;
   }, [props.options, open])
 
@@ -17,7 +19,7 @@ export const ButterflyValve = (props: any) => {
       role="img"
       {...props}
       style={{
-        filter: shadowStyle // props.options?.fault == true ? 'drop-shadow(0px 0px 5px red)' : open == true ? 'drop-shadow(0px 0px 5px green)' : undefined,
+        background: shadowStyle // props.options?.fault == true ? 'drop-shadow(0px 0px 5px red)' : open == true ? 'drop-shadow(0px 0px 5px green)' : undefined,
       }}
     >
       <linearGradient
