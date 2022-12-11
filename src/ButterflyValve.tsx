@@ -15,10 +15,10 @@ export const ButterflyValve = (props: any) => {
       viewBox="0 -0.092 80.245 51.312"
       xmlns="http://www.w3.org/2000/svg"
       role="img"
+      {...props}
       style={{
         filter: shadowStyle // props.options?.fault == true ? 'drop-shadow(0px 0px 5px red)' : open == true ? 'drop-shadow(0px 0px 5px green)' : undefined,
       }}
-      {...props}
     >
       <linearGradient
         id="butterfly_valve_svg__a"
