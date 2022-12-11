@@ -4,12 +4,19 @@ import { SVGProps } from "react";
 export const ButterflyValve = (props: any) => {
   const open = props.options?.open || false;
 
+  const shadowStyle = React.useMemo(() => {
+    return props.options?.fault == true ? 
+            'drop-shadow(0px 0px 5px red)' : 
+            open == true ? 'drop-shadow(0px 0px 5px green)' : 
+            undefined;
+  }, [props.options, open])
+
   return (<svg
       viewBox="0 -0.092 80.245 51.312"
       xmlns="http://www.w3.org/2000/svg"
       role="img"
       style={{
-        filter: props.options?.fault == true ? 'drop-shadow(0px 0px 5px red)' : open == true ? 'drop-shadow(0px 0px 5px green)' : undefined,
+        filter: shadowStyle // props.options?.fault == true ? 'drop-shadow(0px 0px 5px red)' : open == true ? 'drop-shadow(0px 0px 5px green)' : undefined,
       }}
       {...props}
     >
