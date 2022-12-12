@@ -7,11 +7,15 @@ export const Pump = (props: any) => (
     viewBox="0 0 100 100"
     xmlSpace="preserve"
     style={{
-      filter: props.options?.fault == true ? 'drop-shadow(0px 0px 5px red)' : props.options?.on == true || props.options?.speed > 0 ? 'drop-shadow(0px 0px 5px green)' : undefined
+      filter: props.options?.fault == true ? 'url(#pump-fault)' : undefined
     }}
     {...props}
-    
   >
+    <defs>
+      <filter id="pump-fault" x="0" y="0">
+        <feDropShadow dx="0" dy="0" stdDeviation="5" floodColor="red"  />
+      </filter>
+    </defs>
     <linearGradient
       id="pump_svg__a"
       gradientUnits="userSpaceOnUse"

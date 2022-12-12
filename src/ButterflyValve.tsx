@@ -8,8 +8,8 @@ export const ButterflyValve = (props: any) => {
 //'drop-shadow(0px 0px 5px green)'
   const shadowStyle = React.useMemo(() => {
     return props.options?.fault == true ? 
-            'rgba(255, 0, 0, 0.1)' :        
-            open == true ?  'rgba(0, 255, 0, 0.1)': 
+            'rgba(255, 0, 0, 0.3)' :        
+            // open == true ?  'rgba(0, 255, 0, 0.3)': 
             undefined;
   }, [props.options, open])
 
@@ -19,9 +19,15 @@ export const ButterflyValve = (props: any) => {
       role="img"
       {...props}
       style={{
-        background: shadowStyle // props.options?.fault == true ? 'drop-shadow(0px 0px 5px red)' : open == true ? 'drop-shadow(0px 0px 5px green)' : undefined,
+        filter: props.options?.fault ? 'url(#valve-fault)' : undefined,
+        // background: shadowStyle // props.options?.fault == true ? 'drop-shadow(0px 0px 5px red)' : open == true ? 'drop-shadow(0px 0px 5px green)' : undefined,
       }}
     >
+      <defs>
+        <filter id="valve-fault" x="0" y="0">
+          <feDropShadow dx="0" dy="0" stdDeviation="5" floodColor="red"  />
+        </filter>
+      </defs>
       <linearGradient
         id="butterfly_valve_svg__a"
         gradientUnits="userSpaceOnUse"
@@ -109,6 +115,8 @@ export const ButterflyValve = (props: any) => {
       />
       <path 
         style={{
+          transformOrigin: '50% 50%',
+          transformBox: 'fill-box',
           transform: `translateY(${open == true ? -1 : 0}px) rotate(${open == true ? '-44' : '45'}deg)`,
         }}
         fill="none"

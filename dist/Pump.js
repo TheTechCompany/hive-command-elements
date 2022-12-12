@@ -26,10 +26,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Pump = void 0;
 const React = __importStar(require("react"));
 const Pump = (props) => {
-    var _a, _b, _c, _d, _e, _f;
+    var _a, _b, _c, _d;
     return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100", xmlSpace: "preserve", style: {
-            filter: ((_a = props.options) === null || _a === void 0 ? void 0 : _a.fault) == true ? 'drop-shadow(0px 0px 5px red)' : ((_b = props.options) === null || _b === void 0 ? void 0 : _b.on) == true || ((_c = props.options) === null || _c === void 0 ? void 0 : _c.speed) > 0 ? 'drop-shadow(0px 0px 5px green)' : undefined
+            filter: ((_a = props.options) === null || _a === void 0 ? void 0 : _a.fault) == true ? 'url(#pump-fault)' : undefined
         } }, props),
+        React.createElement("defs", null,
+            React.createElement("filter", { id: "pump-fault", x: "0", y: "0" },
+                React.createElement("feDropShadow", { dx: "0", dy: "0", stdDeviation: "5", floodColor: "red" }))),
         React.createElement("linearGradient", { id: "pump_svg__a", gradientUnits: "userSpaceOnUse", x1: 1680.754, y1: -633.181, x2: 1680.754, y2: -591.601, gradientTransform: "rotate(180 860.603 -270)" },
             React.createElement("stop", { offset: 0, style: {
                     stopColor: "#616264",
@@ -64,7 +67,7 @@ const Pump = (props) => {
                 } })),
         React.createElement("path", { fill: "url(#pump_svg__c)", d: "M40.49 11.3s.72 37.81 37.81 37.81h18.69V11.3h-56.5z" }),
         React.createElement("path", { fill: "none", stroke: "#4C4C4D", strokeLinecap: "round", strokeLinejoin: "round", strokeMiterlimit: 10, d: "M40.49 11.3c-20.84 0-37.81 16.96-37.81 37.8 0 11.5 5.17 21.71 13.22 28.75l-6.6 7.62c-2.59 3.02-.43 7.76 3.59 7.76h55.2c4.03 0 6.18-4.74 3.59-7.76l-6.61-7.62C73.12 70.95 78.3 60.6 78.3 49.1h18.69V11.3h-56.5z" }),
-        React.createElement("path", { fill: ((_d = props.options) === null || _d === void 0 ? void 0 : _d.fault) == true ? 'red' : ((_e = props.options) === null || _e === void 0 ? void 0 : _e.on) == true || ((_f = props.options) === null || _f === void 0 ? void 0 : _f.speed) > 0 ? 'cyan' : "#333", d: "M48.18 24.81c-19.55-5.46-37.09 11.93-31.62 31.62 2.3 8.19 8.77 14.66 16.96 16.96 19.55 5.46 37.09-11.93 31.62-31.62-2.3-8.19-8.77-14.66-16.96-16.96zM41.42 66.5h-1.14c-6.32-.43-10.49-7.04-8.34-12.94l1.15-3.31 6.9-19.12c.29-.72 1.15-.72 1.44 0l6.9 19.12 1.15 3.31c2.44 5.89-1.59 12.5-8.06 12.94z" })));
+        React.createElement("path", { fill: ((_b = props.options) === null || _b === void 0 ? void 0 : _b.fault) == true ? 'red' : ((_c = props.options) === null || _c === void 0 ? void 0 : _c.on) == true || ((_d = props.options) === null || _d === void 0 ? void 0 : _d.speed) > 0 ? 'cyan' : "#333", d: "M48.18 24.81c-19.55-5.46-37.09 11.93-31.62 31.62 2.3 8.19 8.77 14.66 16.96 16.96 19.55 5.46 37.09-11.93 31.62-31.62-2.3-8.19-8.77-14.66-16.96-16.96zM41.42 66.5h-1.14c-6.32-.43-10.49-7.04-8.34-12.94l1.15-3.31 6.9-19.12c.29-.72 1.15-.72 1.44 0l6.9 19.12 1.15 3.31c2.44 5.89-1.59 12.5-8.06 12.94z" })));
 };
 exports.Pump = Pump;
 exports.Pump.metadata = {

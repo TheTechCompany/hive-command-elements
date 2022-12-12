@@ -28,8 +28,11 @@ const React = __importStar(require("react"));
 const DosingPump = (props) => {
     var _a, _b;
     return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100", xmlSpace: "preserve", style: {
-            filter: ((_a = props.options) === null || _a === void 0 ? void 0 : _a.on) == true ? 'drop-shadow(0px 0px 5px green)' : undefined
+            filter: ((_a = props.options) === null || _a === void 0 ? void 0 : _a.fault) ? 'url(#pump-fault)' : undefined,
         } }, props),
+        React.createElement("defs", null,
+            React.createElement("filter", { id: "pump-fault", x: "0", y: "0" },
+                React.createElement("feDropShadow", { dx: "0", dy: "0", stdDeviation: "5", floodColor: "red" }))),
         React.createElement("linearGradient", { id: "dosing_pump_svg__a", gradientUnits: "userSpaceOnUse", x1: 4.17, y1: -552.102, x2: 79.692, y2: -627.624, gradientTransform: "matrix(1 0 0 -1 0 -540)" },
             React.createElement("stop", { offset: 0, style: {
                     stopColor: "#616365",

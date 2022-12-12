@@ -7,10 +7,15 @@ export const DosingPump = (props: any) => (
     viewBox="0 0 100 100"
     xmlSpace="preserve"
     style={{
-      filter: props.options?.on == true ? 'drop-shadow(0px 0px 5px green)' : undefined
+      filter: props.options?.fault ? 'url(#pump-fault)' : undefined,
     }}
     {...props}
   >
+    <defs>
+      <filter id="pump-fault" x="0" y="0">
+        <feDropShadow dx="0" dy="0" stdDeviation="5" floodColor="red"  />
+      </filter>
+    </defs>
     <linearGradient
       id="dosing_pump_svg__a"
       gradientUnits="userSpaceOnUse"

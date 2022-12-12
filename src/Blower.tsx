@@ -10,7 +10,7 @@ export const Blower = (props: any) => {
 
     if(props.options?.on == true){
       timer = setInterval(() => {
-        setRotation((rotation) => rotation + 5);
+        setRotation((rotation) => (rotation + 5) % 360);
       }, 300)  
     }else{
       setRotation(0);
@@ -30,10 +30,17 @@ export const Blower = (props: any) => {
     viewBox="0 0 100 100"
     xmlSpace="preserve"
     style={{
-      filter: props.options?.fault == true ? 'drop-shadow(0px 0px 5px red)' : props.options?.on == true ? 'drop-shadow(0px 0px 5px green)' : undefined
+      filter: props.options?.fault ? `url(#blower-fault)` : undefined,
+      // filter: props.options?.fault == true ? 'drop-shadow(0px 0px 5px red)' : undefined // props.options?.on == true ? 'drop-shadow(0px 0px 5px green)' : undefined
     }}
     {...props}
   >
+    
+    <defs>
+      <filter id="blower-fault" x="0" y="0">
+        <feDropShadow dx="0" dy="0" stdDeviation="5" floodColor="red"  />
+      </filter>
+    </defs>
     <linearGradient
       id="blower_svg__a"
       gradientUnits="userSpaceOnUse"
@@ -201,8 +208,9 @@ export const Blower = (props: any) => {
       />
     </linearGradient>
     <g style={{
+      transformBox: 'fill-box',
+      transformOrigin: '50% 50%', //'41% 48%'
       transform: props.options?.on == true ? `rotate(${rotation}deg)` : undefined,
-      transformOrigin: '41% 48%'
     }}>
     <path
       fill="url(#blower_svg__e)"

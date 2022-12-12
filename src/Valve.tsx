@@ -8,11 +8,16 @@ export const Valve = (props: any) => (
     xmlSpace="preserve"
     role="img"
     style={{
-      filter: props.options?.open == 'true' ? 'drop-shadow(0px 0px 5px green)' : undefined,
+      filter: props.options?.fault ? 'url(#valve-fault)' : undefined, 
       transform: props.options?.open != 'true' ? 'rotate(90deg)' : undefined
     }}
     {...props}
   >
+    <defs>
+      <filter id="valve-fault" x="0" y="0">
+        <feDropShadow dx="0" dy="0" stdDeviation="5" floodColor="red"  />
+      </filter>
+    </defs>
     <linearGradient
       id="Valve_svg__a"
       gradientUnits="userSpaceOnUse"
