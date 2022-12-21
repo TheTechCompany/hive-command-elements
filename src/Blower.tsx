@@ -5,10 +5,12 @@ export const Blower = (props: any) => {
 
   const [ rotation, setRotation ] = React.useState(0);
 
+  const blowerOn = `${props.options?.on}`;
+
   React.useEffect(() => {
     let timer: any;
 
-    if(props.options?.on == true){
+    if(blowerOn == "true"){
       timer = setInterval(() => {
         setRotation((rotation) => (rotation + 5) % 360);
       }, 300)  
@@ -210,7 +212,7 @@ export const Blower = (props: any) => {
     <g style={{
       transformBox: 'fill-box',
       transformOrigin: '50% 50%', //'41% 48%'
-      transform: props.options?.on == true ? `rotate(${rotation}deg)` : undefined,
+      transform: blowerOn == "true" ? `rotate(${rotation}deg)` : undefined,
     }}>
     <path
       fill="url(#blower_svg__e)"
