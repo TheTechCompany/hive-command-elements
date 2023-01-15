@@ -1,11 +1,18 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-export const Blower = (props: any) => {
+export const Blower = (props: {
+  options?: {
+    device: {
+      on: boolean
+      fault: boolean
+    }
+  }
+}) => {
 
   const [ rotation, setRotation ] = React.useState(0);
 
-  const blowerOn = `${props.options?.on}`;
+  const blowerOn = `${props.options?.device?.on}`;
 
   React.useEffect(() => {
     let timer: any;
@@ -22,7 +29,7 @@ export const Blower = (props: any) => {
     return () => {
       if(timer) clearInterval(timer);
     }
-  }, [props.options?.on])
+  }, [props.options?.device?.on])
   
   return (
 
@@ -32,7 +39,7 @@ export const Blower = (props: any) => {
     viewBox="0 0 100 100"
     xmlSpace="preserve"
     style={{
-      filter: props.options?.fault ? `url(#blower-fault)` : undefined,
+      filter: props.options?.device?.fault ? `url(#blower-fault)` : undefined,
       // filter: props.options?.fault == true ? 'drop-shadow(0px 0px 5px red)' : undefined // props.options?.on == true ? 'drop-shadow(0px 0px 5px green)' : undefined
     }}
     {...props}
@@ -517,6 +524,10 @@ Blower.metadata = {
   height: 50,
   type: 'blower',
   maintainAspect: true,
+  
+  options: {
+    device: 'Device',
+  },
   ports: [
     {
       key: 'outlet',

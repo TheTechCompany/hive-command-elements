@@ -26,9 +26,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Blower = void 0;
 const React = __importStar(require("react"));
 const Blower = (props) => {
-    var _a, _b, _c;
+    var _a, _b, _c, _d, _e, _f;
     const [rotation, setRotation] = React.useState(0);
-    const blowerOn = `${(_a = props.options) === null || _a === void 0 ? void 0 : _a.on}`;
+    const blowerOn = `${(_b = (_a = props.options) === null || _a === void 0 ? void 0 : _a.device) === null || _b === void 0 ? void 0 : _b.on}`;
     React.useEffect(() => {
         let timer;
         if (blowerOn == "true") {
@@ -44,9 +44,9 @@ const Blower = (props) => {
             if (timer)
                 clearInterval(timer);
         };
-    }, [(_b = props.options) === null || _b === void 0 ? void 0 : _b.on]);
+    }, [(_d = (_c = props.options) === null || _c === void 0 ? void 0 : _c.device) === null || _d === void 0 ? void 0 : _d.on]);
     return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100", xmlSpace: "preserve", style: {
-            filter: ((_c = props.options) === null || _c === void 0 ? void 0 : _c.fault) ? `url(#blower-fault)` : undefined,
+            filter: ((_f = (_e = props.options) === null || _e === void 0 ? void 0 : _e.device) === null || _f === void 0 ? void 0 : _f.fault) ? `url(#blower-fault)` : undefined,
             // filter: props.options?.fault == true ? 'drop-shadow(0px 0px 5px red)' : undefined // props.options?.on == true ? 'drop-shadow(0px 0px 5px green)' : undefined
         } }, props),
         React.createElement("defs", null,
@@ -244,6 +244,9 @@ exports.Blower.metadata = {
     height: 50,
     type: 'blower',
     maintainAspect: true,
+    options: {
+        device: 'Device',
+    },
     ports: [
         {
             key: 'outlet',
