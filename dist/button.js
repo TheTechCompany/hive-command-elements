@@ -7,7 +7,7 @@ exports.Button = void 0;
 const react_1 = __importDefault(require("react"));
 const material_1 = require("@mui/material");
 const Button = (props) => {
-    return (react_1.default.createElement(material_1.Button, { variant: "contained", fullWidth: true, color: "primary", onClick: props.onClick, sx: {
+    return (react_1.default.createElement(material_1.Button, { variant: "contained", fullWidth: true, color: "primary", disabled: props.disabled, onClick: props.onClick, sx: {
             height: '100%',
             // background: props.color,
             border: 0,
@@ -15,6 +15,7 @@ const Button = (props) => {
             color: props.textColor,
             cursor: 'pointer',
             // margin: '1.5em auto',
+            opacity: props.disabled ? '0.3' : '1',
             padding: '0.5em 1em',
             textShadow: `0 0 0.1em white`,
             transition: `box-shadow 0.2s linear`,
@@ -39,6 +40,7 @@ exports.Button.metadata = {
     options: {
         text: 'String',
         textColor: 'String',
+        disabled: 'Boolean',
         onClick: 'Function'
     }
 };

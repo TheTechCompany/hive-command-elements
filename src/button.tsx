@@ -4,6 +4,7 @@ import { Button as ButtonUnstyled } from '@mui/material'
 export interface ButtonProps {
     text?: any;
     color?: any;
+    disabled?: boolean;
     textColor?: any;
     onClick?: () => void;
 }
@@ -14,6 +15,7 @@ export const Button : React.FC<ButtonProps> = (props) => {
             variant="contained"
             fullWidth
             color="primary"
+            disabled={props.disabled}
             onClick={props.onClick}
             sx={{
                 height: '100%',
@@ -23,6 +25,7 @@ export const Button : React.FC<ButtonProps> = (props) => {
                 color: props.textColor,
                 cursor: 'pointer',
                 // margin: '1.5em auto',
+                opacity: props.disabled ? '0.3' : '1',
                 padding: '0.5em 1em',
                 textShadow: `0 0 0.1em white`,
                 transition: `box-shadow 0.2s linear`,
@@ -52,6 +55,7 @@ export const Button : React.FC<ButtonProps> = (props) => {
     options: {
         text: 'String',
         textColor: 'String',
+        disabled: 'Boolean',
         onClick: 'Function'
     }
 }
