@@ -137,6 +137,11 @@ DosingPump.metadata = {
   width: 50,
   height: 50,
   type: 'dosing-pump',
+  options: {
+    on: 'Boolean',
+    fault: 'Boolean',
+    onClick: 'Function'
+  },
   ports: [
     {
       key: 'outlet',
