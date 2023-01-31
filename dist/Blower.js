@@ -26,7 +26,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Blower = void 0;
 const React = __importStar(require("react"));
 const Blower = (props) => {
-    var _a, _b, _c, _d;
+    var _a, _b, _c;
     const [rotation, setRotation] = React.useState(0);
     const blowerOn = `${(_a = props.options) === null || _a === void 0 ? void 0 : _a.on}`;
     React.useEffect(() => {
@@ -49,7 +49,11 @@ const Blower = (props) => {
     return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100", xmlSpace: "preserve", style: {
             filter: ((_c = props.options) === null || _c === void 0 ? void 0 : _c.fault) ? `url(#blower-fault)` : undefined,
             // filter: props.options?.fault == true ? 'drop-shadow(0px 0px 5px red)' : undefined // props.options?.on == true ? 'drop-shadow(0px 0px 5px green)' : undefined
-        }, onClick: (_d = props.options) === null || _d === void 0 ? void 0 : _d.onClick }, props),
+        }, onClick: () => {
+            var _a, _b, _c;
+            console.log({ onClick: (_a = props.options) === null || _a === void 0 ? void 0 : _a.onClick });
+            (_c = (_b = props.options) === null || _b === void 0 ? void 0 : _b.onClick) === null || _c === void 0 ? void 0 : _c.call(_b);
+        } }, props),
         React.createElement("defs", null,
             React.createElement("filter", { id: "blower-fault", x: "0", y: "0" },
                 React.createElement("feDropShadow", { dx: "0", dy: "0", stdDeviation: "5", floodColor: "red" }))),
