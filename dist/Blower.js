@@ -51,8 +51,13 @@ const Blower = (props) => {
             // filter: props.options?.fault == true ? 'drop-shadow(0px 0px 5px red)' : undefined // props.options?.on == true ? 'drop-shadow(0px 0px 5px green)' : undefined
         }, onClick: () => {
             var _a, _b, _c;
-            console.log({ onClick: (_a = props.options) === null || _a === void 0 ? void 0 : _a.onClick });
-            (_c = (_b = props.options) === null || _b === void 0 ? void 0 : _b.onClick) === null || _c === void 0 ? void 0 : _c.call(_b);
+            console.log("CLICK", { onClick: (_a = props.options) === null || _a === void 0 ? void 0 : _a.onClick });
+            try {
+                (_c = (_b = props.options) === null || _b === void 0 ? void 0 : _b.onClick) === null || _c === void 0 ? void 0 : _c.call(_b);
+            }
+            catch (e) {
+                console.error(e);
+            }
         } }, props),
         React.createElement("defs", null,
             React.createElement("filter", { id: "blower-fault", x: "0", y: "0" },
