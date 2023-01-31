@@ -30,7 +30,7 @@ export const Blower = (props: {
     }
   }, [props.options?.on])
   
-  // console.log("Blower options", props.options);
+  console.log("Blower options", props.options);
 
   return (
 
