@@ -1,11 +1,18 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-export const DosingPump = (props: any) => (
+export const DosingPump = (props: {
+  options: {
+    fault: boolean,
+    on: boolean,
+    onClick?: () => void;
+  }
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 100 100"
     xmlSpace="preserve"
+    onClick={props.options.onClick}
     style={{
       filter: props.options?.fault ? 'url(#pump-fault)' : undefined,
     }}

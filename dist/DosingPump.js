@@ -27,7 +27,7 @@ exports.DosingPump = void 0;
 const React = __importStar(require("react"));
 const DosingPump = (props) => {
     var _a, _b;
-    return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100", xmlSpace: "preserve", style: {
+    return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100", xmlSpace: "preserve", onClick: props.options.onClick, style: {
             filter: ((_a = props.options) === null || _a === void 0 ? void 0 : _a.fault) ? 'url(#pump-fault)' : undefined,
         } }, props),
         React.createElement("defs", null,
