@@ -26,9 +26,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.DosingPump = void 0;
 const React = __importStar(require("react"));
 const DosingPump = (props) => {
-    var _a, _b;
-    return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100", xmlSpace: "preserve", onClick: props.options.onClick, style: {
-            filter: ((_a = props.options) === null || _a === void 0 ? void 0 : _a.fault) ? 'url(#pump-fault)' : undefined,
+    var _a, _b, _c;
+    return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100", xmlSpace: "preserve", onClick: (_a = props.options) === null || _a === void 0 ? void 0 : _a.onClick, style: {
+            filter: ((_b = props.options) === null || _b === void 0 ? void 0 : _b.fault) ? 'url(#pump-fault)' : undefined,
         } }, props),
         React.createElement("defs", null,
             React.createElement("filter", { id: "pump-fault", x: "0", y: "0" },
@@ -72,7 +72,7 @@ const DosingPump = (props) => {
             React.createElement("stop", { offset: 1, style: {
                     stopColor: "#383838",
                 } })),
-        React.createElement("path", { fill: ((_b = props.options) === null || _b === void 0 ? void 0 : _b.on) == true ? 'cyan' : "url(#dosing_pump_svg__c)", d: "m59.9 58.58-1.69-6.59-14.13-37.85c-.56-1.69-2.64-1.69-3.01 0L26.94 51.99l-2.64 6.59C19.78 70.63 28.25 84 40.68 84.38h1.88c13-.94 20.91-14.12 17.34-25.8zM39.37 37.11c0-1.51 1.32-2.82 2.82-2.82s2.82 1.32 2.82 2.82V58.2c0 1.51-1.32 2.82-2.82 2.82s-2.82-1.32-2.82-2.82V37.11zm2.82 38.8c-2.64 0-4.71-2.07-4.71-4.71s2.07-4.71 4.71-4.71 4.71 2.07 4.71 4.71-2.07 4.71-4.71 4.71z" })));
+        React.createElement("path", { fill: ((_c = props.options) === null || _c === void 0 ? void 0 : _c.on) == true ? 'cyan' : "url(#dosing_pump_svg__c)", d: "m59.9 58.58-1.69-6.59-14.13-37.85c-.56-1.69-2.64-1.69-3.01 0L26.94 51.99l-2.64 6.59C19.78 70.63 28.25 84 40.68 84.38h1.88c13-.94 20.91-14.12 17.34-25.8zM39.37 37.11c0-1.51 1.32-2.82 2.82-2.82s2.82 1.32 2.82 2.82V58.2c0 1.51-1.32 2.82-2.82 2.82s-2.82-1.32-2.82-2.82V37.11zm2.82 38.8c-2.64 0-4.71-2.07-4.71-4.71s2.07-4.71 4.71-4.71 4.71 2.07 4.71 4.71-2.07 4.71-4.71 4.71z" })));
 };
 exports.DosingPump = DosingPump;
 exports.DosingPump.metadata = {

@@ -12,7 +12,7 @@ export const DosingPump = (props: {
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 100 100"
     xmlSpace="preserve"
-    onClick={props.options.onClick}
+    onClick={props.options?.onClick}
     style={{
       filter: props.options?.fault ? 'url(#pump-fault)' : undefined,
     }}
