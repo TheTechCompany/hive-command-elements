@@ -7,7 +7,7 @@ export const Text = (props: {options: {border: boolean, borderRadius: number, te
             border: props.options?.border ? '1px solid black' : undefined,
             borerRadius: props.options?.borderRadius != undefined ? `${props.options?.borderRadius}px` : undefined
         }}>
-            <Typography>{props.options?.text || props.children || "Text"}</Typography>
+            <Typography fontSize={'small'}>{props.options?.text || props.children || "Text"}</Typography>
         </Box>
     )
 }
