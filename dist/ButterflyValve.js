@@ -86,6 +86,11 @@ exports.ButterflyValve.metadata = {
     type: 'valve',
     width: 40,
     height: 25,
+    options: {
+        open: 'Boolean',
+        fault: 'Boolean',
+        onClick: 'Function'
+    },
     ports: [
         {
             key: 'outlet',

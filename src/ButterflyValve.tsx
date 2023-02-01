@@ -1,7 +1,13 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-export const ButterflyValve = (props: any) => {
+export const ButterflyValve = (props: {
+  options: {
+    open: boolean,
+    fault: boolean,
+    onClick?: Function
+  }
+}) => {
   const open = props.options?.open || false;
 
     // 'drop-shadow(0px 0px 5px red)' : 
@@ -151,6 +157,11 @@ ButterflyValve.metadata = {
   type: 'valve',
   width: 40,
   height: 25,
+  options: {
+    open: 'Boolean',
+    fault: 'Boolean',
+    onClick: 'Function'
+  },
   ports: [
     {
       key: 'outlet',
