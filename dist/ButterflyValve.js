@@ -37,7 +37,7 @@ const ButterflyValve = (props) => {
             // open == true ?  'rgba(0, 255, 0, 0.3)': 
             undefined;
     }, [props.options, open]);
-    return (React.createElement("svg", Object.assign({ viewBox: "0 -0.092 80.245 51.312", xmlns: "http://www.w3.org/2000/svg", role: "img" }, props, { style: {
+    return (React.createElement("svg", Object.assign({ viewBox: "0 -0.092 80.245 51.312", xmlns: "http://www.w3.org/2000/svg", role: "img", onClick: props.options.onClick }, props, { style: {
             filter: ((_b = props.options) === null || _b === void 0 ? void 0 : _b.fault) ? 'url(#valve-fault)' : undefined,
             // background: shadowStyle // props.options?.fault == true ? 'drop-shadow(0px 0px 5px red)' : open == true ? 'drop-shadow(0px 0px 5px green)' : undefined,
         } }),

@@ -5,7 +5,7 @@ export const ButterflyValve = (props: {
   options: {
     open: boolean,
     fault: boolean,
-    onClick?: Function
+    onClick?: () => void
   }
 }) => {
   const open = props.options?.open || false;
@@ -23,6 +23,7 @@ export const ButterflyValve = (props: {
       viewBox="0 -0.092 80.245 51.312"
       xmlns="http://www.w3.org/2000/svg"
       role="img"
+      onClick={props.options.onClick}
       {...props}
       style={{
         filter: props.options?.fault ? 'url(#valve-fault)' : undefined,
