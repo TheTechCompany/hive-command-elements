@@ -16,7 +16,7 @@ const Text = (props) => {
 exports.Text = Text;
 exports.Text.metadata = {
     options: {
-        text: 'Template',
+        text: 'String',
         border: 'Boolean',
         borderRadius: 'Number'
     }

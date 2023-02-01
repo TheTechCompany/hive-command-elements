@@ -14,7 +14,7 @@ export const Text = (props: any) => {
 
 Text.metadata = {
     options: {
-        text: 'Template',
+        text: 'String',
         border: 'Boolean',
         borderRadius: 'Number'
     }
