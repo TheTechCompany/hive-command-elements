@@ -26,7 +26,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ButterflyValve = void 0;
 const React = __importStar(require("react"));
 const ButterflyValve = (props) => {
-    var _a, _b;
+    var _a, _b, _c;
     const open = ((_a = props.options) === null || _a === void 0 ? void 0 : _a.open) || false;
     // 'drop-shadow(0px 0px 5px red)' : 
     //'drop-shadow(0px 0px 5px green)'
@@ -37,8 +37,8 @@ const ButterflyValve = (props) => {
             // open == true ?  'rgba(0, 255, 0, 0.3)': 
             undefined;
     }, [props.options, open]);
-    return (React.createElement("svg", Object.assign({ viewBox: "0 -0.092 80.245 51.312", xmlns: "http://www.w3.org/2000/svg", role: "img", onClick: props.options.onClick }, props, { style: {
-            filter: ((_b = props.options) === null || _b === void 0 ? void 0 : _b.fault) ? 'url(#valve-fault)' : undefined,
+    return (React.createElement("svg", Object.assign({ viewBox: "0 -0.092 80.245 51.312", xmlns: "http://www.w3.org/2000/svg", role: "img", onClick: (_b = props.options) === null || _b === void 0 ? void 0 : _b.onClick }, props, { style: {
+            filter: ((_c = props.options) === null || _c === void 0 ? void 0 : _c.fault) ? 'url(#valve-fault)' : undefined,
             // background: shadowStyle // props.options?.fault == true ? 'drop-shadow(0px 0px 5px red)' : open == true ? 'drop-shadow(0px 0px 5px green)' : undefined,
         } }),
         React.createElement("defs", null,
