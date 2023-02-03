@@ -12,7 +12,7 @@ export interface DropdownProps {
 
 export const Dropdown : React.FC<DropdownProps> = (props) => {
     return (
-        <FormControl>
+        <FormControl fullWidth size="small">
             <InputLabel>{props.options?.label}</InputLabel>
             <Select
                 label={props.options?.label}
