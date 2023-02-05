@@ -19,6 +19,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./button"), exports);
 __exportStar(require("./DropDown"), exports);
 __exportStar(require("./DateInput"), exports);
+__exportStar(require("./TimeInput"), exports);
 __exportStar(require("./ButterflyValve"), exports);
 __exportStar(require("./BallValve"), exports);
 __exportStar(require("./Valve"), exports);

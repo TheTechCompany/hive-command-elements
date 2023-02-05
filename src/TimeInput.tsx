@@ -1,11 +1,11 @@
 import { Box, TextField, TextFieldProps } from "@mui/material";
-import { DatePicker } from "@mui/x-date-pickers"
+import { TimePicker } from "@mui/x-date-pickers"
 import React from "react";
 
-export const DateInput = (props: any) => {
+export const TimeInput = (props: any) => {
     return (
         <Box>
-            <DatePicker 
+            <TimePicker 
                 onChange={props.onChange} 
                 value={props.value} 
                 renderInput={(params) => <TextField {...params} />} />
@@ -13,7 +13,7 @@ export const DateInput = (props: any) => {
     )
 }
 
-DateInput.metadata = {
+TimeInput.metadata = {
     options: {
         onChange: 'Function',
         value: 'Date'

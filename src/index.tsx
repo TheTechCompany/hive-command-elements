@@ -3,6 +3,7 @@
 export * from './button';
 export * from './DropDown';
 export * from "./DateInput";
+export * from "./TimeInput";
 export * from './ButterflyValve';
 export * from './BallValve';
 export * from './Valve';
