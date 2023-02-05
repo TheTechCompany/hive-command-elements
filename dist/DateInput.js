@@ -14,6 +14,8 @@ const DateInput = (props) => {
 };
 exports.DateInput = DateInput;
 exports.DateInput.metadata = {
+    width: 100,
+    height: 50,
     options: {
         onChange: 'Function',
         value: 'Date'

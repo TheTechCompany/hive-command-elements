@@ -14,6 +14,8 @@ export const TimeInput = (props: { options: { onChange: (value: Date) => void, v
 }
 
 TimeInput.metadata = {
+    width: 100,
+    height: 50,
     options: {
         onChange: 'Function',
         value: 'Date'
