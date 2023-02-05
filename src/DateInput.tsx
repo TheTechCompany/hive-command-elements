@@ -8,7 +8,7 @@ export const DateInput = (props: any) => {
             <DatePicker 
                 onChange={props.onChange} 
                 value={props.value} 
-                renderInput={(params) => <TextField {...params} />} />
+                renderInput={(params) => <TextField size="small" {...params} />} />
         </Box>
     )
 }

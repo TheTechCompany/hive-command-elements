@@ -8,7 +8,7 @@ export const TimeInput = (props: any) => {
             <TimePicker 
                 onChange={props.onChange} 
                 value={props.value} 
-                renderInput={(params) => <TextField {...params} />} />
+                renderInput={(params) => <TextField size="small" {...params} />} />
         </Box>
     )
 }
