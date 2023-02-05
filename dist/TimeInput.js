@@ -8,8 +8,9 @@ const material_1 = require("@mui/material");
 const x_date_pickers_1 = require("@mui/x-date-pickers");
 const react_1 = __importDefault(require("react"));
 const TimeInput = (props) => {
+    var _a, _b;
     return (react_1.default.createElement(material_1.Box, null,
-        react_1.default.createElement(x_date_pickers_1.TimePicker, { onChange: props.onChange, value: props.value, renderInput: (params) => react_1.default.createElement(material_1.TextField, Object.assign({ size: "small" }, params)) })));
+        react_1.default.createElement(x_date_pickers_1.TimePicker, { onChange: (_a = props.options) === null || _a === void 0 ? void 0 : _a.onChange, value: (_b = props.options) === null || _b === void 0 ? void 0 : _b.value, renderInput: (params) => react_1.default.createElement(material_1.TextField, Object.assign({ size: "small" }, params)) })));
 };
 exports.TimeInput = TimeInput;
 exports.TimeInput.metadata = {
