@@ -7,6 +7,7 @@ export const Pump = (props: any) => {
 
   return (
     <svg
+      onClick={props.options?.onClick}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 100 100"
       xmlSpace="preserve"
@@ -132,6 +133,10 @@ Pump.metadata = {
   width: 50,
   height: 50,
   type: 'pump',
+  options: {
+    'on': 'Boolean',
+    'onClick': 'Function'
+  },
   ports: [
     {
       key: 'outlet',
