@@ -8,7 +8,10 @@ const react_1 = __importDefault(require("react"));
 const material_1 = require("@mui/material");
 const Button = (props) => {
     var _a, _b, _c, _d;
-    return (react_1.default.createElement(material_1.Button, { variant: "contained", fullWidth: true, color: "primary", disabled: (_a = props.options) === null || _a === void 0 ? void 0 : _a.disabled, onClick: (_b = props.options) === null || _b === void 0 ? void 0 : _b.onClick, sx: {
+    return (react_1.default.createElement(material_1.Button, { variant: "contained", fullWidth: true, color: "primary", 
+        // disabled={props.options?.disabled}
+        onClick: (_a = props.options) === null || _a === void 0 ? void 0 : _a.onClick, sx: {
+            opacity: ((_b = props.options) === null || _b === void 0 ? void 0 : _b.disabled) ? '0.6' : 1,
             height: '100%',
             // background: props.color,
             border: 0,

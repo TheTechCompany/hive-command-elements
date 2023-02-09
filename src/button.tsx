@@ -17,9 +17,10 @@ export const Button : React.FC<ButtonProps> = (props) => {
             variant="contained"
             fullWidth
             color="primary"
-            disabled={props.options?.disabled}
+            // disabled={props.options?.disabled}
             onClick={props.options?.onClick}
             sx={{
+                opacity: props.options?.disabled ? '0.6' : 1,
                 height: '100%',
                 // background: props.color,
                 border: 0,
