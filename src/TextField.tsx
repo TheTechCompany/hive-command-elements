@@ -5,6 +5,7 @@ export const TextField = (props: { options: { onChange: (value: any) => void, ty
     return (
         <Box>
             <BaseTextField
+                size="small"
                 onChange={(e) => props.options?.onChange?.(e.target.value)} 
                 value={props.options?.value} 
                 type={props.options?.type}
