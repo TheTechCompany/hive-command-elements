@@ -17,7 +17,7 @@ exports.TextField.metadata = {
     height: 50,
     options: {
         onChange: 'Function',
-        value: 'Date',
+        value: 'String',
         type: 'String',
         label: 'String'
     }
