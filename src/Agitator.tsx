@@ -1,11 +1,12 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-export const Agitator = (props: SVGProps<SVGSVGElement>) => (
+export const Agitator = (props: {options?: { onClick: () => void, on: boolean }}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 89.9 90.1"
     xmlSpace="preserve"
+    onClick={props.options?.onClick}
     {...props}
   >
     <linearGradient
@@ -242,3 +243,12 @@ export const Agitator = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
+
+Agitator.metadata = {
+  width: 50,
+  height: 50,
+  options: {
+    on: 'Boolean',
+    onClick: 'Boolean'
+  }
+}
