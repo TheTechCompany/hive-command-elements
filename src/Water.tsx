@@ -1,7 +1,7 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-export const Water = (props: {options?: { level: number} }) => {
+export const Water = (props: {options?: { level: number, onClick?: () => void } }) => {
 console.log("Water level", props.options?.level);
 
   return (
@@ -11,6 +11,7 @@ console.log("Water level", props.options?.level);
       viewBox="2.5 2 40 40"
       xmlSpace="preserve"
       preserveAspectRatio="none"
+      onClick={props.options?.onClick}
       style={{
         width: '100%',
         height: '100%',
@@ -37,7 +38,8 @@ Water.metadata = {
     width: 100,
     height: 100,
     options: {
-      level: 'Number'
+      level: 'Number',
+      onClick: 'Function'
     }
 }
   
