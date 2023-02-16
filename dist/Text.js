@@ -16,8 +16,8 @@ const Text = (props) => {
 };
 exports.Text = Text;
 exports.Text.metadata = {
-    width: '100',
-    height: '20',
+    width: 80,
+    height: 20,
     options: {
         text: 'String',
         border: 'Boolean',
