@@ -13,6 +13,8 @@ export const Text = (props: {options: {border: boolean, borderRadius: number, te
 }
 
 Text.metadata = {
+    width: '100',
+    height: '20',    
     options: {
         text: 'String',
         border: 'Boolean',
