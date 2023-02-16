@@ -2,7 +2,6 @@ import * as React from "react";
 import { SVGProps } from "react";
 
 export const Water = (props: {options?: { level: number, onClick?: () => void } }) => {
-console.log("Water level", props.options?.level);
 
   return (
     
@@ -16,7 +15,7 @@ console.log("Water level", props.options?.level);
         width: '100%',
         height: '100%',
           transformOrigin: '0 bottom',
-          transform: `scaleY(${((props.options?.level != undefined ? props.options?.level : 100) / 100) || 1})`
+          transform: `scaleY(${((props.options?.level != undefined ? props.options?.level : 100) / 100)})`
       }}
       {...props}
     >
