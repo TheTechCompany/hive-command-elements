@@ -24,17 +24,19 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Water = void 0;
+const material_1 = require("@mui/material");
 const React = __importStar(require("react"));
 const Water = (props) => {
     var _a, _b, _c;
-    return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "2.5 2 40 40", xmlSpace: "preserve", preserveAspectRatio: "none", onClick: (_a = props.options) === null || _a === void 0 ? void 0 : _a.onClick, style: {
-            width: '100%',
-            height: '100%',
-            transformOrigin: '0 bottom',
-            transform: `scaleY(${((((_b = props.options) === null || _b === void 0 ? void 0 : _b.level) != undefined ? (_c = props.options) === null || _c === void 0 ? void 0 : _c.level : 100) / 100)})`
-        } }, props),
-        React.createElement("path", { fill: "#4AE5FF", d: "M41.4 35.5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5V8.1c0-2.8 2.2-5 5-5h27.3c2.8 0 5 2.3 5 5v27.4z", opacity: 0.5 }),
-        React.createElement("path", { fill: "none", stroke: "#4AE5FF", strokeMiterlimit: 10, d: "M41.4 35.5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5V8.1c0-2.8 2.2-5 5-5h27.3c2.8 0 5 2.3 5 5v27.4z" })));
+    return (React.createElement(material_1.Box, { onClick: (_a = props.options) === null || _a === void 0 ? void 0 : _a.onClick, sx: { width: '100%', height: '100%' } },
+        React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "2.5 2 40 40", xmlSpace: "preserve", preserveAspectRatio: "none", style: {
+                width: '100%',
+                height: '100%',
+                transformOrigin: '0 bottom',
+                transform: `scaleY(${((((_b = props.options) === null || _b === void 0 ? void 0 : _b.level) != undefined ? (_c = props.options) === null || _c === void 0 ? void 0 : _c.level : 100) / 100)})`
+            } }, props),
+            React.createElement("path", { fill: "#4AE5FF", d: "M41.4 35.5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5V8.1c0-2.8 2.2-5 5-5h27.3c2.8 0 5 2.3 5 5v27.4z", opacity: 0.5 }),
+            React.createElement("path", { fill: "none", stroke: "#4AE5FF", strokeMiterlimit: 10, d: "M41.4 35.5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5V8.1c0-2.8 2.2-5 5-5h27.3c2.8 0 5 2.3 5 5v27.4z" }))));
 };
 exports.Water = Water;
 exports.Water.metadata = {
