@@ -1,12 +1,16 @@
 import React from 'react';
 
 export const Rectangle = (props: {options: any}) => {
+
+    console.log("Rectangle", props)
     return (
-        <rect  
-            strokeWidth={props.options?.strokeWidth}
-            stroke={props.options?.strokeColor}
-            strokeLinejoin={props.options?.strokeLineJoin}
-            />
+        <svg>
+            <rect  
+                strokeWidth={props.options?.strokeWidth}
+                stroke={props.options?.strokeColor}
+                strokeLinejoin={props.options?.strokeLineJoin}
+                />
+        </svg>
     )
 }
 

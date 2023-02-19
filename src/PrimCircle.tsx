@@ -4,9 +4,11 @@ export const Circle = (props: {options: any}) => {
     console.log("Circle", {props});
 
     return (
-        <circle 
-            stroke={props.options?.strokeColor}
-            radius={props.options?.radius} />
+        <svg>
+            <circle 
+                stroke={props.options?.strokeColor}
+                radius={props.options?.radius} />
+        </svg>
     )
 }
 
