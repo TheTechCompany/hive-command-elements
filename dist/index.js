@@ -42,3 +42,5 @@ __exportStar(require("./SquareTank"), exports);
 __exportStar(require("./Water"), exports);
 __exportStar(require("./Tank"), exports);
 __exportStar(require("./TextField"), exports);
+__exportStar(require("./PrimCircle"), exports);
+__exportStar(require("./PrimRectangle"), exports);
