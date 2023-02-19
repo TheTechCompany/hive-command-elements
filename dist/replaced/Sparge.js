@@ -23,35 +23,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ButterflyValve = void 0;
+exports.Sparge = void 0;
 const React = __importStar(require("react"));
-const ButterflyValve = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 283.46 283.46", xmlSpace: "preserve" }, props),
-    React.createElement("path", { d: "M278.27 240.51V42.95c0-20.85-16.9-37.75-37.75-37.75H42.95C22.1 5.2 5.2 22.1 5.2 42.95v197.56c0 20.85 16.9 37.75 37.75 37.75h197.56c20.85.01 37.76-16.9 37.76-37.75zm-158.61 1.21V41.74c0-12.19 9.88-22.07 22.07-22.07s22.07 9.88 22.07 22.07v199.98c0 12.19-9.88 22.07-22.07 22.07s-22.07-9.88-22.07-22.07z", style: {
-            fill: "#4d4d4e",
-        } })));
-exports.ButterflyValve = ButterflyValve;
-exports.ButterflyValve.metadata = {
-    type: 'valve',
-    width: 50,
-    height: 50,
-    options: {
-        open: 'Boolean',
-        fault: 'Boolean',
-        onClick: 'Function'
-    },
-    ports: [
-        {
-            key: 'outlet',
-            momentum: 1,
-            x: '90%',
-            y: '30%',
-            rotation: 180
-        },
-        {
-            key: 'inlet',
-            momentum: -1,
-            x: '-10%',
-            y: '30%'
-        }
-    ]
-};
+const Sparge = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 109.5 29.6", xmlSpace: "preserve" }, props),
+    React.createElement("g", { fill: "none", stroke: "#282828", strokeWidth: 2, strokeLinecap: "round", strokeLinejoin: "round", strokeMiterlimit: 10 },
+        React.createElement("path", { d: "M9.6 19.8H100M94.1 8.8l-5.4 11-5.5-11M77.3 8.8l-5.3 11-5.5-11M60.5 8.8l-5.3 11-5.5-11M43.7 8.8l-5.3 11-5.5-11M26.4 8.8l-5.3 11-5.6-11" }))));
+exports.Sparge = Sparge;

@@ -23,35 +23,13 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ButterflyValve = void 0;
+exports.Membrane = void 0;
 const React = __importStar(require("react"));
-const ButterflyValve = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 283.46 283.46", xmlSpace: "preserve" }, props),
-    React.createElement("path", { d: "M278.27 240.51V42.95c0-20.85-16.9-37.75-37.75-37.75H42.95C22.1 5.2 5.2 22.1 5.2 42.95v197.56c0 20.85 16.9 37.75 37.75 37.75h197.56c20.85.01 37.76-16.9 37.76-37.75zm-158.61 1.21V41.74c0-12.19 9.88-22.07 22.07-22.07s22.07 9.88 22.07 22.07v199.98c0 12.19-9.88 22.07-22.07 22.07s-22.07-9.88-22.07-22.07z", style: {
-            fill: "#4d4d4e",
-        } })));
-exports.ButterflyValve = ButterflyValve;
-exports.ButterflyValve.metadata = {
-    type: 'valve',
+const Membrane = (props) => (React.createElement("svg", Object.assign({ id: "membrane_svg__Layer_1", xmlns: "http://www.w3.org/2000/svg", x: 0, y: 0, viewBox: "0 0 283.46 283.46", xmlSpace: "preserve" }, props),
+    React.createElement("style", null, ".membrane_svg__st0{fill:none;stroke:#4d4d4e;stroke-width:6.1609;stroke-miterlimit:10}"),
+    React.createElement("path", { className: "membrane_svg__st0", d: "M6.25 10.09v267.73M19.88 10.09v267.73M33.52 10.09v267.73M47.16 10.09v267.73M60.8 10.09v267.73M74.43 10.09v267.73M88.07 10.09v267.73M101.71 10.09v267.73M6.25 10.09h95.46v267.73H6.25z" })));
+exports.Membrane = Membrane;
+exports.Membrane.metadata = {
     width: 50,
-    height: 50,
-    options: {
-        open: 'Boolean',
-        fault: 'Boolean',
-        onClick: 'Function'
-    },
-    ports: [
-        {
-            key: 'outlet',
-            momentum: 1,
-            x: '90%',
-            y: '30%',
-            rotation: 180
-        },
-        {
-            key: 'inlet',
-            momentum: -1,
-            x: '-10%',
-            y: '30%'
-        }
-    ]
+    height: 50
 };

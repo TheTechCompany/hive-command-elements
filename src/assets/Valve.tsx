@@ -1,7 +1,7 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-export const ButterflyValve = (props: {options: any}) => (
+export const Valve = (props: {options: any}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 283.46 283.46"
@@ -17,10 +17,10 @@ export const ButterflyValve = (props: {options: any}) => (
   </svg>
 );
 
-ButterflyValve.metadata = {
+Valve.metadata = {
   type: 'valve',
-  width: 50,
-  height: 50,
+  width: 40,
+  height: 25,
   options: {
     open: 'Boolean',
     fault: 'Boolean',

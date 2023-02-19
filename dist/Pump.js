@@ -25,51 +25,10 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Pump = void 0;
 const React = __importStar(require("react"));
-const Pump = (props) => {
-    var _a, _b, _c, _d, _e;
-    const pumpOn = `${(_a = props.options) === null || _a === void 0 ? void 0 : _a.on}`;
-    return (React.createElement("svg", Object.assign({ onClick: (_b = props.options) === null || _b === void 0 ? void 0 : _b.onClick, xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 100 100", xmlSpace: "preserve", style: {
-            filter: ((_c = props.options) === null || _c === void 0 ? void 0 : _c.fault) == true ? 'url(#pump-fault)' : undefined
-        } }, props),
-        React.createElement("defs", null,
-            React.createElement("filter", { id: "pump-fault", x: "0", y: "0" },
-                React.createElement("feDropShadow", { dx: "0", dy: "0", stdDeviation: "5", floodColor: "red" }))),
-        React.createElement("linearGradient", { id: "pump_svg__a", gradientUnits: "userSpaceOnUse", x1: 1680.754, y1: -633.181, x2: 1680.754, y2: -591.601, gradientTransform: "rotate(180 860.603 -270)" },
-            React.createElement("stop", { offset: 0, style: {
-                    stopColor: "#616264",
-                } }),
-            React.createElement("stop", { offset: 0.532, style: {
-                    stopColor: "#a0a0a0",
-                } }),
-            React.createElement("stop", { offset: 1, style: {
-                    stopColor: "#616264",
-                } })),
-        React.createElement("path", { fill: "url(#pump_svg__a)", d: "m71.54 85.47-27.6-32.2c-1.87-2.16-5.32-2.16-7.19 0L9.3 85.47c-2.59 3.02-.43 7.76 3.59 7.76h55.2c3.88 0 6.18-4.74 3.45-7.76z" }),
-        React.createElement("radialGradient", { id: "pump_svg__b", cx: 1680.715, cy: -589.102, r: 37.806, gradientTransform: "rotate(180 860.603 -270)", gradientUnits: "userSpaceOnUse" },
-            React.createElement("stop", { offset: 0, style: {
-                    stopColor: "#616264",
-                } }),
-            React.createElement("stop", { offset: 0.541, style: {
-                    stopColor: "#a0a0a0",
-                } }),
-            React.createElement("stop", { offset: 1, style: {
-                    stopColor: "#616264",
-                } })),
-        React.createElement("circle", { fill: "url(#pump_svg__b)", cx: 40.49, cy: 49.1, r: 37.81 }),
-        React.createElement("linearGradient", { id: "pump_svg__c", gradientUnits: "userSpaceOnUse", x1: 1652.468, y1: -589.102, x2: 1652.468, y2: -551.296, gradientTransform: "rotate(180 860.603 -270)" },
-            React.createElement("stop", { offset: 0, style: {
-                    stopColor: "#616264",
-                } }),
-            React.createElement("stop", { offset: 0.532, style: {
-                    stopColor: "#a0a0a0",
-                } }),
-            React.createElement("stop", { offset: 1, style: {
-                    stopColor: "#616264",
-                } })),
-        React.createElement("path", { fill: "url(#pump_svg__c)", d: "M40.49 11.3s.72 37.81 37.81 37.81h18.69V11.3h-56.5z" }),
-        React.createElement("path", { fill: "none", stroke: "#4C4C4D", strokeLinecap: "round", strokeLinejoin: "round", strokeMiterlimit: 10, d: "M40.49 11.3c-20.84 0-37.81 16.96-37.81 37.8 0 11.5 5.17 21.71 13.22 28.75l-6.6 7.62c-2.59 3.02-.43 7.76 3.59 7.76h55.2c4.03 0 6.18-4.74 3.59-7.76l-6.61-7.62C73.12 70.95 78.3 60.6 78.3 49.1h18.69V11.3h-56.5z" }),
-        React.createElement("path", { fill: ((_d = props.options) === null || _d === void 0 ? void 0 : _d.fault) == true ? 'red' : pumpOn == "true" || ((_e = props.options) === null || _e === void 0 ? void 0 : _e.speed) > 0 ? 'cyan' : "#333", d: "M48.18 24.81c-19.55-5.46-37.09 11.93-31.62 31.62 2.3 8.19 8.77 14.66 16.96 16.96 19.55 5.46 37.09-11.93 31.62-31.62-2.3-8.19-8.77-14.66-16.96-16.96zM41.42 66.5h-1.14c-6.32-.43-10.49-7.04-8.34-12.94l1.15-3.31 6.9-19.12c.29-.72 1.15-.72 1.44 0l6.9 19.12 1.15 3.31c2.44 5.89-1.59 12.5-8.06 12.94z" })));
-};
+const Pump = (props) => (React.createElement("svg", Object.assign({ id: "pump_svg__Layer_1", xmlns: "http://www.w3.org/2000/svg", x: 0, y: 0, viewBox: "0 0 283.46 283.46", xmlSpace: "preserve" }, props),
+    React.createElement("style", null, ".pump_svg__st0{fill:#4d4d4e}"),
+    React.createElement("path", { className: "pump_svg__st0", d: "m135.74 153.84-20.02-55.46c-.84-2.09-3.34-2.09-4.18 0l-20.02 55.46-3.34 9.6c-6.24 17.12 5.86 36.29 24.19 37.54h3.3c18.77-1.28 30.46-20.45 23.38-37.54l-3.31-9.6z" }),
+    React.createElement("path", { className: "pump_svg__st0", d: "M113 40.85C52.55 40.85 3.32 90.05 3.32 150.5c0 33.36 15 62.98 38.35 83.4L22.52 256c-7.51 8.76-1.25 22.51 10.41 22.51h160.13c11.69 0 17.93-13.75 10.41-22.51l-19.17-22.1c23.35-20.02 38.38-50.04 38.38-83.4h54.22V40.85H113zM92.78 220.96c-23.76-6.67-42.53-25.44-49.2-49.2C27.71 114.65 78.6 64.2 135.31 80.04c23.76 6.67 42.53 25.44 49.2 49.2 15.87 57.12-35.02 107.56-91.73 91.72z" })));
 exports.Pump = Pump;
 exports.Pump.metadata = {
     width: 50,
