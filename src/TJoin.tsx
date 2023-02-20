@@ -8,13 +8,12 @@ export const TJoin = (props: SVGProps<SVGSVGElement>) => (
     x={0}
     y={0}
     viewBox="0 0 283.5 283.5"
-
     xmlSpace="preserve"
     {...props}
   >
     <style>
       {
-        ".TJoin_svg__st0{opacity:.8;fill:none;stroke:#626363;stroke-width:3.5902;stroke-miterlimit:10}"
+        ".TJoin_svg__st0{opacity:.8;fill:none;stroke:#626363;stroke-width:13;stroke-miterlimit:10}"
       }
     </style>
     <path
@@ -29,8 +28,6 @@ export const TJoin = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
-
 
 TJoin.metadata = {
   width: 60,
