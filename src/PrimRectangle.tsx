@@ -3,7 +3,7 @@ import React from 'react';
 export const Rectangle = (props: {options: any, width: number, height: number}) => {
 
     return (
-        <svg width={props.width} height={props.height}>
+        <svg width={props.width + ((props.options?.strokeWidth || 0) * 2) } height={props.height + ((props.options?.strokeWidth || 0) * 2) }>
             <rect  
                 fill={props.options?.fill || 'none'}
                 width={props?.width}
