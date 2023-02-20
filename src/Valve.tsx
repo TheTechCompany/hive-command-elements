@@ -19,8 +19,8 @@ export const ButterflyValve = (props: {options: any}) => (
 
 ButterflyValve.metadata = {
   type: 'valve',
-  width: 50,
-  height: 50,
+  width: 30,
+  height: 30,
   options: {
     open: 'Boolean',
     fault: 'Boolean',

@@ -32,8 +32,8 @@ const ButterflyValve = (props) => (React.createElement("svg", Object.assign({ xm
 exports.ButterflyValve = ButterflyValve;
 exports.ButterflyValve.metadata = {
     type: 'valve',
-    width: 50,
-    height: 50,
+    width: 30,
+    height: 30,
     options: {
         open: 'Boolean',
         fault: 'Boolean',

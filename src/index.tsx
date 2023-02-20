@@ -29,3 +29,4 @@ export * from './Tank';
 export * from './TextField';
 export * from './PrimCircle'
 export * from './PrimRectangle'
+export * from './Membrane'
