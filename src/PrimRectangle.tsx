@@ -10,7 +10,8 @@ export const Rectangle = (props: {options: any, width: number, height: number}) 
                 height={props?.height}
                 strokeWidth={props.options?.strokeWidth}
                 stroke={props.options?.strokeColor || (!props.options?.fill ? 'black' : undefined)}
-                strokeLinejoin={props.options?.strokeLineJoin}
+                rx={props.options?.strokeLineJoin}
+                ry={props.options?.rounded}
                 />
         </svg>
     )
@@ -23,6 +24,6 @@ Rectangle.metadata = {
         fill: 'String',
         strokeWidth: 'Number',
         strokeColor: 'String',
-        strokeLineJoin: 'String'
+        rounded: 'Number'
     }
 }
