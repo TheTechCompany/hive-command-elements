@@ -7,7 +7,6 @@ exports.Circle = void 0;
 const react_1 = __importDefault(require("react"));
 const Circle = (props) => {
     var _a;
-    console.log("Circle", { props });
     return (react_1.default.createElement("svg", null,
         react_1.default.createElement("circle", { stroke: (_a = props.options) === null || _a === void 0 ? void 0 : _a.strokeColor, radius: props === null || props === void 0 ? void 0 : props.width })));
 };

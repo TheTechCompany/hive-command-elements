@@ -1,8 +1,6 @@
 import React from 'react';
 
 export const Circle = (props: {options: any, width: number}) => {
-    console.log("Circle", {props});
-
     return (
         <svg>
             <circle 
