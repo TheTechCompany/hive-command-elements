@@ -8,7 +8,7 @@ const react_1 = __importDefault(require("react"));
 const Circle = (props) => {
     var _a, _b;
     return (react_1.default.createElement("svg", { width: props.width, height: props.width },
-        react_1.default.createElement("circle", { fill: ((_a = props.options) === null || _a === void 0 ? void 0 : _a.fill) || 'none', stroke: (_b = props.options) === null || _b === void 0 ? void 0 : _b.strokeColor, radius: (props === null || props === void 0 ? void 0 : props.width) / 2 })));
+        react_1.default.createElement("circle", { fill: ((_a = props.options) === null || _a === void 0 ? void 0 : _a.fill) || 'none', stroke: (_b = props.options) === null || _b === void 0 ? void 0 : _b.strokeColor, r: (props === null || props === void 0 ? void 0 : props.width) / 2 })));
 };
 exports.Circle = Circle;
 exports.Circle.metadata = {

@@ -6,7 +6,7 @@ export const Circle = (props: {options: any, width: number}) => {
             <circle 
                 fill={props.options?.fill || 'none'}
                 stroke={props.options?.strokeColor}
-                radius={props?.width / 2} />
+                r={props?.width / 2} />
         </svg>
     )
 }

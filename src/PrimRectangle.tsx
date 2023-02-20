@@ -9,7 +9,7 @@ export const Rectangle = (props: {options: any, width: number, height: number}) 
                 width={props?.width}
                 height={props?.height}
                 strokeWidth={props.options?.strokeWidth}
-                stroke={props.options?.strokeColor}
+                stroke={props.options?.strokeColor || (!props.options?.fill ? 'black' : undefined)}
                 strokeLinejoin={props.options?.strokeLineJoin}
                 />
         </svg>
