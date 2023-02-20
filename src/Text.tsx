@@ -7,6 +7,7 @@ export const Text = (props: {options: {background: string, border: boolean, bord
             background: props.options?.background || (props.options?.border  ? 'white' : undefined),
             paddingLeft: '6px',
             paddingRight: '6px',
+            flex: 1,
             border: props.options?.border ? '1px solid black' : undefined,
             borerRadius: props.options?.borderRadius != undefined ? `${props.options?.borderRadius}px` : undefined
         }}>

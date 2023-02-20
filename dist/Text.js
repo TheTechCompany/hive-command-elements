@@ -12,6 +12,7 @@ const Text = (props) => {
             background: ((_a = props.options) === null || _a === void 0 ? void 0 : _a.background) || (((_b = props.options) === null || _b === void 0 ? void 0 : _b.border) ? 'white' : undefined),
             paddingLeft: '6px',
             paddingRight: '6px',
+            flex: 1,
             border: ((_c = props.options) === null || _c === void 0 ? void 0 : _c.border) ? '1px solid black' : undefined,
             borerRadius: ((_d = props.options) === null || _d === void 0 ? void 0 : _d.borderRadius) != undefined ? `${(_e = props.options) === null || _e === void 0 ? void 0 : _e.borderRadius}px` : undefined
         } },
