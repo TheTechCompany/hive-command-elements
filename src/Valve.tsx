@@ -34,7 +34,7 @@ ButterflyValve.metadata = {
     {
       key: 'outlet',
       momentum: 1,
-      x: '90%',
+      x: '80%',
       y: '30%',
       rotation: 180
     },
