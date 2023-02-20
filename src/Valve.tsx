@@ -3,6 +3,7 @@ import { SVGProps } from "react";
 
 export const ButterflyValve = (props: {options: any}) => (
   <svg
+    onClick={props.options?.onClick}
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 283.46 283.46"
     xmlSpace="preserve"

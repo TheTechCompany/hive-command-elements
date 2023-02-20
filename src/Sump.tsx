@@ -1,9 +1,9 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-export const Sump = (props: SVGProps<SVGSVGElement>) => (
+export const Sump = (props: any) => (
   <svg
-    id="sump_svg__Layer_1"
+    onClick={props.options?.onClick}
     xmlns="http://www.w3.org/2000/svg"
     x={0}
     y={0}
