@@ -2,14 +2,16 @@ import React from 'react';
 
 export const Rectangle = (props: {options: any, width: number, height: number}) => {
 
+    const strokeWidth = props.options?.strokeWidth || 0;
+
     return (
-        <svg width={props.width + ((props.options?.strokeWidth || 0) * 2) } height={props.height + ((props.options?.strokeWidth || 0) * 2) }>
+        <svg width={props.width} height={props.height}>
             <rect  
-                x={props.options?.strokeWidth}
-                y={props.options?.strokeWidth}
+                x={strokeWidth / 2}
+                y={strokeWidth / 2}
                 fill={props.options?.fill || 'none'}
-                width={props?.width}
-                height={props?.height}
+                width={props?.width - (strokeWidth / 2)}
+                height={props?.height - (strokeWidth / 2)}
                 strokeWidth={props.options?.strokeWidth}
                 stroke={props.options?.strokeColor || (!props.options?.fill ? 'black' : undefined)}
                 rx={props.options?.strokeLineJoin}
