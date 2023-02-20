@@ -9,7 +9,7 @@ const react_1 = __importDefault(require("react"));
 const TextField = (props) => {
     var _a, _b, _c;
     return (react_1.default.createElement(material_1.Box, null,
-        react_1.default.createElement(material_1.TextField, { size: "small", onChange: (e) => { var _a, _b; return (_b = (_a = props.options) === null || _a === void 0 ? void 0 : _a.onChange) === null || _b === void 0 ? void 0 : _b.call(_a, e.target.value); }, value: (_a = props.options) === null || _a === void 0 ? void 0 : _a.value, type: (_b = props.options) === null || _b === void 0 ? void 0 : _b.type, label: (_c = props.options) === null || _c === void 0 ? void 0 : _c.label })));
+        react_1.default.createElement(material_1.TextField, { size: "small", fullWidth: true, onChange: (e) => { var _a, _b; return (_b = (_a = props.options) === null || _a === void 0 ? void 0 : _a.onChange) === null || _b === void 0 ? void 0 : _b.call(_a, e.target.value); }, value: (_a = props.options) === null || _a === void 0 ? void 0 : _a.value, type: (_b = props.options) === null || _b === void 0 ? void 0 : _b.type, label: (_c = props.options) === null || _c === void 0 ? void 0 : _c.label })));
 };
 exports.TextField = TextField;
 exports.TextField.metadata = {
