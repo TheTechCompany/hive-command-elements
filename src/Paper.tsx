@@ -3,7 +3,7 @@ import { Paper as MuiPaper } from '@mui/material'
 
 export const Paper = () => {
     return (
-        <MuiPaper sx={{flex: 1}} />
+        <MuiPaper sx={{flex: 1, width: '100%', height: '100%'}} />
     )
 }
 
