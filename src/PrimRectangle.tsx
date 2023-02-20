@@ -14,7 +14,7 @@ export const Rectangle = (props: {options: any, width: number, height: number}) 
                 height={props?.height - (strokeWidth / 2)}
                 strokeWidth={props.options?.strokeWidth}
                 stroke={props.options?.strokeColor || (!props.options?.fill ? 'black' : undefined)}
-                rx={props.options?.strokeLineJoin}
+                rx={props.options?.rounded}
                 ry={props.options?.rounded}
                 />
         </svg>
