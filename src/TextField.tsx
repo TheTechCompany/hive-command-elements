@@ -3,7 +3,7 @@ import React from "react";
 
 export const TextField = (props: { options: { onChange: (value: any) => void, type: string, label: string, value: Date } }) => {
     return (
-        <Box>
+        <Box sx={{flex: 1, display: 'flex'}}>
             <BaseTextField
                 size="small"
                 fullWidth
