@@ -46,3 +46,4 @@ __exportStar(require("./TextField"), exports);
 __exportStar(require("./PrimCircle"), exports);
 __exportStar(require("./PrimRectangle"), exports);
 __exportStar(require("./Membrane"), exports);
+__exportStar(require("./Paper"), exports);
