@@ -4,7 +4,7 @@ import React from "react";
 
 export const DateInput = (props: { options: { onChange?: (date: Date) => void, value: Date } }) => {
     return (
-        <Box>
+        <Box sx={{flex: 1, display: 'flex'}}>
             <DatePicker 
                 onChange={(value) => value && props.options?.onChange?.(value)} 
                 value={props.options?.value} 
