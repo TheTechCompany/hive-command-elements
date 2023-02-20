@@ -25,10 +25,16 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ButterflyValve = void 0;
 const React = __importStar(require("react"));
-const ButterflyValve = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 283.46 283.46", xmlSpace: "preserve" }, props),
-    React.createElement("path", { d: "M278.27 240.51V42.95c0-20.85-16.9-37.75-37.75-37.75H42.95C22.1 5.2 5.2 22.1 5.2 42.95v197.56c0 20.85 16.9 37.75 37.75 37.75h197.56c20.85.01 37.76-16.9 37.76-37.75zm-158.61 1.21V41.74c0-12.19 9.88-22.07 22.07-22.07s22.07 9.88 22.07 22.07v199.98c0 12.19-9.88 22.07-22.07 22.07s-22.07-9.88-22.07-22.07z", style: {
-            fill: "#4d4d4e",
-        } })));
+const ButterflyValve = (props) => {
+    var _a, _b;
+    return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 283.46 283.46", xmlSpace: "preserve" }, props),
+        React.createElement("path", { d: "M278.27 240.51V42.95c0-20.85-16.9-37.75-37.75-37.75H42.95C22.1 5.2 5.2 22.1 5.2 42.95v197.56c0 20.85 16.9 37.75 37.75 37.75h197.56c20.85.01 37.76-16.9 37.76-37.75zm-158.61 1.21V41.74c0-12.19 9.88-22.07 22.07-22.07s22.07 9.88 22.07 22.07v199.98c0 12.19-9.88 22.07-22.07 22.07s-22.07-9.88-22.07-22.07z", style: {
+                fill: ((_a = props.options) === null || _a === void 0 ? void 0 : _a.fault) ? 'red' : "#4d4d4e",
+                transformOrigin: '50% 50%',
+                transformBox: 'fill-box',
+                transform: `rotate(${((_b = props.options) === null || _b === void 0 ? void 0 : _b.open) == true ? '90' : '0'}deg)`,
+            } })));
+};
 exports.ButterflyValve = ButterflyValve;
 exports.ButterflyValve.metadata = {
     type: 'valve',
