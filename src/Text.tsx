@@ -4,7 +4,7 @@ import React from "react";
 export const Text = (props: {options: {background: string, border: boolean, borderRadius: number, text: string}, children: any}) => {
     return (
         <Box sx={{
-            background: props.options?.background || 'white',
+            background: props.options?.background || (props.options?.border  ? 'white' : undefined),
             paddingLeft: '6px',
             paddingRight: '6px',
             border: props.options?.border ? '1px solid black' : undefined,
