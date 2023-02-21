@@ -6,10 +6,10 @@ export const DateInput = (props: { options: { onChange?: (date: Date) => void, l
     return (
         <Box sx={{flex: 1, display: 'flex'}}>
             <DatePicker 
-                
+                label={props.options?.label}
                 onChange={(value) => value && props.options?.onChange?.(value)} 
                 value={props.options?.value} 
-                renderInput={(params) => <TextField fullWidth label={props.options?.label} size="small" {...params} />} />
+                renderInput={(params) => <TextField fullWidth size="small" {...params} />} />
         </Box>
     )
 }
