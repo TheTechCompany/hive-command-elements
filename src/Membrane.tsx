@@ -7,7 +7,7 @@ export const Membrane = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     x={0}
     y={0}
-    viewBox="0 0 283.46 283.46"
+    viewBox="0 0 109 283.5"
     xmlSpace="preserve"
     {...props}
   >
@@ -18,10 +18,11 @@ export const Membrane = (props: SVGProps<SVGSVGElement>) => (
     </style>
     <path
       className="membrane_svg__st0"
-      d="M6.25 10.09v267.73M19.88 10.09v267.73M33.52 10.09v267.73M47.16 10.09v267.73M60.8 10.09v267.73M74.43 10.09v267.73M88.07 10.09v267.73M101.71 10.09v267.73M6.25 10.09h95.46v267.73H6.25z"
+      d="M6.2 10.1v267.7M19.9 10.1v267.7M33.5 10.1v267.7M47.2 10.1v267.7M60.8 10.1v267.7M74.4 10.1v267.7M88.1 10.1v267.7M101.7 10.1v267.7M6.2 10.1h95.5v267.7H6.2z"
     />
   </svg>
 );
+
 
 Membrane.metadata = {
   width: 50,

@@ -8,7 +8,7 @@ export const TextField = (props: { options: { onChange: (value: any) => void, ty
                 size="small"
                 fullWidth
                 onChange={(e) => props.options?.onChange?.(e.target.value)} 
-                value={props.options?.value} 
+                value={props.options?.value || null} 
                 type={props.options?.type}
                 label={props.options?.label} />
         </Box>
