@@ -11,6 +11,9 @@ export interface DropdownProps {
 }
 
 export const Dropdown : React.FC<DropdownProps> = (props) => {
+
+    console.log("Dropdown opts", props);
+    
     return (
         <FormControl fullWidth size="small">
             <InputLabel>{props.options?.label}</InputLabel>
