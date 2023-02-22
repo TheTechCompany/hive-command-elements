@@ -1,15 +1,34 @@
-import { Box, TextField as BaseTextField, TextFieldProps } from "@mui/material";
-import React from "react";
+import { Box, IconButton, InputAdornment, TextField as BaseTextField, TextFieldProps } from "@mui/material";
+import { Check } from '@mui/icons-material';
+import React, { useEffect, useState } from "react";
 
-export const TextField = (props: { options: { onChange: (value: any) => void, type: string, label: string, value: Date } }) => {
+export const TextField = (props: { options: { onChange: (value: any) => void, type: string, label: string, value: any } }) => {
+    
+    const [ value, setValue ] = useState(props.options?.value)
+
+    useEffect(() => {
+        setValue(props.options?.value)
+    }, [props.options?.value])
+
+    const changeValue = () => {
+        props.options?.onChange?.(value)
+    }
+
     return (
         <Box sx={{flex: 1, display: 'flex'}}>
             <BaseTextField
                 size="small"
                 fullWidth
-                onChange={(e) => props.options?.onChange?.(e.target.value)} 
-                value={props.options?.value || null} 
+                onChange={(e) => { setValue(e.target.value) }}
+                value={value || null} 
                 type={props.options?.type}
+                InputProps={{
+                    endAdornment: value != props.options?.value ? <InputAdornment position="end">
+                        <IconButton size="small">
+                            <Check />
+                        </IconButton>
+                </InputAdornment> : undefined
+                }}
                 label={props.options?.label} />
         </Box>
     )
