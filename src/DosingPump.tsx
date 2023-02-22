@@ -19,6 +19,11 @@ export const DosingPump = (props: {options: any}) => (
     />
     <circle className="dose_pump_svg__st0" cx={113.02} cy={204.11} r={13.78} />
     <path
+          style={{
+            fill: props.options?.fill || (!props.options?.stroke) ? "#4d4d4e" : 'none',
+            stroke: props.options?.stroke,
+            strokeWidth: props.options?.stroke ? '5px' : undefined
+          }}
       className="dose_pump_svg__st0"
       d="M220.24 182.51V46.94c0-24.26-19.84-44.1-44.1-44.1H48.29c-24.26 0-44.1 19.84-44.1 44.1v189.59c0 24.26 19.84 44.1 44.1 44.1h220.44v-98.12h-48.49zm-106.13 60.16h-5.5c-36.37-1.11-61.16-40.24-47.93-75.5l7.73-19.28 41.35-110.76c1.08-4.95 7.17-4.95 8.81 0l41.35 110.76 4.95 19.28c10.42 34.19-12.72 72.75-50.76 75.5z"
     />
@@ -30,6 +35,8 @@ DosingPump.metadata = {
   height: 50,
   type: 'dosing-pump',
   options: {
+    fill: 'String',
+    stroke: 'String',
     on: 'Boolean',
     fault: 'Boolean',
     onClick: 'Function'
