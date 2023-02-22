@@ -35,5 +35,9 @@ const Fan = (props) => {
 exports.Fan = Fan;
 exports.Fan.metadata = {
     width: 50,
-    height: 50
+    height: 50,
+    options: {
+        on: 'Boolean',
+        onClick: 'Function'
+    }
 };

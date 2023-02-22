@@ -20,6 +20,10 @@ export const Fan = (props: any) => (
 
 Fan.metadata = {
   width: 50,
-  height: 50
+  height: 50,
+  options: {
+    on: 'Boolean',
+    onClick: 'Function'
+  }
 }
 
