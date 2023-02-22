@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import * as React from "react";
 import { SVGProps } from "react";
 
-export const Water = (props: { options?: { level: number, onClick?: () => void } }) => {
+export const Water = (props: { options?: { color?: string, level: number, onClick?: () => void } }) => {
 
   return (
     <Box
@@ -22,13 +22,13 @@ export const Water = (props: { options?: { level: number, onClick?: () => void }
         {...props}
       >
         <path
-          fill="#4AE5FF"
+          fill={props.options?.color || "#4AE5FF"}
           d="M41.4 35.5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5V8.1c0-2.8 2.2-5 5-5h27.3c2.8 0 5 2.3 5 5v27.4z"
           opacity={0.5}
         />
         <path
           fill="none"
-          stroke="#4AE5FF"
+          stroke={props.options?.color || "#4AE5FF"}
           strokeMiterlimit={10}
           d="M41.4 35.5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5V8.1c0-2.8 2.2-5 5-5h27.3c2.8 0 5 2.3 5 5v27.4z"
         />
@@ -41,6 +41,7 @@ Water.metadata = {
   height: 100,
   options: {
     level: 'Number',
+    color: 'String',
     onClick: 'Function'
   }
 }
