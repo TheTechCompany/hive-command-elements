@@ -7,7 +7,7 @@ export const DateInput = (props: { options: { onChange?: (date: Date) => void, l
         <Box sx={{flex: 1, display: 'flex'}}>
             <DatePicker 
                 label={props.options?.label}
-                inputFormat={`dd/mm`}
+                inputFormat={`DD/MM`}
                 onChange={(value) => value && props.options?.onChange?.( (value as any).toDate() )} 
                 value={props.options?.value} 
                 renderInput={(params) => <TextField fullWidth size="small" {...params} />} />
