@@ -7,7 +7,8 @@ export const TimeInput = (props: { options: { onChange: (value: Date) => void, l
         <Box sx={{flex: 1, display: 'flex'}}>
             <TimePicker 
                 label={props.options?.label}
-                onChange={(value) => value && props.options?.onChange?.(value)} 
+                inputFormat={`hh:mma`}
+                onChange={(value) => value && props.options?.onChange?.( (value as any).toDate() )} 
                 value={props.options?.value} 
                 renderInput={(params) => <TextField fullWidth size="small" {...params} />} />
         </Box>
