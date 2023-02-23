@@ -25,7 +25,7 @@ export const TextField = (props: { options: { onChange: (value: any) => void, ty
                 type={props.options?.type}
                 InputProps={{
                     endAdornment: value != props.options?.value ? <InputAdornment position="end">
-                        <IconButton onClick={changeValue} size="small">
+                        <IconButton onClick={() => changeValue()} size="small">
                             <Check fontSize="inherit" />
                         </IconButton>
                 </InputAdornment> : undefined
