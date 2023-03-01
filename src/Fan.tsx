@@ -24,6 +24,21 @@ Fan.metadata = {
   options: {
     on: 'Boolean',
     onClick: 'Function'
-  }
+  },
+  ports: [
+    {
+      key: 'outlet',
+      momentum: 1,
+      x: '85%',
+      y: '20%',
+      rotation: 180
+    },
+    {
+      key: 'inlet',
+      momentum: -1,
+      x: '-5%',
+      y: '55%'
+    }
+  ]
 }
 
