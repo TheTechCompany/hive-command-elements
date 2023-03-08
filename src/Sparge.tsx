@@ -8,9 +8,7 @@ export const Sparge = (props: SVGProps<SVGSVGElement>) => (
     x={0}
     y={0}
     viewBox="0 0 283.5 66.2"
-
     xmlSpace="preserve"
-    {...props}
   >
     <style>{".sparge_svg__st0{fill:#4d4d4e}"}</style>
     <path

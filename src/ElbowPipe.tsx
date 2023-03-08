@@ -6,7 +6,6 @@ export const ElbowPipe = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 90.2 90.2"
     xmlSpace="preserve"
-    {...props}
   >
     <linearGradient
       id="ElbowPipe_svg__a"

@@ -25,7 +25,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ElbowPipe = void 0;
 const React = __importStar(require("react"));
-const ElbowPipe = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 90.2 90.2", xmlSpace: "preserve" }, props),
+const ElbowPipe = (props) => (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 90.2 90.2", xmlSpace: "preserve" },
     React.createElement("linearGradient", { id: "ElbowPipe_svg__a", gradientUnits: "userSpaceOnUse", x1: 1180.734, y1: -944.253, x2: 1200.73, y2: -944.253, gradientTransform: "rotate(-90 1128.015 136.968)" },
         React.createElement("stop", { offset: 0, style: {
                 stopColor: "#6f7173",

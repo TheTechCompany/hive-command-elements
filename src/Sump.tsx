@@ -9,7 +9,6 @@ export const Sump = (props: any) => (
     y={0}
     viewBox="0 0 283.46 283.46"
     xmlSpace="preserve"
-    {...props}
   >
     <style>{".sump_svg__st0{fill:#4d4d4e}"}</style>
     <path

@@ -19,7 +19,6 @@ export const Water = (props: { options?: { color?: string, level: number, onClic
           transformOrigin: '0 bottom',
           transform: `scaleY(${((props.options?.level != undefined ? props.options?.level : 100) / 100)})`
         }}
-        {...props}
       >
         <path
           fill={props.options?.color || "#4AE5FF"}

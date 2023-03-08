@@ -6,7 +6,6 @@ export const FilterMembrane = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 109.5 79.7"
     xmlSpace="preserve"
-    {...props}
   >
     <g
       fill="none"

@@ -27,7 +27,7 @@ exports.Pump = void 0;
 const React = __importStar(require("react"));
 const Pump = (props) => {
     var _a, _b, _c, _d, _e, _f;
-    return (React.createElement("svg", Object.assign({ onClick: (_a = props.options) === null || _a === void 0 ? void 0 : _a.onClick, id: "pump_svg__Layer_1", xmlns: "http://www.w3.org/2000/svg", x: 0, y: 0, viewBox: "0 0 283.46 283.46", xmlSpace: "preserve" }, props),
+    return (React.createElement("svg", { onClick: (_a = props.options) === null || _a === void 0 ? void 0 : _a.onClick, id: "pump_svg__Layer_1", xmlns: "http://www.w3.org/2000/svg", x: 0, y: 0, viewBox: "0 0 283.46 283.46", xmlSpace: "preserve" },
         React.createElement("style", null, ".pump_svg__st0{fill:#4d4d4e}"),
         React.createElement("path", { style: {
                 fill: ((_b = props.options) === null || _b === void 0 ? void 0 : _b.color) || '#4d4d4e'

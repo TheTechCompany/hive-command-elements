@@ -25,10 +25,10 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SquareTank = void 0;
 const React = __importStar(require("react"));
-const SquareTank = (props) => (React.createElement("svg", Object.assign({ viewBox: "54.726 24.16 150.619 150.684", xmlns: "http://www.w3.org/2000/svg", role: "img", preserveAspectRatio: "none", style: {
+const SquareTank = (props) => (React.createElement("svg", { viewBox: "54.726 24.16 150.619 150.684", xmlns: "http://www.w3.org/2000/svg", role: "img", preserveAspectRatio: "none", style: {
         width: '100%',
         height: '100%'
-    } }, props),
+    } },
     React.createElement("defs", null,
         React.createElement("style", null, ".tank_sq_sm_svg__st2{fill:none;stroke:#383739;stroke-width:1.8221;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}")),
     React.createElement("linearGradient", { id: "tank_sq_sm_svg__SVGID_1_", gradientUnits: "userSpaceOnUse", x1: 176.478, y1: 180.002, x2: 83.522, y2: 18.998 },

@@ -25,7 +25,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.FilterMembrane = void 0;
 const React = __importStar(require("react"));
-const FilterMembrane = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 109.5 79.7", xmlSpace: "preserve" }, props),
+const FilterMembrane = (props) => (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 109.5 79.7", xmlSpace: "preserve" },
     React.createElement("g", { fill: "none", stroke: "#282828", strokeWidth: 2, strokeLinecap: "round", strokeLinejoin: "round", strokeMiterlimit: 10 },
         React.createElement("path", { d: "M9.8 63.6V15.2c0-3.1 2.5-5.6 5.6-5.6h78.8c3.1 0 5.6 2.5 5.6 5.6v48.5c0 3.1-2.5 5.6-5.6 5.6H15.3c-3-.1-5.5-2.6-5.5-5.7z" }),
         React.createElement("path", { d: "m99.8 16.2-7.2-6.6-6.5 6.6-7.4-6.6-6.8 6.6-6.7-6.6-7 6.6L51 9.6l-6.8 6.6-7.5-6.6-6.5 6.6-7-6.6-6.7 6.6-5.1-5M99.8 22.8l-7.2-6.6-6.5 6.6-7.4-6.6-6.8 6.6-6.7-6.6-7 6.6-7.2-6.6-6.8 6.6-7.5-6.6-6.5 6.6-7-6.6-6.7 6.6-6.7-6.6" }),

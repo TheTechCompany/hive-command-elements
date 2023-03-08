@@ -9,7 +9,6 @@ export const TJoin = (props: SVGProps<SVGSVGElement>) => (
     y={0}
     viewBox="0 0 283.5 283.5"
     xmlSpace="preserve"
-    {...props}
   >
     <style>
       {

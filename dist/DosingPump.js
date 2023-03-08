@@ -27,7 +27,7 @@ exports.DosingPump = void 0;
 const React = __importStar(require("react"));
 const DosingPump = (props) => {
     var _a, _b, _c, _d, _e;
-    return (React.createElement("svg", Object.assign({ onClick: (_a = props.options) === null || _a === void 0 ? void 0 : _a.onClick, id: "dose_pump_svg__Layer_1", xmlns: "http://www.w3.org/2000/svg", x: 0, y: 0, viewBox: "0 0 283.46 283.46", xmlSpace: "preserve" }, props),
+    return (React.createElement("svg", { onClick: (_a = props.options) === null || _a === void 0 ? void 0 : _a.onClick, id: "dose_pump_svg__Layer_1", xmlns: "http://www.w3.org/2000/svg", x: 0, y: 0, viewBox: "0 0 283.46 283.46", xmlSpace: "preserve" },
         React.createElement("style", null, ".dose_pump_svg__st0{fill:#4d4d4e}"),
         React.createElement("path", { className: "dose_pump_svg__st0", d: "M113.02 174.32c4.39 0 8.25-3.83 8.25-8.25v-61.72c0-4.39-3.86-8.25-8.25-8.25s-8.25 3.83-8.25 8.25v61.72c0 4.38 3.86 8.25 8.25 8.25z" }),
         React.createElement("circle", { className: "dose_pump_svg__st0", cx: 113.02, cy: 204.11, r: 13.78 }),
