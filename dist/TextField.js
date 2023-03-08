@@ -35,7 +35,7 @@ const TextField = (props) => {
         var _a;
         if (!editing)
             setValue((_a = props.options) === null || _a === void 0 ? void 0 : _a.value);
-    }, [(_b = props.options) === null || _b === void 0 ? void 0 : _b.value]);
+    }, [(_b = props.options) === null || _b === void 0 ? void 0 : _b.value, editing]);
     const changeValue = () => {
         var _a, _b;
         (_b = (_a = props.options) === null || _a === void 0 ? void 0 : _a.onChange) === null || _b === void 0 ? void 0 : _b.call(_a, value);

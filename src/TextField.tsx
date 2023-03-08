@@ -9,7 +9,7 @@ export const TextField = (props: { options: { onChange: (value: any) => void, ty
 
     useEffect(() => {
         if(!editing) setValue(props.options?.value)
-    }, [props.options?.value])
+    }, [props.options?.value, editing])
 
     const changeValue = () => {
         props.options?.onChange?.(value)
