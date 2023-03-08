@@ -29,19 +29,24 @@ const icons_material_1 = require("@mui/icons-material");
 const react_1 = __importStar(require("react"));
 const TextField = (props) => {
     var _a, _b, _c, _d, _e;
+    const [editing, setEditing] = (0, react_1.useState)(false);
     const [value, setValue] = (0, react_1.useState)((_a = props.options) === null || _a === void 0 ? void 0 : _a.value);
     (0, react_1.useEffect)(() => {
         var _a;
-        setValue((_a = props.options) === null || _a === void 0 ? void 0 : _a.value);
+        if (!editing)
+            setValue((_a = props.options) === null || _a === void 0 ? void 0 : _a.value);
     }, [(_b = props.options) === null || _b === void 0 ? void 0 : _b.value]);
     const changeValue = () => {
         var _a, _b;
-        console.log("Change value");
         (_b = (_a = props.options) === null || _a === void 0 ? void 0 : _a.onChange) === null || _b === void 0 ? void 0 : _b.call(_a, value);
+        setEditing(false);
     };
     return (react_1.default.createElement(material_1.Box, { sx: { flex: 1, display: 'flex' } },
-        react_1.default.createElement(material_1.TextField, { size: "small", fullWidth: true, onChange: (e) => { setValue(e.target.value); }, value: value || null, type: (_c = props.options) === null || _c === void 0 ? void 0 : _c.type, InputProps: {
-                endAdornment: value != ((_d = props.options) === null || _d === void 0 ? void 0 : _d.value) ? react_1.default.createElement(material_1.InputAdornment, { position: "end" },
+        react_1.default.createElement(material_1.TextField, { size: "small", fullWidth: true, onChange: (e) => {
+                setEditing(true);
+                setValue(e.target.value);
+            }, value: value || '', type: (_c = props.options) === null || _c === void 0 ? void 0 : _c.type, InputProps: {
+                endAdornment: (editing && value != ((_d = props.options) === null || _d === void 0 ? void 0 : _d.value)) ? react_1.default.createElement(material_1.InputAdornment, { position: "end" },
                     react_1.default.createElement(material_1.IconButton, { onClick: () => changeValue(), size: "small" },
                         react_1.default.createElement(icons_material_1.Check, { fontSize: "inherit" }))) : undefined
             }, label: (_e = props.options) === null || _e === void 0 ? void 0 : _e.label })));

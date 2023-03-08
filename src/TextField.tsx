@@ -4,15 +4,16 @@ import React, { useEffect, useState } from "react";
 
 export const TextField = (props: { options: { onChange: (value: any) => void, type: string, label: string, value: any } }) => {
     
+    const [ editing, setEditing ] = useState(false);
     const [ value, setValue ] = useState(props.options?.value)
 
     useEffect(() => {
-        setValue(props.options?.value)
+        if(!editing) setValue(props.options?.value)
     }, [props.options?.value])
 
     const changeValue = () => {
-        console.log("Change value")
         props.options?.onChange?.(value)
+        setEditing(false);
     }
 
     return (
@@ -20,11 +21,14 @@ export const TextField = (props: { options: { onChange: (value: any) => void, ty
             <BaseTextField
                 size="small"
                 fullWidth
-                onChange={(e) => { setValue(e.target.value) }}
-                value={value || null} 
+                onChange={(e) => { 
+                    setEditing(true);
+                    setValue(e.target.value);
+                }}
+                value={value || ''} 
                 type={props.options?.type}
                 InputProps={{
-                    endAdornment: value != props.options?.value ? <InputAdornment position="end">
+                    endAdornment: (editing && value != props.options?.value) ? <InputAdornment position="end">
                         <IconButton onClick={() => changeValue()} size="small">
                             <Check fontSize="inherit" />
                         </IconButton>
