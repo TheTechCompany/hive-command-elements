@@ -47,3 +47,4 @@ __exportStar(require("./PrimCircle"), exports);
 __exportStar(require("./PrimRectangle"), exports);
 __exportStar(require("./Membrane"), exports);
 __exportStar(require("./Paper"), exports);
+__exportStar(require("./InletFilter"), exports);
