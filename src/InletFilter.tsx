@@ -36,15 +36,15 @@ InletFilter.metadata = {
       {
         key: 'outlet',
         momentum: 1,
-        x: '80%',
-        y: '18%',
+        x: '90%',
+        y: '5%',
         rotation: 180
       },
       {
         key: 'inlet',
         momentum: -1,
         x: '-10%',
-        y: '18%'
+        y: '5%'
       }
     ]
   }
