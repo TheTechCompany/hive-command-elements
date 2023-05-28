@@ -43,8 +43,8 @@ InletFilter.metadata = {
       {
         key: 'inlet',
         momentum: -1,
-        x: '-14%',
-        y: '55%'
+        x: '-10%',
+        y: '18%'
       }
     ]
   }
