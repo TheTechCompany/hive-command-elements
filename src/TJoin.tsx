@@ -29,27 +29,27 @@ export const TJoin = (props: SVGProps<SVGSVGElement>) => (
 );
 
 TJoin.metadata = {
-  width: 60,
-  height: 40,
+  width: 40,
+  height: 30,
   ports: [
     {
       key: 'left-hand',
       momentum: 0,
       x: '4%',
-      y: '16%',
+      y: '15%',
       rotation: 180
     },
     {
       key: 'right-hand',
       momentum: 0,
       x: '70%',
-      y: '16%'
+      y: '15%'
     },
     {
       key: 'bottom',
       momentum: 0,
       x: '40%',
-      y: '70%'
+      y: '60%'
     }
   ]
 }

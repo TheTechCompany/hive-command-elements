@@ -33,27 +33,27 @@ const TJoin = (props) => (React.createElement("svg", { id: "TJoin_svg__Layer_1",
         }, d: "M6 58v54.3h108.6v108.6h54.3V112.3h108.6V58z" })));
 exports.TJoin = TJoin;
 exports.TJoin.metadata = {
-    width: 60,
-    height: 40,
+    width: 40,
+    height: 30,
     ports: [
         {
             key: 'left-hand',
             momentum: 0,
             x: '4%',
-            y: '16%',
+            y: '15%',
             rotation: 180
         },
         {
             key: 'right-hand',
             momentum: 0,
             x: '70%',
-            y: '16%'
+            y: '15%'
         },
         {
             key: 'bottom',
             momentum: 0,
             x: '40%',
-            y: '70%'
+            y: '60%'
         }
     ]
 };
