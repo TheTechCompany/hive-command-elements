@@ -36,20 +36,20 @@ TJoin.metadata = {
       key: 'left-hand',
       momentum: 0,
       x: '4%',
-      y: '13%',
+      y: '12%',
       rotation: 180
     },
     {
       key: 'right-hand',
       momentum: 0,
       x: '70%',
-      y: '13%'
+      y: '12%'
     },
     {
       key: 'bottom',
       momentum: 0,
       x: '35%',
-      y: '60%'
+      y: '58%'
     }
   ]
 }
