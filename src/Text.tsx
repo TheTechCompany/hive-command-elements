@@ -1,9 +1,11 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 
-export const Text = (props: {options: {background: string, border: boolean, bold: boolean, borderRadius: number, text: string}, children: any}) => {
+export const Text = (props: {options: {background: string, onClick: () => void, border: boolean, bold: boolean, borderRadius: number, text: string}, children: any}) => {
     return (
-        <Box sx={{
+        <Box 
+        onClick={props.options?.onClick}
+        sx={{
             background: props.options?.background || (props.options?.border  ? 'white' : undefined),
             paddingLeft: '6px',
             paddingRight: '6px',
@@ -22,6 +24,7 @@ Text.metadata = {
     options: {
         bold: 'Boolean',
         background: 'String',
+        onClick: 'Function',
         text: 'String',
         border: 'Boolean',
         borderRadius: 'Number'
