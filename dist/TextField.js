@@ -54,7 +54,7 @@ const TextField = (props) => {
 exports.TextField = TextField;
 exports.TextField.metadata = {
     width: 150,
-    height: 50,
+    height: 40,
     options: {
         onChange: 'Function',
         value: 'String',
