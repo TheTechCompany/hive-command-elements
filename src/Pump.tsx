@@ -3,7 +3,7 @@ import { SVGProps } from "react";
 
 export const Pump = (props: any) => {
 
-  console.log("Pump props", {props});
+  console.log("Pump props", props.options?.fill);
 
   return <svg
     onClick={props.options?.onClick}
