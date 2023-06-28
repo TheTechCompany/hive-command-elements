@@ -14,7 +14,7 @@ export const Pump = (props: any) => {
     viewBox="0 0 283.46 283.46"
     xmlSpace="preserve"
   >
-    <style>{".pump_svg__st0{fill:#4d4d4e}"}</style>
+    <style>{`.pump_svg__st0{fill:${props.options?.fill || '#4d4d4e'}}`}</style>
     <path
       style={{
         fill: props.options?.color || '#4d4d4e'
