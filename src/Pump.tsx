@@ -1,8 +1,11 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-export const Pump = (props: any) => (
-  <svg
+export const Pump = (props: any) => {
+
+  console.log("Pump props", {props});
+
+  return <svg
     onClick={props.options?.onClick}
     id="pump_svg__Layer_1"
     xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +32,7 @@ export const Pump = (props: any) => (
       d="M113 40.85C52.55 40.85 3.32 90.05 3.32 150.5c0 33.36 15 62.98 38.35 83.4L22.52 256c-7.51 8.76-1.25 22.51 10.41 22.51h160.13c11.69 0 17.93-13.75 10.41-22.51l-19.17-22.1c23.35-20.02 38.38-50.04 38.38-83.4h54.22V40.85H113zM92.78 220.96c-23.76-6.67-42.53-25.44-49.2-49.2C27.71 114.65 78.6 64.2 135.31 80.04c23.76 6.67 42.53 25.44 49.2 49.2 15.87 57.12-35.02 107.56-91.73 91.72z"
     />
   </svg>
-);
+}
 
 Pump.metadata = {
   width: 50,
