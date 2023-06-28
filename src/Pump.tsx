@@ -24,7 +24,7 @@ export const Pump = (props: any) => {
     />
     <path
       style={{
-        fill: props.options?.fill || (!props.options?.stroke) ? "#4d4d4e" : 'none',
+        fill: props.options?.fill, // || (!props.options?.stroke) ? "#4d4d4e" : 'none',
         stroke: props.options?.stroke,
         strokeWidth: props.options?.stroke ? '5px' : undefined
       }}
