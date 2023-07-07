@@ -29,7 +29,7 @@ const ButterflyValve = (props) => {
     var _a, _b, _c;
     return (React.createElement("svg", { onClick: (_a = props.options) === null || _a === void 0 ? void 0 : _a.onClick, xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 283.46 283.46", xmlSpace: "preserve" },
         React.createElement("path", { d: "M278.27 240.51V42.95c0-20.85-16.9-37.75-37.75-37.75H42.95C22.1 5.2 5.2 22.1 5.2 42.95v197.56c0 20.85 16.9 37.75 37.75 37.75h197.56c20.85.01 37.76-16.9 37.76-37.75zm-158.61 1.21V41.74c0-12.19 9.88-22.07 22.07-22.07s22.07 9.88 22.07 22.07v199.98c0 12.19-9.88 22.07-22.07 22.07s-22.07-9.88-22.07-22.07z", style: {
-                fill: ((_b = props.options) === null || _b === void 0 ? void 0 : _b.fault) ? 'red' : "#4d4d4e",
+                fill: ((_b = props.options) === null || _b === void 0 ? void 0 : _b.fill) || "#4d4d4e",
                 transformOrigin: '50% 50%',
                 transformBox: 'fill-box',
                 transform: `rotate(${((_c = props.options) === null || _c === void 0 ? void 0 : _c.open) == true ? '90' : '0'}deg)`,
