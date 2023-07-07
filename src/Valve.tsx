@@ -26,7 +26,8 @@ ButterflyValve.metadata = {
   height: 30,
   options: {
     open: 'Boolean',
-    onClick: 'Function'
+    onClick: 'Function',
+    fill: 'String'
   },
   ports: [
     {
