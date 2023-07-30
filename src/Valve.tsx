@@ -32,6 +32,7 @@ ButterflyValve.metadata = {
   ports: [
     {
       key: 'outlet',
+      type: 'source',
       momentum: 1,
       x: '80%',
       y: '30%',
@@ -39,6 +40,7 @@ ButterflyValve.metadata = {
     },
     {
       key: 'inlet',
+      type: 'target',
       momentum: -1,
       x: '-10%',
       y: '30%'

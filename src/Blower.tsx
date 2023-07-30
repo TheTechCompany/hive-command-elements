@@ -43,6 +43,7 @@ Blower.metadata = {
   ports: [
     {
       key: 'outlet',
+      type: 'source',
       momentum: 1,
       x: '80%',
       y: '18%',
