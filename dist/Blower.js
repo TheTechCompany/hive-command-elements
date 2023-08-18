@@ -38,7 +38,7 @@ const Blower = (props) => {
         }
         return result;
     };
-    const id = React.useMemo(() => { makeid(5); }, []);
+    const id = makeid(5);
     return React.createElement("svg", { onClick: (_a = props.options) === null || _a === void 0 ? void 0 : _a.onClick, xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 283.46 283.46", xmlSpace: "preserve" },
         React.createElement("style", null, `
 

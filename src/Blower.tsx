@@ -3,6 +3,7 @@ import { SVGProps } from "react";
 
 export const Blower = (props: any) => {
  
+
   const makeid = (length: number) => {
       let result = '';
       const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -15,7 +16,7 @@ export const Blower = (props: any) => {
       return result;
   }
 
-  const id = React.useMemo(() => {makeid(5)}, [])
+  const id = makeid(5);
 
   return <svg
     onClick={props.options?.onClick}
