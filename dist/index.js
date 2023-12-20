@@ -48,3 +48,5 @@ __exportStar(require("./PrimRectangle"), exports);
 __exportStar(require("./Membrane"), exports);
 __exportStar(require("./Paper"), exports);
 __exportStar(require("./InletFilter"), exports);
+__exportStar(require("./UV"), exports);
+__exportStar(require("./Multimedia"), exports);
