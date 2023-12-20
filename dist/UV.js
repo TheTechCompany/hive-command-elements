@@ -75,17 +75,16 @@ exports.UV.metadata = {
     height: 50,
     ports: [
         {
-            key: 'outlet',
+            key: 'inlet',
             momentum: 1,
-            x: '80%',
-            y: '42%',
-            rotation: 180
+            x: '9%',
+            y: '5%',
         },
         {
-            key: 'inlet',
+            key: 'outlet',
             momentum: -1,
-            x: '-5%',
-            y: '42%'
+            x: '100%',
+            y: '55%'
         }
     ]
 };
