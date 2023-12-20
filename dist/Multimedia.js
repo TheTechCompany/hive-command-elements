@@ -38,15 +38,15 @@ exports.Multimedia.metadata = {
         {
             key: 'outlet',
             momentum: 1,
-            x: '80%',
-            y: '42%',
+            x: '92%',
+            y: '2%',
             rotation: 180
         },
         {
             key: 'inlet',
             momentum: -1,
-            x: '-5%',
-            y: '42%'
+            x: '5%',
+            y: '2%'
         }
     ]
 };
