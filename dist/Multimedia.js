@@ -32,6 +32,8 @@ const Multimedia = (props) => (React.createElement("svg", Object.assign({ xmlns:
 exports.Multimedia = Multimedia;
 exports.Multimedia.metadata = {
     type: 'multimedia',
+    width: 50,
+    height: 150,
     ports: [
         {
             key: 'outlet',

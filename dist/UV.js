@@ -71,6 +71,8 @@ const UV = (props) => (React.createElement("svg", Object.assign({ xmlns: "http:/
 exports.UV = UV;
 exports.UV.metadata = {
     type: 'uv',
+    width: 150,
+    height: 50,
     ports: [
         {
             key: 'outlet',

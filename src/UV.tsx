@@ -119,6 +119,8 @@ export const UV = (props: SVGProps<SVGSVGElement>) => (
 
 UV.metadata = {
   type: 'uv',
+  width: 150,
+  height: 50,
   ports: [
     {
       key: 'outlet',

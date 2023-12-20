@@ -25,6 +25,8 @@ export const Multimedia = (props: SVGProps<SVGSVGElement>) => (
 
 Multimedia.metadata = {
   type: 'multimedia',
+  width: 50,
+  height: 150,
   ports: [
     {
       key: 'outlet',
