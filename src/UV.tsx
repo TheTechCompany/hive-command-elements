@@ -1,7 +1,9 @@
 import * as React from "react";
 import type { SVGProps } from "react";
-const SvgUv = (props: SVGProps<SVGSVGElement>) => (
-  <svg
+
+export const UV = (props: SVGProps<SVGSVGElement>) => {
+
+  return (<svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     id="uv_svg__Layer_1"
@@ -145,6 +147,25 @@ const SvgUv = (props: SVGProps<SVGSVGElement>) => (
         fill: "#393839",
       }}
     />
-  </svg>
-);
-export default SvgUv;
+  </svg>)
+}
+
+UV.metadata = {
+  type: 'uv',
+  width: 150,
+  height: 50,
+  ports: [
+    {
+      key: 'inlet',
+      momentum: 1,
+      x: '5%',
+      y: '5%',
+    },
+    {
+      key: 'outlet',
+      momentum: -1,
+      x: '95%',
+      y: '55%'
+    }
+  ]
+}
