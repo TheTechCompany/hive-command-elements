@@ -27,7 +27,12 @@ exports.InletFilter = void 0;
 const React = __importStar(require("react"));
 const InletFilter = (props) => {
     var _a, _b, _c, _d, _e, _f, _g, _h, _j;
-    console.log("Inlet filter opts", props, { fill: (_a = props.options) === null || _a === void 0 ? void 0 : _a.fill, fillEmpty: ((_b = props.options) === null || _b === void 0 ? void 0 : _b.fill) || 'abc', options: props.options, fillEq: (((_c = props.options) === null || _c === void 0 ? void 0 : _c.fill) || (!((_d = props.options) === null || _d === void 0 ? void 0 : _d.stroke)) ? "#4d4d4e" : 'none') });
+    console.log("Inlet filter opts", props, {
+        fill: (_a = props.options) === null || _a === void 0 ? void 0 : _a.fill,
+        fillEmpty: ((_b = props.options) === null || _b === void 0 ? void 0 : _b.fill) || 'abc',
+        options: props.options,
+        fillEq: (((_c = props.options) === null || _c === void 0 ? void 0 : _c.fill) || ((!((_d = props.options) === null || _d === void 0 ? void 0 : _d.stroke)) ? "#4d4d4e" : 'none'))
+    });
     return React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", xmlSpace: "preserve", viewBox: "0 0 500 500", onClick: (_e = props.options) === null || _e === void 0 ? void 0 : _e.onClick }, props),
         React.createElement("style", null, `
             .inlet_filter_svg{

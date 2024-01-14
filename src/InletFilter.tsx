@@ -1,7 +1,11 @@
 import * as React from "react";
 
 export const InletFilter = (props: {options: any}) => {
-  console.log("Inlet filter opts", props, {fill: props.options?.fill, fillEmpty: props.options?.fill || 'abc', options: props.options, fillEq: (props.options?.fill || (!props.options?.stroke) ? "#4d4d4e" : 'none')});
+  console.log("Inlet filter opts", props, {
+    fill: props.options?.fill, 
+    fillEmpty: props.options?.fill || 'abc', 
+    options: props.options, 
+    fillEq: (props.options?.fill || ((!props.options?.stroke) ? "#4d4d4e" : 'none'))});
 
   return <svg
     xmlns="http://www.w3.org/2000/svg"
