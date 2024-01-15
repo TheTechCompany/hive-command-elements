@@ -1,7 +1,7 @@
 import * as React from "react";
 import type { SVGProps } from "react";
 
-export const UV = (props: SVGProps<SVGSVGElement>) => {
+export const UV = (props: any) => {
 
   return (<svg
     xmlns="http://www.w3.org/2000/svg"
@@ -9,6 +9,7 @@ export const UV = (props: SVGProps<SVGSVGElement>) => {
     id="uv_svg__Layer_1"
     data-name="Layer 1"
     viewBox="0 0 165.4 45.3"
+    onClick={props.options?.onClick}
     {...props}
   >
     <defs>
@@ -101,7 +102,9 @@ export const UV = (props: SVGProps<SVGSVGElement>) => {
       </linearGradient>
       <linearGradient id="uv_svg__flow-with-no-uv">
         <stop offset={0} stopColor="#6aa8e5" />
-        {">"}
+      </linearGradient>
+      <linearGradient id="uv_svg__bulb-error">
+        <stop offset={0} stopColor="red" />
       </linearGradient>
       <style>{".uv_svg__cls-2{fill:#4d4d4e}"}</style>
     </defs>
@@ -132,13 +135,13 @@ export const UV = (props: SVGProps<SVGSVGElement>) => {
       y={21.5}
       rx={3.25}
       style={{
-        fill: "url(#uv_svg__flow-with-no-uv)",
+        fill: `url(#${props.options?.flowFill})`,
       }}
     />
     <path
       d="M56 27.66h38.28v4.49H56a2.24 2.24 0 0 1-2.24-2.24A2.24 2.24 0 0 1 56 27.66"
       style={{
-        fill: "url(#uv_svg__uv-off)",
+        fill: `url(#${props.options?.uvFill}uv_svg__uv-off)`,
       }}
     />
     <path
@@ -154,6 +157,11 @@ UV.metadata = {
   type: 'uv',
   width: 150,
   height: 50,
+  options: {
+    uvFill: 'String',
+    flowFill: 'String',
+    onClick: 'Function'
+  },
   ports: [
     {
       key: 'inlet',

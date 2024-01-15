@@ -26,7 +26,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.UV = void 0;
 const React = __importStar(require("react"));
 const UV = (props) => {
-    return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", id: "uv_svg__Layer_1", "data-name": "Layer 1", viewBox: "0 0 165.4 45.3" }, props),
+    var _a, _b, _c;
+    return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", id: "uv_svg__Layer_1", "data-name": "Layer 1", viewBox: "0 0 165.4 45.3", onClick: (_a = props.options) === null || _a === void 0 ? void 0 : _a.onClick }, props),
         React.createElement("defs", null,
             React.createElement("linearGradient", { id: "uv_svg__linear-gradient", x1: 75.4, x2: 75.4, y1: 33.1, y2: 3.1, gradientTransform: "matrix(1 0 0 -1 0 48)", gradientUnits: "userSpaceOnUse" },
                 React.createElement("stop", { offset: 0, stopColor: "#393839" }),
@@ -61,8 +62,9 @@ const UV = (props) => {
                 React.createElement("stop", { offset: 0.5, stopColor: "#fff" }),
                 React.createElement("stop", { offset: 1, stopColor: "#6aa8e5" })),
             React.createElement("linearGradient", { id: "uv_svg__flow-with-no-uv" },
-                React.createElement("stop", { offset: 0, stopColor: "#6aa8e5" }),
-                ">"),
+                React.createElement("stop", { offset: 0, stopColor: "#6aa8e5" })),
+            React.createElement("linearGradient", { id: "uv_svg__bulb-error" },
+                React.createElement("stop", { offset: 0, stopColor: "red" })),
             React.createElement("style", null, ".uv_svg__cls-2{fill:#4d4d4e}")),
         React.createElement("path", { d: "M146.9 44.9H3.9a3.54 3.54 0 0 1-3.5-3.5v-23a3.54 3.54 0 0 1 3.5-3.5h143a3.54 3.54 0 0 1 3.5 3.5v23a3.54 3.54 0 0 1-3.5 3.5", style: {
                 fill: "url(#uv_svg__linear-gradient)",
@@ -76,10 +78,10 @@ const UV = (props) => {
                 fill: "url(#uv_svg__linear-gradient-3)",
             } }),
         React.createElement("rect", { width: 54.04, height: 16.8, x: 48.38, y: 21.5, rx: 3.25, style: {
-                fill: "url(#uv_svg__flow-with-no-uv)",
+                fill: `url(#${(_b = props.options) === null || _b === void 0 ? void 0 : _b.flowFill})`,
             } }),
         React.createElement("path", { d: "M56 27.66h38.28v4.49H56a2.24 2.24 0 0 1-2.24-2.24A2.24 2.24 0 0 1 56 27.66", style: {
-                fill: "url(#uv_svg__uv-off)",
+                fill: `url(#${(_c = props.options) === null || _c === void 0 ? void 0 : _c.uvFill}uv_svg__uv-off)`,
             } }),
         React.createElement("path", { d: "M102.52 28.85H100A2.31 2.31 0 0 0 97.54 27h-3.26v5.9h3.26A2.31 2.31 0 0 0 100 31h2.49Z", style: {
                 fill: "#393839",
@@ -90,6 +92,11 @@ exports.UV.metadata = {
     type: 'uv',
     width: 150,
     height: 50,
+    options: {
+        uvFill: 'String',
+        flowFill: 'String',
+        onClick: 'Function'
+    },
     ports: [
         {
             key: 'inlet',
