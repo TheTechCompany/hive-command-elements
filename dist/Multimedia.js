@@ -26,15 +26,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Multimedia = void 0;
 const React = __importStar(require("react"));
 const Multimedia = (props) => {
-    var _a;
-    return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", xmlSpace: "preserve", id: "Multimedia_svg__Layer_1", x: 0, y: 0, viewBox: "0 0 31.5 97.4" }, props),
+    var _a, _b;
+    return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", xmlSpace: "preserve", id: "Multimedia_svg__Layer_1", x: 0, y: 0, viewBox: "0 0 31.5 97.4", onClick: (_a = props.options) === null || _a === void 0 ? void 0 : _a.onClick }, props),
         React.createElement("style", null, `
       .Multimedia_svg__st1{
         fill:#393839;
       }
       
       .Multimedia_svg__tankHead{
-        fill:${((_a = props.options) === null || _a === void 0 ? void 0 : _a.headFill) || '#393839'};
+        fill:${((_b = props.options) === null || _b === void 0 ? void 0 : _b.headFill) || '#393839'};
       }`),
         React.createElement("linearGradient", { id: "Multimedia_svg__SVGID_1_", x1: 1.218, x2: 30.153, y1: 48.7, y2: 48.7, gradientUnits: "userSpaceOnUse" },
             React.createElement("stop", { offset: 0, style: {
@@ -100,7 +100,8 @@ exports.Multimedia.metadata = {
     width: 50,
     height: 150,
     options: {
-        headFill: "String"
+        headFill: "String",
+        onClick: "Function"
     },
     ports: [
         {

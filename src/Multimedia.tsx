@@ -9,6 +9,7 @@ export const Multimedia = (props: any) => (
     x={0}
     y={0}
     viewBox="0 0 31.5 97.4"
+    onClick={props.options?.onClick}
     {...props}
   >
     <style>{`
@@ -173,7 +174,8 @@ Multimedia.metadata = {
   width: 50,
   height: 150,
   options: {
-    headFill: "String"
+    headFill: "String",
+    onClick: "Function"
   },
   ports: [
     {
