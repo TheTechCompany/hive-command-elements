@@ -141,7 +141,7 @@ export const UV = (props: any) => {
     <path
       d="M56 27.66h38.28v4.49H56a2.24 2.24 0 0 1-2.24-2.24A2.24 2.24 0 0 1 56 27.66"
       style={{
-        fill: `url(#${props.options?.uvFill}uv_svg__uv-off)`,
+        fill: `url(#${props.options?.uvFill})`,
       }}
     />
     <path

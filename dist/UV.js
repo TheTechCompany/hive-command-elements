@@ -81,7 +81,7 @@ const UV = (props) => {
                 fill: `url(#${(_b = props.options) === null || _b === void 0 ? void 0 : _b.flowFill})`,
             } }),
         React.createElement("path", { d: "M56 27.66h38.28v4.49H56a2.24 2.24 0 0 1-2.24-2.24A2.24 2.24 0 0 1 56 27.66", style: {
-                fill: `url(#${(_c = props.options) === null || _c === void 0 ? void 0 : _c.uvFill}uv_svg__uv-off)`,
+                fill: `url(#${(_c = props.options) === null || _c === void 0 ? void 0 : _c.uvFill})`,
             } }),
         React.createElement("path", { d: "M102.52 28.85H100A2.31 2.31 0 0 0 97.54 27h-3.26v5.9h3.26A2.31 2.31 0 0 0 100 31h2.49Z", style: {
                 fill: "#393839",
