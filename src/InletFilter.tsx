@@ -17,7 +17,7 @@ export const InletFilter = (props: {options: any}) => {
     <style>
       {`
             .inlet_filter_svg{
-              fill:${props.options?.fill || (!props.options?.stroke) ? "#4d4d4e" : 'none'}
+              fill:${props.options?.fill || ((!props.options?.stroke) ? "#4d4d4e" : 'none')}
             }
         `}
     </style>
