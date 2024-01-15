@@ -99,6 +99,9 @@ exports.Multimedia.metadata = {
     type: 'multimedia',
     width: 50,
     height: 150,
+    options: {
+        headFill: "String"
+    },
     ports: [
         {
             key: 'outlet',
