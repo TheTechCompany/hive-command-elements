@@ -11,6 +11,7 @@ export const NFMembrane = (props: SVGProps<SVGSVGElement>) => (
     viewBox="0 0 142.5 47.5"
     xmlSpace="preserve"
     role="img"
+    style={{width: '100%'}}
   >
     <style>
       {
