@@ -181,7 +181,7 @@ Multimedia.metadata = {
     {
       key: 'outlet',
       momentum: 1,
-      x: '92%',
+      x: '90%',
       y: '2%',
       rotation: 180
     },
