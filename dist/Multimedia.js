@@ -107,7 +107,7 @@ exports.Multimedia.metadata = {
         {
             key: 'outlet',
             momentum: 1,
-            x: '85%',
+            x: '83%',
             y: '2%',
             rotation: 180
         },
