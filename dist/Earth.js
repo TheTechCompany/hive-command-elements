@@ -38,7 +38,7 @@ exports.Earth.metadata = {
         {
             key: 'outlet',
             momentum: 1,
-            x: '45%',
+            x: '35%',
             y: '0%'
         },
     ]
