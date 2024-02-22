@@ -16,7 +16,7 @@ export const Earth = (props: SVGProps<SVGSVGElement>) => (
     viewBox="-4.5 -5 30 30"
     {...props}
   >
-    <style>{".earth_svg__E{stroke-width:.5}"}</style>
+    <style>{".earth_svg__E{stroke-width:1}"}</style>
     <use xlinkHref="#earth_svg__A" x={0.5} y={0.5} />
     <symbol id="earth_svg__A" overflow="visible">
       <path
@@ -29,13 +29,13 @@ export const Earth = (props: SVGProps<SVGSVGElement>) => (
 );
 
 Earth.metadata = {
-  width: 20,
-  height: 20,
+  width: 40,
+  height: 40,
   ports: [
     {
       key: 'outlet',
       momentum: 1,
-      x: '50%',
+      x: '45%',
       y: '0%'
     },
   ]
