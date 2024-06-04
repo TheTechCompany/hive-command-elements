@@ -27,7 +27,7 @@ exports.ControlValve = void 0;
 const React = __importStar(require("react"));
 const ControlValve = (props) => {
     var _a, _b, _c;
-    return (React.createElement("svg", Object.assign({ onClick: (_a = props.options) === null || _a === void 0 ? void 0 : _a.onClick }, props),
+    return (React.createElement("svg", Object.assign({ viewBox: "0 0 20 20", onClick: (_a = props.options) === null || _a === void 0 ? void 0 : _a.onClick }, props),
         React.createElement("rect", { fill: ((_b = props.options) === null || _b === void 0 ? void 0 : _b.fill) || '#4d4d4e', width: 20, height: 20, rx: 5 }),
         React.createElement("rect", { width: 2, height: 18, x: 9, y: 1, fill: "#fff", rx: 1, style: {
                 transformOrigin: "50% 50%",

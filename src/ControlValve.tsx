@@ -2,7 +2,9 @@ import * as React from "react";
 import type { SVGProps } from "react";
 
 export const ControlValve = (props: any) => (
-  <svg onClick={props.options?.onClick} {...props}>
+  <svg 
+    viewBox="0 0 20 20"
+    onClick={props.options?.onClick} {...props}>
     <rect fill={props.options?.fill || '#4d4d4e'} width={20} height={20} rx={5} />
     <rect
       width={2}
