@@ -51,3 +51,4 @@ __exportStar(require("./InletFilter"), exports);
 __exportStar(require("./UV"), exports);
 __exportStar(require("./Multimedia"), exports);
 __exportStar(require("./Earth"), exports);
+__exportStar(require("./ControlValve"), exports);
