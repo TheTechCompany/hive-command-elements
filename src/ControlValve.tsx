@@ -5,14 +5,14 @@ export const ControlValve = (props: any) => (
   <svg 
     viewBox="0 0 20 20"
     onClick={props.options?.onClick} {...props}>
-    <rect fill={props.options?.fill || '#4d4d4e'} width={20} height={20} rx={5} />
+    <rect fill={props.options?.fill || '#4d4d4e'} width={20} height={20} rx={2.5} />
     <rect
-      width={2}
+      width={3}
       height={18}
-      x={9}
+      x={8.5}
       y={1}
       fill={"#fff"}
-      rx={1}
+      rx={1.5}
       style={{
         transformOrigin: "50% 50%",
         transformBox: "content-box",
